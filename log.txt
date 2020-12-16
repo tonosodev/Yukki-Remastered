@@ -1,0 +1,65 @@
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> реп
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ReputationCog' object has no attribute 'author'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, give_rep <@!641398600727003197> | {Nedo} Dev 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ReputationCog' object has no attribute 'author'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, реп <@!641398600727003197> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ReputationCog' object has no attribute 'author'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, реп <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ReputationCog' object has no attribute 'author'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, реп
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ReputationCog' object has no attribute 'author'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'DevOpStatusCog' object has no attribute 'client'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'ps'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'virtual_memory'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'cpu_percent'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, say 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: can only concatenate list (not "str") to list
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
