@@ -1,5 +1,5 @@
 import discord
-from config import virtual_ram_aliases
+from config import virtual_ram_aliases, virtual_ram_permission
 from discord.ext import commands
 from psutil import virtual_memory
 
@@ -8,11 +8,8 @@ class VirtualMemoryCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    permission = 766231587104620554
-    aliases = virtual_ram_aliases
-
-    @commands.command(aliases=[str(virtual_ram_aliases)])
-    @commands.has_any_role(permission)
+    @commands.command(aliases=virtual_ram_aliases)
+    @commands.has_any_role(virtual_ram_permission)
     async def ram(self, ctx):
 
         ram = virtual_memory().total

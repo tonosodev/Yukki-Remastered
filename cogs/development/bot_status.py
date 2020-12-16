@@ -6,42 +6,15 @@ from Cybernator import Paginator
 from discord.ext import commands
 from psutil._common import bytes2human
 
+from config import bot_status_permission, bot_status_aliases
+
 
 class DevOpStatusCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    def bytes2human(number, typer=None):
-        # Пример Работы Этой Функции перевода чисел:
-        # >> bytes2human(10000)
-        # >> '9.8K'
-        # >> bytes2human(100001221)
-        # >> '95.4M'
-
-        if typer == "system":
-            symbols = ('KБ', 'МБ', 'ГБ', 'TБ', 'ПБ', 'ЭБ', 'ЗБ',
-                       'ИБ')  # Для перевода в Килобайты, Мегабайты, Гигобайты, Террабайты, Петабайты, Петабайты, Эксабайты, Зеттабайты, Йоттабайты
-        else:
-            symbols = ('K', 'M', 'G', 'T', 'P', 'E', 'Z', 'Y')  # Для перевода в обычные цифры (10k, 10MM)
-
-        prefix = {}
-
-        for i, s in enumerate(symbols):
-            prefix[s] = 1 << (i + 1) * 10
-
-        for s in reversed(symbols):
-            if number >= prefix[s]:
-                value = float(number) / prefix[s]
-                return '%.1f%s' % (value, s)
-
-        return f"{number}B"
-
-    @commands.command(
-        name="бот",
-        aliases=["bot", "botinfo", "ботинфо"],
-        brief="Информация о боте",
-        usage="бот <None>",
-        description="Подробная информация о боте")
+    @commands.command(aliases=bot_status_aliases)
+    @commands.has_any_role(bot_status_permission)
     async def _bot(self, ctx):
         await ctx.message.delete()
 
@@ -118,9 +91,9 @@ class DevOpStatusCog(commands.Cog):
                          inline=True)
 
         embed2.add_field(name='Использование RAM',
-                         value=f'Доступно: {bytes2human(mem.available)}\n'
-                               f'Используется: {bytes2human(mem.used)} **({mem.percent}%)**\n'
-                               f'Всего: {bytes2human(mem.total)}',
+                         value=f'Доступно: **{bytes2human(mem.available)}**\n'
+                               f'Используется: **{bytes2human(mem.used)}** **({mem.percent}%)**\n'
+                               f'Всего: **{bytes2human(mem.total)}**',
                          inline=True)
 
         embed2.add_field(name='Задержка системы',
@@ -133,7 +106,7 @@ class DevOpStatusCog(commands.Cog):
             embed2.add_field(name="‎‎‎‎", value=f'```{disk.device}```',
                              inline=False)
             embed2.add_field(name='Всего на диске',
-                             value=f'{bytes2human(usage.total)}', inline=True)
+                             value=f'**{bytes2human(usage.total)}**', inline=True)
             embed2.add_field(name='Свободное место на диске',
                              value=f'{bytes2human(usage.free)}', inline=True)
             embed2.add_field(name='Используемое дисковое пространство',
@@ -143,7 +116,7 @@ class DevOpStatusCog(commands.Cog):
 
         message = await ctx.send(embed=embed1)
         page = Paginator(self.bot, message, only=ctx.author, use_more=False, embeds=embeds, language="ru",
-                         footer_icon=self.bot.user.avatar_url, timeout=120, use_exit=True, delete_message=False,
+                         footer_icon=self.bot.user.avatar_url, timeout=120, use_exit=True, delete_message=True,
                          color=0x6A5ACD, use_remove_reaction=True)
         await page.start()
 

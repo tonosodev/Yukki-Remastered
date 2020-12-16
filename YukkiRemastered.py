@@ -60,6 +60,7 @@ for filename in os.listdir('./cogs/development'):
 # -------------------------------#
 @yukki.event
 async def on_command_error(ctx, error):
+    await ctx.message.delete()
     if isinstance(error, commands.CommandNotFound) or isinstance(error, commands.MemberNotFound):
         return await ctx.send(embed=discord.Embed(
             description=f'❗️ {ctx.author.mention}, команда не найдена!\nПропишите " ' + bot_settings[

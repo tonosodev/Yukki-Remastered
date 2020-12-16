@@ -63,3 +63,39 @@
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, слот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In message_reference: Unknown message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, бот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+...
