@@ -50,14 +50,16 @@ mongo_db = {
 #                             INITIALIZE                             #
 # ===================================================================#
 bot_initialize = {
+    "cog_load_error": "LOAD ERROR!\n\t\t   CHECK AND CORRECT CODE!",
     "activity_status": "за порядком ☕",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",
-    "activity_status_success": "\n##################################################\n[SUCCESS] Discord activity status is ready!",
-    "activity_status_error": "\n##################################################\n[ERROR] Discord activity status doesnt ready!",
-    "discord_py_version": "1.6.0a adapted\n##################################################\n",
-    "mongo_success_notification": "\n##################################################\n          [SUCCESS] MONGODB CONNECTED!\n            WELCOME ABOARD, CAPTAIN!\n##################################################\n",
-    "mongo_error_notification": "\n##################################################\n          [ERROR] MONGODB CONNECT ERROR!\n                    CHECK DATA!\n##################################################\n",
+    "activity_status_success": "[SUCCESS] Discord activity status is ready!",
+    "activity_status_error": "[ERROR] Discord activity status doesnt ready!",
+    "discord_py_version": "1.6.0a adapted",
+    "mongo_success_notification": "          [SUCCESS] MONGODB CONNECTED!\n            WELCOME ABOARD, CAPTAIN!",
+    "mongo_error_notification": "          [ERROR] MONGODB CONNECT ERROR!\n                    CHECK DATA!",
+    "copyright_message": "\n\t  Yukki© 2020 | All rights reserved"
 }
 
 # ===================================================================#

@@ -27,9 +27,9 @@ class ConnectCog(commands.Cog):
             cluster = MongoClient(mongo_db['mongo_settings_cluster'])
             db = mongo_db['mongo_settings_db']
             coll = mongo_db['mongo_settings_coll']
-            print(bot_initialize['mongo_success_notification'])
+            print("\n##################################################\n" + bot_initialize['mongo_success_notification'] + "\n##################################################\n")
         except:
-            print(bot_initialize['mongo_error_notification'])
+            print("\n##################################################\n" + bot_initialize['mongo_error_notification'] + "\n##################################################\n")
         finally:
             pass
 
@@ -42,13 +42,13 @@ class ConnectCog(commands.Cog):
         try:
             await self.bot.change_presence(
                 activity=discord.Activity(type=discord.ActivityType.watching, name=str(status_msg)))
-            print(bot_initialize['activity_status_success'])
+            print("\n##################################################\n" + bot_initialize['activity_status_success'])
         except:
-            print(bot_initialize['activity_status_error'])
+            print("\n##################################################\n" + bot_initialize['activity_status_error'])
         finally:
             pass
         print('[SUCCESS] Discord.py version ' + (
-            str(discord.__version__)) + " | " + bot_initialize['discord_py_version'])
+            str(discord.__version__)) + " | " + bot_initialize['discord_py_version'] + "\n##################################################\n")
 
 
 def setup(bot):
