@@ -51,7 +51,7 @@ mongo_db = {
 # ===================================================================#
 bot_initialize = {
     "activity_status": "за порядком ☕",
-    "token_error": "\n\n\tGeneral code error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
+    "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",
     "activity_status_success": "\n##################################################\n[SUCCESS] Discord activity status is ready!",
     "activity_status_error": "\n##################################################\n[ERROR] Discord activity status doesnt ready!",
