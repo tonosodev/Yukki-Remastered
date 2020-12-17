@@ -5,7 +5,7 @@ import random
 import discord
 from discord.ext import commands
 
-from config import slot_command_aliases, slot_command_permission
+from config import slot_command_aliases
 
 
 class SlotCog(commands.Cog):

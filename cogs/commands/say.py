@@ -2,14 +2,15 @@ import discord
 from discord.ext import commands
 import io
 
+from config import say_command_aliases, commands_permission
+
 
 class SayCommandCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
-    @commands.has_any_role(766293535832932392, 766233124681547776,
-                           766231587104620554)  # Head.tech-spec, #Support,  #Owner
+    @commands.command(aliases=say_command_aliases)
+    @commands.has_any_role(*commands_permission['say_permission'])
     async def say(self, ctx, *, message=None):
         files = []
         for file in ctx.message.attachments:

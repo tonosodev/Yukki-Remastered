@@ -1,15 +1,15 @@
 from discord.ext import commands
-import config
+from config import ping_aliases, commands_permission
 
 
 class PingCommandCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    permission = 766231587104620554
+    # items = [766293535832932392, 766233124681547776, 766231587104620554]
 
-    @commands.command(aliases=['пинг'])
-    @commands.has_any_role(permission)
+    @commands.command(aliases=ping_aliases)
+    @commands.has_any_role(*commands_permission['ping_permission'])
     async def ping(self, ctx):
         await ctx.message.delete()
         ping = self.bot.ws.latency

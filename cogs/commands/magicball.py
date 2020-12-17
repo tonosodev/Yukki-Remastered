@@ -1,6 +1,5 @@
 import discord
 import random
-from discord import Embed
 from discord.ext import commands
 
 

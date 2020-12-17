@@ -12,6 +12,8 @@ TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
 yukki.remove_command("help")
 
+error_logs = yukki.get_channel(bot_settings['error_log_channel'])
+
 
 # ----------------------------- #
 #         YUKKI COGS            #
@@ -57,7 +59,9 @@ try:
             yukki.load_extension(f'cogs.development.{filename[:-3]}')
 except:
     print(
-        f"\n##################################################\n\t\tFile '{filename[:-3]}' " + bot_initialize['cog_load_error'] + "\n##################################################\n" + bot_initialize['copyright_message'])
+        f"\n##################################################\nFile '{filename[:-3]}' " + bot_initialize[
+            'cog_load_error'] + "\n##################################################\n" + bot_initialize[
+            'copyright_message'])
 
 
 # -------------------------------#
@@ -113,8 +117,8 @@ async def on_command_error(ctx, error):
                 log.write("...\n")
                 log.close()
 
-            await ctx.send(embed=discord.Embed(
-                description=f'❗️ {ctx.author.name}, Вы - достигли комедии! \n**`ОШИБКА:`** {error}', ))
+            await yukki.get_channel(bot_settings['error_log_channel']).send(embed=discord.Embed(
+                description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}', ))
             raise error
 
 

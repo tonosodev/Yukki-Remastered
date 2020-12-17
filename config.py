@@ -6,7 +6,8 @@ bot_settings = {
     "bot_token": "NzY2MjcwOTkwMDA3MDA5MzMw.X4g7eA.PLdlBX2vFVI-HMcD97bDofXRDWs",
     "bot_name": "Yukki",
     "bot_prefix": "Юкки, ",
-    "log_channel": 766218369279852554,  # ID-канала для отправки лога
+    "log_channel": 766218369279852554,  # ID-канала для отправки лога оповещений бота
+    "error_log_channel": 789246267645362196  # ID-канала для отправки лога ошибок
 }
 
 # ===================================================================#
@@ -50,8 +51,8 @@ mongo_db = {
 #                             INITIALIZE                             #
 # ===================================================================#
 bot_initialize = {
-    "cog_load_error": "LOAD ERROR!\n\t\t   CHECK AND CORRECT CODE!",
     "activity_status": "за порядком ☕",
+    "cog_load_error": "LOAD ERROR!\nCHECK AND CORRECT CODE!",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",
     "activity_status_success": "[SUCCESS] Discord activity status is ready!",
@@ -65,11 +66,13 @@ bot_initialize = {
 # ===================================================================#
 #                             PERMISSIONS                            #
 # ===================================================================#
-ping_permission = 766293535832932392, 766233124681547776, 766231587104620554
-virtual_ram_permission = [766231587104620554]
-bot_status_permission = 766231587104620554
-slot_command_permission = None
-
+commands_permission = {
+    "ping_permission": [766293535832932392, 766233124681547776, 766231587104620554],
+    "virtual_ram_permission": [766293535832932392, 766233124681547776, 766231587104620554],
+    "bot_status_permission": [766293535832932392, 766233124681547776, 766231587104620554],
+    "say_permission": [766293535832932392, 766233124681547776, 766231587104620554],
+    "slot_command_permission": 0000
+}
 # ===================================================================#
 #                              ALIASES                               #
 # ===================================================================#
@@ -88,5 +91,6 @@ remove_role_command_aliases = ['удалить_роль', 'Удалить_рол
                                'снять_роль', 'Снять_роль']
 clear_command_aliases = ['очисти', 'Очисти', 'очисти_чат', 'Очисти_чат', 'очистить', 'Очистить', 'очистить_чат',
                          'Очистить_чат']
+say_command_aliases = ['скажи', 'напиши', 'отправь', 'Скажи', 'Напиши', 'Отправь']
 version_command_aliases = ['версия']
 # ==========================

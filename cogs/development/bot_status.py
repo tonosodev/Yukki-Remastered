@@ -6,7 +6,7 @@ from Cybernator import Paginator
 from discord.ext import commands
 from psutil._common import bytes2human
 
-from config import bot_status_permission, bot_status_aliases
+from config import bot_status_aliases, commands_permission
 
 
 class DevOpStatusCog(commands.Cog):
@@ -14,9 +14,8 @@ class DevOpStatusCog(commands.Cog):
         self.bot = bot
 
     @commands.command(aliases=bot_status_aliases)
-    @commands.has_any_role(bot_status_permission)
+    @commands.has_any_role(*commands_permission['bot_status_permission'])
     async def _bot(self, ctx):
-        await ctx.message.delete()
 
         members_count = 0
         guild_count = len(self.bot.guilds)
@@ -101,16 +100,16 @@ class DevOpStatusCog(commands.Cog):
                                f'`{ping_emoji}`',
                          inline=True)
 
-        for disk in psutil.disk_partitions():
-            usage = psutil.disk_usage(disk.mountpoint)
-            embed2.add_field(name="‎‎‎‎", value=f'```{disk.device}```',
-                             inline=False)
-            embed2.add_field(name='Всего на диске',
-                             value=f'**{bytes2human(usage.total)}**', inline=True)
-            embed2.add_field(name='Свободное место на диске',
-                             value=f'{bytes2human(usage.free)}', inline=True)
-            embed2.add_field(name='Используемое дисковое пространство',
-                             value=f'{bytes2human(usage.used)}', inline=True)
+#        for disk in psutil.disk_partitions():
+#            usage = psutil.disk_usage(disk.mountpoint)
+#            embed2.add_field(name="‎‎‎‎", value=f'```{disk.device}```',
+#                             inline=False)
+#            embed2.add_field(name='Всего на диске',
+#                             value=f'**{bytes2human(usage.total)}**', inline=True)
+#            embed2.add_field(name='Свободное место на диске',
+#                             value=f'{bytes2human(usage.free)}', inline=True)
+#            embed2.add_field(name='Используемое дисковое пространство',
+#                             value=f'{bytes2human(usage.used)}', inline=True)
 
         embeds = [embed1, embed2]
 
