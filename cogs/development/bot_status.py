@@ -1,3 +1,4 @@
+import datetime
 import random
 
 import discord
@@ -35,8 +36,7 @@ class DevOpStatusCog(commands.Cog):
             members_count += len(guild.members)
 
         embed1 = discord.Embed(title=f"{ctx.guild.name}",
-                               color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
-                                                            random.randint(1, 255)), timestamp=ctx.message.created_at)
+                               color=0x6A5ACD, timestamp=ctx.message.created_at)
         embed1.set_thumbnail(url=ctx.guild.icon_url)
 
         embed1.add_field(name=f"Пользователей", value=f"🐥 Участников: **{users}**\n"
@@ -90,9 +90,9 @@ class DevOpStatusCog(commands.Cog):
                          inline=True)
 
         embed2.add_field(name='Использование RAM',
-                         value=f'Доступно: **{bytes2human(mem.available)}**\n'
-                               f'Используется: **{bytes2human(mem.used)}** **({mem.percent}%)**\n'
-                               f'Всего: **{bytes2human(mem.total)}**',
+                         value=
+                         f'Всего: **{bytes2human(mem.total)}**\n'
+                         f'Используется: **{bytes2human(mem.used)}**',
                          inline=True)
 
         embed2.add_field(name='Задержка системы',
@@ -100,16 +100,14 @@ class DevOpStatusCog(commands.Cog):
                                f'`{ping_emoji}`',
                          inline=True)
 
-#        for disk in psutil.disk_partitions():
-#            usage = psutil.disk_usage(disk.mountpoint)
-#            embed2.add_field(name="‎‎‎‎", value=f'```{disk.device}```',
-#                             inline=False)
-#            embed2.add_field(name='Всего на диске',
-#                             value=f'**{bytes2human(usage.total)}**', inline=True)
-#            embed2.add_field(name='Свободное место на диске',
-#                             value=f'{bytes2human(usage.free)}', inline=True)
-#            embed2.add_field(name='Используемое дисковое пространство',
-#                             value=f'{bytes2human(usage.used)}', inline=True)
+        # embed2.add_field(name='Всего на диске',
+        #                 value=f"**{psutil.users()}**", inline=True)
+        #            embed2.add_field(name='Свободное место на диске',
+        #                             value=f'{bytes2human(usage.free)}', inline=True)
+        #            embed2.add_field(name='Используемое дисковое пространство',
+        #                             value=f'{bytes2human(usage.used)}', inline=True)
+        embed2.add_field(name="Аптайм системы от:",
+                         value=f'{datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d | %H:%M:%S")}')
 
         embeds = [embed1, embed2]
 

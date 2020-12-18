@@ -6,7 +6,7 @@ Discord.py bot | 1.6.0a adapted
 F#cking ** UnboundLocalError("local variable 'role' referenced before assignment") ** error - fixed!
 
 
-#TODO:
+# TODO:
 - Rewrite authorize system (with expedition!)
 - Adapt config
 - Transfer general function from oldest versions

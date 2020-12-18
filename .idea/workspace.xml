@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="- Some changes">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/slot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/verification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608254001048</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite.">
+      <created>1608258531615</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608258531615</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,6 +186,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Some changes" />
+    <MESSAGE value="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite." />
+    <option name="LAST_COMMIT_MESSAGE" value="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite." />
   </component>
 </project>
