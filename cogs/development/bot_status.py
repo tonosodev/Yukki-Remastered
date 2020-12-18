@@ -15,7 +15,7 @@ class DevOpStatusCog(commands.Cog):
 
     @commands.command(aliases=bot_status_aliases)
     @commands.has_any_role(*commands_permission['bot_status_permission'])
-    async def _bot(self, ctx):
+    async def status(self, ctx):
 
         members_count = 0
         guild_count = len(self.bot.guilds)

@@ -15,7 +15,6 @@ class SlotCog(commands.Cog):
     @commands.command(aliases=slot_command_aliases)
     @commands.cooldown(1, 15, commands.BucketType.user)
     async def slot(self, ctx):
-        await ctx.message.delete()
         await ctx.reply('{}, временно на технических работах.'.format(ctx.message.author.mention), delete_after=10)
 
 
