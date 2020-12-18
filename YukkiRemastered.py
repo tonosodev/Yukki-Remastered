@@ -95,6 +95,8 @@ async def on_command_error(ctx, error):
                     description=f'❗️ {ctx.author.name}, сначала получите начальное сбережение командой " Юкки, награда "'))
         if "Command raised an exception: UnboundLocalError:" in str(error):
             return
+        if "UnboundLocalError(\"local variable 'role' referenced before assignment\")" in str(error):
+            pass
         else:
             try:
                 log = open('log.txt', 'a', encoding='cp1251')

@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="- Some changes">
-      <change beforePath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/magicball.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/magicball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/ping.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/ping.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/say.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/slot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/virtual_memory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/economy/role_shop.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/economy/role_shop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
