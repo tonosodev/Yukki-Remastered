@@ -14,7 +14,7 @@ class VerificationCog(commands.Cog):
         channel = self.bot.get_channel(payload.channel_id)  # получаем объект канала
         message = await channel.fetch_message(payload.message_id)  # получаем объект сообщения
         member = utils.get(message.guild.members,
-                           id=payload.user_id)  # получаем объект пользователя который поставил реакцию
+                           id=payload.user_id)  ## получаем объект пользователя который поставил реакцию
 
         try:
             if payload.message_id == verification['verification_post_id'] and payload.channel_id \
