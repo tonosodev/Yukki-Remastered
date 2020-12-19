@@ -7,22 +7,27 @@ bot_settings = {
     "bot_name": "Yukki",
     "bot_prefix": "Юкки, ",
     "log_channel": 766218369279852554,  # ID-канала для отправки лога оповещений бота
-    "error_log_channel": 789246267645362196  # ID-канала для отправки лога ошибок
+    "system_log_channel": 789246267645362196  # ID-канала для отправки лога ошибок
 }
 
 # ===================================================================#
 #                          VERIFICATION                              #
 # ===================================================================#
-
-MAX_ROLES_PER_USER = 10
-EXCROLES = {}
-
 verification = {
     "verification_channel_id": 766217891971465216,  # ID-канала для обработки добавления реакции
-    "verification_post_id": 768238823511293973  # ID-поста для обработки добавления реакции
+    "verification_post_id": 789959038770872341  # ID-поста для обработки добавления реакции
 }
 verification_roles = {
     '<a:verify:768537178221051944>': 766232921685622795  # Verified
+}
+
+# ===================================================================#
+#                               ROLES                                #
+# ===================================================================#
+server_roles = {
+    "not_verified_role": 768118967759405056,
+    "verified_role": 766232921685622795,
+    "member_role": 766232996285775903
 }
 
 # ===================================================================#
@@ -60,6 +65,9 @@ bot_initialize = {
     "discord_py_version": "1.6.0a adapted",
     "mongo_success_notification": "          [SUCCESS] MONGODB CONNECTED!\n            WELCOME ABOARD, CAPTAIN!",
     "mongo_error_notification": "          [ERROR] MONGODB CONNECT ERROR!\n                    CHECK DATA!",
+
+    "new_user_authorize": "",
+
     "copyright_message": "\n\t  Yukki© 2020 | All rights reserved"
 }
 

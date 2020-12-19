@@ -1,55 +1,10 @@
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
+[РђР’РўРћР РР—РђР¦РРЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ NeverMind#5885 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР РР—РђР¦РРЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР РР—РђР¦РРЇ] - (вњ” verified)
+[РђР’РўРћР РР—РђР¦РРЇ] - (рџЋѓMember)
 ...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [WinError 3] The system cannot find the path specified: 't'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: AttributeError: module 'psutil' has no attribute 'sensors_fans'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: PermissionError: [WinError 21] The device is not ready: 'G'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [WinError 3] The system cannot find the path specified: 's'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: TypeError: type sdiskusage doesn't define __round__ method
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: TypeError: unsupported operand type(s) for /: 'sdiskusage' and 'int'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, бот
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: AttributeError: 'DevOpStatusCog' object has no attribute 'INCLUDED_PARTITIONS'
+[РђР’РўРћР РР—РђР¦РРЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ NeverMind#5885 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР РР—РђР¦РРЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР РР—РђР¦РРЇ] - (вњ” verified)
+[РђР’РўРћР РР—РђР¦РРЇ] - (рџЋѓMember)
 ...

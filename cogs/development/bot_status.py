@@ -99,13 +99,6 @@ class DevOpStatusCog(commands.Cog):
                          value=f'Ping: **{ping * 1000:.0f}ms**\n'
                                f'`{ping_emoji}`',
                          inline=True)
-
-        # embed2.add_field(name='Всего на диске',
-        #                 value=f"**{psutil.users()}**", inline=True)
-        #            embed2.add_field(name='Свободное место на диске',
-        #                             value=f'{bytes2human(usage.free)}', inline=True)
-        #            embed2.add_field(name='Используемое дисковое пространство',
-        #                             value=f'{bytes2human(usage.used)}', inline=True)
         embed2.add_field(name="Аптайм системы от:",
                          value=f'{datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d | %H:%M:%S")}')
 
@@ -113,7 +106,7 @@ class DevOpStatusCog(commands.Cog):
 
         message = await ctx.send(embed=embed1)
         page = Paginator(self.bot, message, only=ctx.author, use_more=False, embeds=embeds, language="ru",
-                         footer_icon=self.bot.user.avatar_url, timeout=120, use_exit=True, delete_message=True,
+                         footer_icon=self.bot.user.avatar_url, timeout=30, use_exit=True, delete_message=True,
                          color=0x6A5ACD, use_remove_reaction=True)
         await page.start()
 

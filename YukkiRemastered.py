@@ -12,7 +12,7 @@ TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
 yukki.remove_command("help")
 
-error_logs = yukki.get_channel(bot_settings['error_log_channel'])
+error_logs = yukki.get_channel(bot_settings['system_log_channel'])
 
 
 # ----------------------------- #
@@ -36,6 +36,17 @@ async def reload(ctx, extensions):
     yukki.unload_extension(f'cogs.{extensions}')
     yukki.load_extension(f'cogs.{extensions}')
     await ctx.send("Yukki reloaded success!")
+
+
+#@yukki.command()
+#async def welcome(ctx):
+#    emb = discord.Embed(color=0xFF69B4)
+#    emb.set_image(url="https://imagizer.imageshack.com/v2/xq90/924/94Box3.png")
+#    await ctx.send(embed=emb)
+#    a = await ctx.send(
+#        "```fix\nПройдите быструю верификацию кликнув на эмодзи под данным сообщением, чтобы получить доступ к основному функционалу сервера!\n```")
+#    await a.add_reaction('<a:verify:768537178221051944>')
+
 
 
 try:
@@ -119,7 +130,7 @@ async def on_command_error(ctx, error):
                 log.write("...\n")
                 log.close()
 
-            await yukki.get_channel(bot_settings['error_log_channel']).send(embed=discord.Embed(
+            await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                 description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}', ))
             raise error
 
