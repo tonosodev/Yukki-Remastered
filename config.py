@@ -1,7 +1,6 @@
 # ===================================================================#
 #                          GENERAL SETTINGS                          #
 # ===================================================================#
-
 bot_settings = {
     "bot_token": "NzY2MjcwOTkwMDA3MDA5MzMw.X4g7eA.PLdlBX2vFVI-HMcD97bDofXRDWs",
     "bot_name": "Yukki",
