@@ -1,4 +1,7 @@
 # Yukki-Remastered
+<p>
+v1.13.2
+</p>
 Discord.py bot | 1.6.0a adapted 
 
 <p align="center">
