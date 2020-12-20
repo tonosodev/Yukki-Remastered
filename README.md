@@ -7,6 +7,5 @@
 </p>
 
 #TODO:
-- Rewrite authorize system (with expedition!) ✔️ 
-- Adapt config ✔️
+- Rewrite @say command ️
 - Transfer general function from oldest versions ⚙️
