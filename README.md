@@ -3,7 +3,7 @@
 <p> Discord.py bot | 1.6.0a adapted </p> 
 
 <p align="center">
-    <img src="https://sun9-53.userapi.com/impf/3_h6UiCocN0BxYTYwIaK4tj-rDuqEYvaocunzg/zf2vR9rDIS8.jpg?size=639x517&quality=96&proxy=1&sign=27713f7204c1bfc8496d601a190fcd2c&type=album">
+    <img src="https://sun9-4.userapi.com/impg/VrGVCkmP1EpEHRqJehW6ime9OO5JYAVhuoOyuA/_zoN5gx5o5U.jpg?size=2048x1365&quality=96&proxy=1&sign=cf9ec4e4835cde8606186c030f5ddd8c&type=album">
 </p>
 
 #TODO:
