@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="- Some changes">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="- TODO update">
+      <change afterPath="$PROJECT_DIR$/cogs/commands/link_cutter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/commands/slowmode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/phrases/slot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/magicball.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/magicball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/say.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/slot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +56,11 @@
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Yukki/YukkiWithCogs" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\phrases" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="YukkiRemastered" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -207,7 +223,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608499100186</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- Some changes">
+      <created>1608499381723</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499381723</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- TODO update">
+      <created>1608499461751</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608499461751</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -240,6 +270,7 @@
     <MESSAGE value="- Authorization system ready&#10;- Config adapted" />
     <MESSAGE value="- Any changes" />
     <MESSAGE value="- Some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Some changes" />
+    <MESSAGE value="- TODO update" />
+    <option name="LAST_COMMIT_MESSAGE" value="- TODO update" />
   </component>
 </project>

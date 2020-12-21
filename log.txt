@@ -1,0 +1,12 @@
+[SLOWMODE] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ:
+[SLOWMODE] - NeverMind
+[SLOWMODE] РљР°РЅР°Р»:
+[SLOWMODE] - в•”в•ђрџ‘ҐРѕР±С‰РµРЅРёРµ
+[SLOWMODE] Р’СЂРµРјСЏ:
+[SLOWMODE] - 1 СЃРµРєСѓРЅРґ
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, слот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'economy.json'
+...

@@ -17,7 +17,7 @@ class DevOpStatusCog(commands.Cog):
     @commands.command(aliases=bot_status_aliases)
     @commands.has_any_role(*commands_permission['bot_status_permission'])
     async def status(self, ctx):
-
+        await ctx.message.delete()
         members_count = 0
         guild_count = len(self.bot.guilds)
 
@@ -54,10 +54,11 @@ class DevOpStatusCog(commands.Cog):
         embed1.add_field(name=f"Количество Ролей", value=f"{allroles}")
         embed1.add_field(name=f"Создатель сервера", value=f"{ctx.guild.owner}")
         embed1.add_field(name=f"Регион сервера", value=f"{ctx.guild.region}")
+        embed1.add_field(name=f'Сервер Meta Peace Team®', value="[[**кликните**]](https://discord.gg/ZrfkCEAcfW)",
+                         inline=True)  # Создает строку
         embed1.add_field(name=f"Дата создания сервера", value=f"{ctx.guild.created_at.strftime('%b %#d %Y')}")
 
-        embed1.add_field(name=f'Сервер Meta Peace Team®:', value="[Тык](https://discord.gg/e46AKbpV)",
-                         inline=True)  # Создает строку
+        embed1.add_field(name=f'Информацию запросил:', value=f'{ctx.author.mention}', inline=False)
         embed1.set_thumbnail(url=self.bot.user.avatar_url)
         embed1.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                           icon_url=self.bot.user.avatar_url)  # создаение футера

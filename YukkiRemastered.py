@@ -38,15 +38,14 @@ async def reload(ctx, extensions):
     await ctx.send("Yukki reloaded success!")
 
 
-#@yukki.command()
-#async def welcome(ctx):
+# @yukki.command()
+# async def welcome(ctx):
 #    emb = discord.Embed(color=0xFF69B4)
 #    emb.set_image(url="https://imagizer.imageshack.com/v2/xq90/924/94Box3.png")
 #    await ctx.send(embed=emb)
 #    a = await ctx.send(
 #        "```fix\nПройдите быструю верификацию кликнув на эмодзи под данным сообщением, чтобы получить доступ к основному функционалу сервера!\n```")
 #    await a.add_reaction('<a:verify:768537178221051944>')
-
 
 
 try:
@@ -62,9 +61,10 @@ try:
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.events.{filename[:-3]}')
 
-    for filename in os.listdir('./cogs/phrases'):
-        if filename.endswith('.py'):
-            yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
+    # for filename in os.listdir('./cogs/phrases'):
+    #    if filename.endswith('.py'):
+    #        yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
+
     for filename in os.listdir('./cogs/development'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.development.{filename[:-3]}')
@@ -80,34 +80,37 @@ except:
 # -------------------------------#
 @yukki.event
 async def on_command_error(ctx, error):
-    await ctx.message.delete()
-    if isinstance(error, commands.CommandNotFound) or isinstance(error, commands.MemberNotFound):
-        return await ctx.send(embed=discord.Embed(
+    if isinstance(error, commands.CommandNotFound):
+        return await ctx.reply(embed=discord.Embed(
             description=f'❗️ {ctx.author.mention}, команда не найдена!\nПропишите " ' + bot_settings[
                 'bot_prefix'] + 'помощь ", для вывода доступных возможностей'))
+
     elif isinstance(error, commands.MissingPermissions) or isinstance(error, discord.Forbidden) or isinstance(error,
                                                                                                               commands.MissingRole) or \
             isinstance(error, commands.MissingAnyRole):
-        return await ctx.send(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'))
+        return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'))
+
     elif isinstance(error, commands.MissingRequiredArgument):
-        return await ctx.send(
+        return await ctx.reply(
             embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'))
+
     elif isinstance(error, commands.CommandOnCooldown):
-        await ctx.send(embed=discord.Embed(
-            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} секунд!"))
+        await ctx.reply(embed=discord.Embed(
+            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"))
     else:
         if "ValueError: invalid literal for int() with base 10:" in str(error):
-            return await ctx.send(
+            return await ctx.reply(
                 embed=discord.Embed(
                     description=f'❗️ {ctx.author.name}, укажите в аргумент числовое значение, а не строку!'))
+
         if "Command raised an exception: KeyError:" in str(error):
             return await ctx.send(
                 embed=discord.Embed(
                     description=f'❗️ {ctx.author.name}, сначала получите начальное сбережение командой " Юкки, награда "'))
+
         if "Command raised an exception: UnboundLocalError:" in str(error):
             return
-        if "UnboundLocalError(\"local variable 'role' referenced before assignment\")" in str(error):
-            pass
+
         else:
             try:
                 log = open('log.txt', 'a', encoding='cp1251')
@@ -131,7 +134,7 @@ async def on_command_error(ctx, error):
                 log.close()
 
             await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
-                description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}', ))
+                description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))
             raise error
 
 

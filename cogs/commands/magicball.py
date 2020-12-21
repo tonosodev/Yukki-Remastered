@@ -2,12 +2,15 @@ import discord
 import random
 from discord.ext import commands
 
+from config import magicball_command_aliases, commands_permission
+
 
 class MagicballCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(aliases=['шар', 'Шар', 'магический_шар', 'magicball'])
+    @commands.command(aliases=magicball_command_aliases)
+    @commands.has_any_role(*commands_permission['magicball_command_permission'])
     async def ball(self, ctx, *, message=None):
         member = ctx.author.mention
         if message is None:
