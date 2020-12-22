@@ -10,3 +10,8 @@
 [ERROR] ������:  Meta Peace Team�
 [ERROR] ������:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'economy.json'
 ...
+[АВТОРИЗАЦИЯ] Пользователь NeverMind#5885 успешно прошел авторизацию!
+[АВТОРИЗАЦИЯ] Выданы роли:
+[АВТОРИЗАЦИЯ] - (✔ verified)
+[АВТОРИЗАЦИЯ] - (🎄Member)
+...
