@@ -265,7 +265,8 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb)
+            await ctx.reply(embed=emb)
+
 
         elif member.id == ctx.guild.owner.id:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить владельца гильдии!',
@@ -273,14 +274,14 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.guild.me.id:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно меня замутить!', color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif ctx.author.top_role.position < member.top_role.position:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше вашей!',
@@ -288,7 +289,7 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.author.id:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить самого себя!',
@@ -296,7 +297,7 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif member.top_role > ctx.guild.me.top_role:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше моей!',
@@ -304,7 +305,7 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif not reason:
             emb = discord.Embed(title=f'Мут 🔇', color=0x4B0082)
@@ -345,14 +346,14 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif mute_role.position > ctx.guild.me.top_role.position:
             emb = discord.Embed(title=f'Анмут 🔉', description=f'Роль мута выше Вашей!', color=0x6A5ACD)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.send(embed=emb, delete_after=15)
+            await ctx.reply(embed=emb, delete_after=15)
 
         elif reason is None:
             await member.remove_roles(mute_role)

@@ -199,3 +199,8 @@ In message_reference: Unknown message
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'position'
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, скажи v1.13.6 beta | Change List
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Channel "v1.13.6" not found.
+...
