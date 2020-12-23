@@ -2,7 +2,7 @@ import discord
 
 from discord.ext import commands
 
-from config import slowmode_command_aliases, commands_permission
+from config import slowmode_command_aliases, commands_permission, bot_settings
 
 
 class SlowMode(commands.Cog):
@@ -36,7 +36,7 @@ class SlowMode(commands.Cog):
             else:
                 sec = 'секунд'
 
-            logs = self.bot.get_channel(766218369279852554)
+            logs = self.bot.get_channel(bot_settings['log_channel'])
             embed = discord.Embed(title="SlowMode ⚔️",
                                   description=f"Установлен медленный режим на **{value}** {sec} в канале {ctx.channel.mention}",
                                   color=0x8A2BE2)

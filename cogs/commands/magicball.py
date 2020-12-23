@@ -137,7 +137,7 @@ class MagicballCog(commands.Cog):
             embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                              icon_url=self.bot.user.avatar_url)
 
-            await ctx.send(embed=embed)
+            await ctx.reply(embed=embed)
 
 
 def setup(bot):

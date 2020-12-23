@@ -83,31 +83,21 @@ async def on_command_error(ctx, error):
     if isinstance(error, commands.CommandNotFound):
         return await ctx.reply(embed=discord.Embed(
             description=f'❗️ {ctx.author.mention}, команда не найдена!\nПропишите " ' + bot_settings[
-                'bot_prefix'] + 'помощь ", для вывода доступных возможностей'))
+                'bot_prefix'] + 'помощь ", для вывода доступных возможностей'), delete_after=10)
 
     elif isinstance(error, commands.MissingPermissions) or isinstance(error, discord.Forbidden) or isinstance(error,
                                                                                                               commands.MissingRole) or \
             isinstance(error, commands.MissingAnyRole):
-        return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'))
+        return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'), delete_after=10)
 
     elif isinstance(error, commands.MissingRequiredArgument):
         return await ctx.reply(
-            embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'))
+            embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'), delete_after=10)
 
     elif isinstance(error, commands.CommandOnCooldown):
         await ctx.reply(embed=discord.Embed(
-            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"))
+            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"), delete_after=5)
     else:
-        if "ValueError: invalid literal for int() with base 10:" in str(error):
-            return await ctx.reply(
-                embed=discord.Embed(
-                    description=f'❗️ {ctx.author.name}, укажите в аргумент числовое значение, а не строку!'))
-
-        if "Command raised an exception: KeyError:" in str(error):
-            return await ctx.send(
-                embed=discord.Embed(
-                    description=f'❗️ {ctx.author.name}, сначала получите начальное сбережение командой " Юкки, награда "'))
-
         if "Command raised an exception: UnboundLocalError:" in str(error):
             return
 

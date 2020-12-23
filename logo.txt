@@ -1,7 +1,7 @@
 
 ░░
 ░░  YUKKI REMASTERED
-░░  v1.13.2
+░░  v1.13.4 beta
 ░░  by vk.com/DevilDesigner
 ░░  github.com/DevilDesigner
 ░░

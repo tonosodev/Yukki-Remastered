@@ -1,5 +1,5 @@
 # Yukki-Remastered
-<p> v1.13.2 </p>
+<p> v1.13.6 </p>
 <p> Discord.py bot | 1.6.0a adapted </p> 
 
 <p align="center">
@@ -7,12 +7,15 @@
 </p>
 
 #Change List:
-- New >say command functions
-- New >slowmode command
-- New Link-Cutter functions
+- Adaptive >unban command
+- New >avatar command
+- New >covid statistic GUI
+- New >wiki search
+- Adapted MemberJoin event 
+- Adapted Private Rooms (need to revision)
+- Adapted moderation commands (need to revision)
 
 #TODO:
 - Transfer general function from oldest versions ⚙ ️
-- Adaptive >unban command 
-- Adaptive economy system for mongo.db
+- Connect economy system to mongo.db
 - Adaptive old information Embeds
