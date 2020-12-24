@@ -213,39 +213,6 @@ class ModerationCog(commands.Cog):
             await logs.send(embed=emb)
             return
 
-#    @commands.command(aliases=mute_command_aliases)
-#    @commands.has_any_role(*commands_permission['mute_command_permission'])
-#    async def mute(self, ctx, member: discord.Member = None, *, reason=None):
-#        logs = self.bot.get_channel(bot_settings['log_channel'])
-#        if member is None:
-#            await ctx.reply('Укажите в аргумент @пользователя, которому необходимо ограничить доступ общения!',
-#                            delete_after=10)
-#        elif member is ctx.message.author:
-#            await ctx.reply("Я не позволю Вам заглушить самого себя!\n", delete_after=10)
-#        else:
-#            if reason is None:
-#                emb = discord.Embed(title='Мут 🔇', color=0x4B0082)
-#                emb.set_author(name=member.name, icon_url=member.avatar_url)
-#                emb.add_field(name='Выдан мут', value=' пользователю : {}'.format(member.mention))
-#                emb.set_footer(text='Выдан управляющим {}'.format(ctx.author.name),
-#                               icon_url=ctx.author.avatar_url)
-#                await logs.send(embed=emb)
-#                role = discord.utils.get(ctx.message.guild.roles, id=766366691466149898)
-#
-#                await member.add_roles(role)
-#                await ctx.message.delete()
-#            elif reason is not None:
-#                emb = discord.Embed(title='Мут 🔇', color=0x4B0082)
-#                emb.set_author(name=member.name, icon_url=member.avatar_url)
-#                emb.add_field(name='Выдан мут', value=' пользователю : {}'.format(member.mention))
-#                emb.set_footer(text='Выдан управляющим {}'.format(ctx.author.name) + '\nПо причине:\n{}'.format(reason),
-#                               icon_url=ctx.author.avatar_url)
-#                await logs.send(embed=emb)
-#                role = discord.utils.get(ctx.message.guild.roles, id=766366691466149898)
-#
-#                await member.add_roles(role)
-#                await ctx.message.delete()
-
     @commands.command(aliases=mute_command_aliases)
     @commands.has_any_role(*commands_permission['mute_command_permission'])
     async def mute(self, ctx, member: discord.Member, *, reason: str = None):
@@ -265,7 +232,7 @@ class ModerationCog(commands.Cog):
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
-            await ctx.reply(embed=emb)
+            await ctx.reply(embed=emb, delete_after=15)
 
 
         elif member.id == ctx.guild.owner.id:
@@ -308,6 +275,7 @@ class ModerationCog(commands.Cog):
             await ctx.reply(embed=emb, delete_after=15)
 
         elif not reason:
+            await ctx.message.delete()
             emb = discord.Embed(title=f'Мут 🔇', color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.add_field(name='__**Выдал(а)**__:', value=ctx.author.mention, inline=False)
@@ -321,6 +289,7 @@ class ModerationCog(commands.Cog):
             await logs.send(embed=emb)
 
         else:
+            await ctx.message.delete()
             emb = discord.Embed(title=f'Мут 🔇', color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.add_field(name='__**Выдал(а)**__:', value=ctx.author.mention, inline=False)
@@ -356,6 +325,7 @@ class ModerationCog(commands.Cog):
             await ctx.reply(embed=emb, delete_after=15)
 
         elif reason is None:
+            await ctx.message.delete()
             await member.remove_roles(mute_role)
             emb = discord.Embed(title=f'Анмут 🔉',
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** Не указана.',
@@ -365,6 +335,7 @@ class ModerationCog(commands.Cog):
                            icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
         else:
+            await ctx.message.delete()
             await member.remove_roles(mute_role)
             emb = discord.Embed(title=f'Анмут 🔉',
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** {reason}',
@@ -373,24 +344,6 @@ class ModerationCog(commands.Cog):
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                            icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
-
-#    @commands.command(aliases=unmute_command_aliases)
-#    @commands.has_any_role(*commands_permission['unmute_command_permission'])
-#    async def unmute(self, ctx, member: discord.Member = None):
-#        await ctx.message.delete()
-#        logs = self.bot.get_channel(bot_settings['log_channel'])
-#        if member == None:
-#            await ctx.reply("Укажите в аргумент @пользователя, которому необходимо вернуть доступ к каналам связи!",
-#                            delete_after=10)
-#        else:
-#            emb = discord.Embed(title='Анмут 🔉', color=0x6A5ACD)
-#            emb.set_author(name=member.name, icon_url=member.avatar_url)
-#            emb.add_field(name='Снят мут', value=' с пользователя : {}'.format(member.mention))
-#            emb.set_footer(text='Снят управляющим {}'.format(ctx.author.name),
-#                           icon_url=ctx.author.avatar_url)
-#            await logs.send(embed=emb)
-#            role = discord.utils.get(ctx.message.guild.roles, id=server_roles['muted_role'])
-#            await member.remove_roles(role)
 
     @commands.command(aliases=version_command_aliases)
     @commands.has_any_role(*commands_permission['version_command_permission'])
