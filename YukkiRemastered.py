@@ -90,9 +90,9 @@ async def on_command_error(ctx, error):
             isinstance(error, commands.MissingAnyRole):
         return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'), delete_after=10)
 
-    elif isinstance(error, commands.MissingRequiredArgument):
-        return await ctx.reply(
-            embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'), delete_after=10)
+    #elif isinstance(error, commands.MissingRequiredArgument):
+    #    return await ctx.reply(
+    #        embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'), delete_after=10)
 
     elif isinstance(error, commands.CommandOnCooldown):
         await ctx.reply(embed=discord.Embed(
@@ -125,8 +125,7 @@ async def on_command_error(ctx, error):
 
             await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                 description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))
-            raise error
-
+            #raise error
 
 # ----------------------------- #
 #          YUKKI RUN            #
