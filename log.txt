@@ -152,3 +152,147 @@ In embed.image.url: Scheme "[<discord.file.file object at 0x00000226c5179cc0>]" 
 [ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
 In message_reference: Unknown message
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  member is a required argument that is missing.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  member is a required argument that is missing.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  member is a required argument that is missing.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  member is a required argument that is missing.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> test1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> test2
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> test2/1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> test3
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!694598900094599198> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!601762965636513792> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[SLOWMODE] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ:
+[SLOWMODE] - NeverMind
+[SLOWMODE] РљР°РЅР°Р»:
+[SLOWMODE] - в•”в•ђрџ‘ҐРѕР±С‰РµРЅРёРµ
+[SLOWMODE] Р’СЂРµРјСЏ:
+[SLOWMODE] - 3600СЃРµРє.
+...
+[SLOWMODE] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ:
+[SLOWMODE] - NeverMind
+[SLOWMODE] РљР°РЅР°Р»:
+[SLOWMODE] - в•”в•ђрџ‘ҐРѕР±С‰РµРЅРёРµ
+[SLOWMODE] Р’СЂРµРјСЏ:
+[SLOWMODE] - 1СЃРµРє.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: object NoneType can't be used in 'await' expression
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: object NoneType can't be used in 'await' expression
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!601762965636513792> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!601762965636513792> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
