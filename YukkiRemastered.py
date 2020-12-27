@@ -60,13 +60,17 @@ try:
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.events.{filename[:-3]}')
 
-    # for filename in os.listdir('./cogs/phrases'):
-    #    if filename.endswith('.py'):
-    #        yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
+    for filename in os.listdir('./cogs/economy'):
+        if filename.endswith('.py'):
+            yukki.load_extension(f'cogs.economy.{filename[:-3]}')
 
     for filename in os.listdir('./cogs/development'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.development.{filename[:-3]}')
+
+    for filename in os.listdir('./cogs/phrases'):
+        if filename.endswith('.py'):
+            yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
 except:
     print(
         f"\n##################################################\nFile '{filename[:-3]}' " + bot_initialize[

@@ -1,10 +1,7 @@
 import asyncio
-import json
 import random
-
 import discord
 from discord.ext import commands
-
 from config import slot_command_aliases, slot
 
 
@@ -15,10 +12,10 @@ class SlotCog(commands.Cog):
     @commands.command(aliases=slot_command_aliases)
     @commands.cooldown(1, 15, commands.BucketType.user)
     async def slot(self, ctx):
-        await ctx.reply('{}, временно на технических работах.'.format(ctx.message.author.mention), delete_after=10)
+        # await ctx.reply('{}, временно на технических работах.'.format(ctx.message.author.mention), delete_after=10)
 
         random_reward = random.randrange(slot['slot_minimum_win'], slot['slot_maximum_win'], 1)
-        #    await ctx.message.delete()
+        await ctx.message.delete()
 
         logs = self.bot.get_channel(slot['slot_notification_channel'])
         member = discord.Member
@@ -113,28 +110,9 @@ class SlotCog(commands.Cog):
             slot15,
             slot16, parrot, slot18, slot19, slot20, parrot, slot22, slot23, slot24, slot25)
 
-        try:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                if money[str(ctx.author.id)]['Money'] <= 79 and money[str(ctx.author.id)]['Money'] != {}:
-                    await ctx.send(
-                        '{}, у Вас недостаточно средств!\n❗Не забудьте получить ежедневную награду командой " Юкки, бонус "'.format(
-                            ctx.message.author.mention))
-
-                else:
-                    msg = await ctx.send(
-                        "{}\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>".format(
-                            slotOutput1, ctx.message.author.mention))
-                    with open('economy.json', 'r') as e:
-                        money = json.load(e)
-                        if str(ctx.author.id) in money:
-                            money[str(ctx.author.id)]['Money'] -= 80
-                            with open('economy.json', 'w') as e:
-                                json.dump(money, e)
-        except commands.CommandInvokeError:
-            pass
+        msg = await ctx.send(
+                "{}\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>".format(
+                    slotOutput1, ctx.message.author.mention))
 
         await asyncio.sleep(2)
         await msg.edit(
@@ -172,14 +150,6 @@ class SlotCog(commands.Cog):
                 ctx.message.author.mention))
 
         if slot1 == slot2 == slot3 == slot4 == slot5:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results0, ctx.author.mention), delete_after=10)
@@ -193,14 +163,6 @@ class SlotCog(commands.Cog):
 
 
         elif slot6 == slot7 == slot8 == slot9 == slot10:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results1, ctx.author.mention), delete_after=10)
@@ -213,14 +175,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot11 == slot12 == slot13 == slot14 == slot15:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results2, ctx.author.mention), delete_after=10)
@@ -233,14 +187,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot16 == slot17 == slot18 == slot19 == slot20:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results3, ctx.author.mention), delete_after=10)
@@ -253,14 +199,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot21 == slot22 == slot23 == slot24 == slot25:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results4, ctx.author.mention), delete_after=10)
@@ -273,14 +211,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot1 == slot6 == slot11 == slot16 == slot21:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results5, ctx.author.mention), delete_after=10)
@@ -293,14 +223,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot2 == slot7 == slot12 == slot17 == slot22:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results6, ctx.author.mention), delete_after=10)
@@ -313,14 +235,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot3 == slot8 == slot13 == slot18 == slot23:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results7, ctx.author.mention), delete_after=10)
@@ -333,14 +247,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot4 == slot9 == slot14 == slot19 == slot24:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results8, ctx.author.mention), delete_after=10)
@@ -353,14 +259,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot5 == slot10 == slot15 == slot20 == slot25:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results9, ctx.author.mention), delete_after=10)
@@ -373,14 +271,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot1 == slot7 == slot13 == slot19 == slot25:
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 80
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results10, ctx.author.mention), delete_after=10)
@@ -393,15 +283,6 @@ class SlotCog(commands.Cog):
             await logs.send(embed=emb)
 
         elif slot5 == slot9 == slot13 == slot17 == slot21:
-
-            with open('economy.json', 'r') as f:
-                money = json.load(f)
-                if not str(ctx.author.id) in money:
-                    money[str(ctx.author.id)] = {}
-                    money[str(ctx.author.id)]['Money'] += 0
-                money[str(ctx.author.id)]['Money'] += random_reward
-                with open('economy.json', 'w') as f:
-                    json.dump(money, f)
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results11, ctx.author.mention), delete_after=10)
@@ -418,6 +299,7 @@ class SlotCog(commands.Cog):
                 content="{}\n {}, Вы проиграли и потеряли стартовый капитал в 80 <:Yukki_Dollar:769711177826566144>".format(
                     slotOutput, ctx.message.author.mention),
                 delete_after=10)
+
 
 def setup(bot):
     bot.add_cog(SlotCog(bot))

@@ -95,7 +95,9 @@ class UserReport(commands.Cog):
 
                     msg = await logs.send(embed=embed, files=files)
                     await load_variable.delete()
+
                     await ctx.message.delete()
+
                     embed_success = discord.Embed(title="Жалоба 💬",
                                                   color=discord.Color.from_rgb(random.randint(1, 255),
                                                                                random.randint(1, 255),
@@ -107,7 +109,7 @@ class UserReport(commands.Cog):
                     embed_success.add_field(name='__**Причина**__:', value=reason, inline=False)
                     embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                                      icon_url=self.bot.user.avatar_url)
-                    await ctx.reply(embed=embed_success, delete_after=15)
+                    await ctx.send(embed=embed_success, delete_after=15)
 
                     warn_reaction = await msg.add_reaction("‼")
                     mute_reaction = await msg.add_reaction("🔇")
