@@ -16,19 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Important changes in user_report.py">
-      <change afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New help.py embed (need to changes)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/economy/role_shop.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/phrases/slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/economy/slot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -320,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608908455684</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="New help.py embed (need to changes)">
+      <created>1609072826019</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1609072826019</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,19 +333,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -356,29 +349,30 @@
     <MESSAGE value="- Some changes" />
     <MESSAGE value="Read README.md" />
     <MESSAGE value="Important changes in user_report.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Important changes in user_report.py" />
+    <MESSAGE value="New help.py embed (need to changes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="New help.py embed (need to changes)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="264" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609054038309">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="264" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1609054038309" />
-    <state width="1577" height="116" key="GridCell.Tab.0.bottom" timestamp="1609071211603">
+    <state width="1577" height="218" key="GridCell.Tab.0.bottom" timestamp="1609085037675">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="116" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1609071211603" />
-    <state width="1577" height="116" key="GridCell.Tab.0.center" timestamp="1609071211602">
+    <state width="1577" height="218" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1609085037675" />
+    <state width="1577" height="218" key="GridCell.Tab.0.center" timestamp="1609085037673">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="116" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1609071211602" />
-    <state width="1577" height="116" key="GridCell.Tab.0.left" timestamp="1609071211601">
+    <state width="1577" height="218" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1609085037673" />
+    <state width="1577" height="218" key="GridCell.Tab.0.left" timestamp="1609085037672">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="116" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1609071211601" />
-    <state width="1577" height="116" key="GridCell.Tab.0.right" timestamp="1609071211602">
+    <state width="1577" height="218" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1609085037672" />
+    <state width="1577" height="218" key="GridCell.Tab.0.right" timestamp="1609085037674">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="116" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1609071211602" />
+    <state width="1577" height="218" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1609085037674" />
     <state x="306" y="95" key="SettingsEditor" timestamp="1609052678906">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
@@ -389,18 +383,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
-          <line>30</line>
+          <line>49</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
-          <line>24</line>
+          <line>43</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

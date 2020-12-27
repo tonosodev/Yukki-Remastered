@@ -21,3 +21,8 @@ In embed.fields.0.value: This field is required
 [ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
 In embed.fields.0.value: This field is required
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, помощь
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: 'int' object is not callable
+...
