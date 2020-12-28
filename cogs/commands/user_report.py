@@ -58,7 +58,7 @@ class UserReport(commands.Cog):
                                                                    random.randint(1, 255)))
                 embed.add_field(name='__**Ошибка при отправке жалобы**__:', value=f'{ctx.author.mention}', inline=False)
                 embed.add_field(name='__**Причина**__:', value="Не указана причина жалобы."
-                                                               "\nПожалуйста, укажите причину репорта после указания пользователя!",
+                                                               "\nПожалуйста, укажите причину репорта после упоминания пользователя!",
                                 inline=False)
                 embed.add_field(name="__**Совет**__:",
                                 value=f"Пропишите «{bot_settings['bot_prefix']}репорт» для вывода информации по заполнению формы!",
@@ -93,9 +93,7 @@ class UserReport(commands.Cog):
                     embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                                      icon_url=self.bot.user.avatar_url)
 
-                    msg = await logs.send(embed=embed, files=files)
                     await load_variable.delete()
-
                     await ctx.message.delete()
 
                     embed_success = discord.Embed(title="Жалоба 💬",
@@ -109,13 +107,16 @@ class UserReport(commands.Cog):
                     embed_success.add_field(name='__**Причина**__:', value=reason, inline=False)
                     embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                                      icon_url=self.bot.user.avatar_url)
+
                     await ctx.send(embed=embed_success, delete_after=15)
 
+                    msg = await logs.send(embed=embed, files=files)
                     warn_reaction = await msg.add_reaction("‼")
                     mute_reaction = await msg.add_reaction("🔇")
                     kick_reaction = await msg.add_reaction("🔥")
                     ban_reaction = await msg.add_reaction("📛")
                     close_ticket_reaction = await msg.add_reaction("❌")
+
 
                 except:
                     await load_variable.delete()
@@ -134,9 +135,8 @@ class UserReport(commands.Cog):
                     embed.add_field(name='__**Действие**__:', value='Задержка на использование команды обнулена.')
                     embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
                                      icon_url=self.bot.user.avatar_url)
-                    await ctx.send(embed=embed)
+                    await ctx.reply(embed=embed)
 
-                    await ctx.message.delete()
                     self.report.reset_cooldown(ctx)
 
                 finally:
