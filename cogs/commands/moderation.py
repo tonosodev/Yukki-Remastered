@@ -78,7 +78,6 @@ class ModerationCog(commands.Cog):
             await ctx.message.delete()
             self.clear.reset_cooldown(ctx)
         elif str:
-            await ctx.message.delete()
             if int(amount) > 100:
                 await ctx.reply(
                     "{}, Вы не можете очистить более сотни сообщений раз в 30 секунд!\nТак что я сброшу кулдаун для этой команды, чтобы вы повторили попытку.".format(
@@ -97,7 +96,6 @@ class ModerationCog(commands.Cog):
                 if amount is None:
                     await ctx.reply('Укажите в аргумент количество сообщений, которые необходимо удалить!',
                                     delete_after=10)
-                    await ctx.message.delete()
                 else:
                     await ctx.channel.purge(limit=int(amount))
                     emb = discord.Embed(title='Очистка чата',

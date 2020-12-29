@@ -3,7 +3,8 @@ from Cybernator import Paginator
 from discord.ext import commands
 
 from config import help_command_aliases, commands_permission, MetaPeace_head_tech_spec_id, MetaPeace_supports_id, \
-    MetaPeace_owner_url, MetaPeace_head_tech_spec_url_name
+    MetaPeace_owner_url, MetaPeace_head_tech_spec_url_name, MetaPeace_head_tech_spec_url, MetaPeace_supports_url_name, \
+    MetaPeace_supports_url
 
 
 class HelpCommandCog(commands.Cog):
@@ -14,8 +15,7 @@ class HelpCommandCog(commands.Cog):
     @commands.has_any_role(*commands_permission['help_command_permission'])
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def help(self, ctx):
-
-        await ctx.message.delete()
+        # await ctx.message.delete()
         embed1 = discord.Embed(title=f"Приветствуем Вас в {ctx.guild.name}",
                                color=0x6A5ACD,
                                description=f'{ctx.guild.name} - жилище для людей с чувством юмора и хорошим настроением.'
@@ -53,16 +53,40 @@ class HelpCommandCog(commands.Cog):
                                description='Контактные данные для связи с командой пользовательской поддержки сервера')
 
         embed3.add_field(name='__**Разработчик**__:',
-                         value=f'ᅠ\n`DISCORD`: {ctx.guild.owner.mention}\n`VKONTAKTE`: [[**кликните**]]({MetaPeace_owner_url["vk"]})\n`GITHUB`: [[**кликните**]]({MetaPeace_owner_url["github"]}])',
+                         value=f'ᅠ\n`DISCORD`: {ctx.guild.owner.mention}\n'
+                               f'`VKONTAKTE`: [[**кликните**]]({MetaPeace_owner_url["vk"]})\n'
+                               f'`GITHUB`: [[**кликните**]]({MetaPeace_owner_url["github"]}])',
                          inline=False)
         embed3.add_field(name='__**Техническая поддержка**__:',
-                         value=f'ᅠ\n`DISCORD`: {MetaPeace_head_tech_spec_id["1"]}\n`{MetaPeace_head_tech_spec_url_name["1:any"]}`: [[**кликните**]](https://)',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_head_tech_spec_id["1"]}\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["1:url_name_1"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["1:url_1"]})\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["1:url_name_2"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["1:url_2"]})\n',
                          inline=True)
-        embed3.add_field(name='ᅠ', value=f'ᅠ\n`DISCORD`: {MetaPeace_head_tech_spec_id["1"]}\n`VKONTAKTE`: [[**кликните**]](https://)',
+        embed3.add_field(name='ᅠ',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_head_tech_spec_id["2"]}\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["2:url_name_1"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["2:url_1"]})\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["2:url_name_2"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["2:url_2"]})\n',
                          inline=True)
-        embed3.add_field(name='__**Поддержка пользователей**__:', value=f'ᅠ\n`DISCORD`: {MetaPeace_supports_id["1"]}',
-                         inline=False)
-
+        embed3.add_field(name='ᅠ',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_head_tech_spec_id["3"]}\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["3:url_name_1"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["3:url_1"]})\n'
+                               f'`{MetaPeace_head_tech_spec_url_name["3:url_name_2"]}`: [[**кликните**]]({MetaPeace_head_tech_spec_url["3:url_2"]})\n',
+                         inline=True)
+        embed3.add_field(name='__**Поддержка пользователей**__:',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_supports_id["1"]}\n'
+                               f'`{MetaPeace_supports_url_name["1:url_name_1"]}`: [[**кликните**]]({MetaPeace_supports_url["1:url_1"]})\n'
+                               f'`{MetaPeace_supports_url_name["1:url_name_2"]}`: [[**кликните**]]({MetaPeace_supports_url["1:url_2"]})\n',
+                         inline=True)
+        embed3.add_field(name='ᅠ',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_supports_id["2"]}\n'
+                               f'`{MetaPeace_supports_url_name["2:url_name_1"]}`: [[**кликните**]]({MetaPeace_supports_url["2:url_1"]})\n'
+                               f'`{MetaPeace_supports_url_name["2:url_name_2"]}`: [[**кликните**]]({MetaPeace_supports_url["2:url_2"]})\n',
+                         inline=True)
+        embed3.add_field(name='ᅠ',
+                         value=f'ᅠ\n`DISCORD`: {MetaPeace_supports_id["3"]}\n'
+                               f'`{MetaPeace_supports_url_name["3:url_name_1"]}`: [[**кликните**]]({MetaPeace_supports_url["3:url_1"]})\n'
+                               f'`{MetaPeace_supports_url_name["3:url_name_2"]}`: [[**кликните**]]({MetaPeace_supports_url["3:url_2"]})\n',
+                         inline=True)
         embeds = [embed1, embed2, embed3]
         message = await ctx.send(embed=embed1)
         page = Paginator(self.bot, message, only=ctx.author, use_more=False, embeds=embeds, language="ru",
