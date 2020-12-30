@@ -15,7 +15,7 @@ class HelpCommandCog(commands.Cog):
     @commands.has_any_role(*commands_permission['help_command_permission'])
     @commands.cooldown(1, 30, commands.BucketType.user)
     async def help(self, ctx):
-        # await ctx.message.delete()
+        await ctx.message.delete()
         embed1 = discord.Embed(title=f"Приветствуем Вас в {ctx.guild.name}",
                                color=0x6A5ACD,
                                description=f'{ctx.guild.name} - жилище для людей с чувством юмора и хорошим настроением.'
