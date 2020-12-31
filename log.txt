@@ -86,3 +86,13 @@ In embed.fields.0.value: This field is required
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: KeyError: '2:url_name_1'
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, помощь
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, помощь
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...

@@ -2,9 +2,9 @@ import discord
 from Cybernator import Paginator
 from discord.ext import commands
 
-from config import help_command_aliases, commands_permission, MetaPeace_head_tech_spec_id, MetaPeace_supports_id, \
-    MetaPeace_owner_url, MetaPeace_head_tech_spec_url_name, MetaPeace_head_tech_spec_url, MetaPeace_supports_url_name, \
-    MetaPeace_supports_url
+from config import help_command_aliases, commands_permission
+from managers_data import MetaPeace_supports_id, MetaPeace_supports_url_name, MetaPeace_supports_url, \
+    MetaPeace_head_tech_spec_url_name, MetaPeace_head_tech_spec_id, MetaPeace_head_tech_spec_url, MetaPeace_owner_url
 
 
 class HelpCommandCog(commands.Cog):
@@ -13,7 +13,7 @@ class HelpCommandCog(commands.Cog):
 
     @commands.command(aliases=help_command_aliases)
     @commands.has_any_role(*commands_permission['help_command_permission'])
-    @commands.cooldown(1, 30, commands.BucketType.user)
+    @commands.cooldown(1, 80, commands.BucketType.user)
     async def help(self, ctx):
         await ctx.message.delete()
         embed1 = discord.Embed(title=f"Приветствуем Вас в {ctx.guild.name}",
@@ -35,17 +35,21 @@ class HelpCommandCog(commands.Cog):
                                f'\n**Спонсоры**:'
                                f'\n{self.bot.get_channel(766217471514247169).mention}',
                          inline=False)
-        embed1.add_field(name='💠 __**Команды**__:', value='см. раздел II', inline=False)
-        embed1.add_field(name='👥 __**Поддержка пользователей**__:', value='см. раздел III', inline=False)
-        embed1.add_field(name='__**Совет**__:', value='Для перемещения по разделам кликайте на эмодзи под этим меню',
-                         inline=False)
-        embed1.add_field(name=f'Информацию запросил:', value=f'{ctx.author.mention}', inline=False)
+        embed1.add_field(name='💠 __**Команды**__:',
+                         value='см. раздел II', inline=False)
+        embed1.add_field(name='👥 __**Поддержка пользователей**__:',
+                         value='см. раздел III', inline=False)
+        embed1.add_field(name='__**Совет**__:',
+                         value='Для перемещения по разделам кликайте на эмодзи под этим меню', inline=False)
+        embed1.add_field(name=f'Информацию запросил:',
+                         value=f'{ctx.author.mention}', inline=False)
 
         # EMBED 2
 
         embed2 = discord.Embed(title=f"💠 Команды сервера {ctx.guild.name}",
                                description=f'Список основных команд сервера {ctx.guild.name}, доступных пользователям.')
-        embed2.add_field(name='__**header**__', value='value')
+        embed2.add_field(name='__**header**__',
+                         value='value', inline=False)
 
         # EMBED 3
 
