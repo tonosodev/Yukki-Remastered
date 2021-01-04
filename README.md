@@ -7,11 +7,7 @@
 </p>
 
 #Change Log:
-- Adaptive >unban command
-- New >avatar command
-- New >covid statistic GUI
-- New >wiki search
-- Adapted MemberJoin event 
+- New >help embed
 - Adapted Private Rooms (need to revision)
 - Adapted moderation commands (need to revision)
 
