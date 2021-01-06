@@ -29,7 +29,7 @@ class VerificationCog(commands.Cog):
                 await member.add_roles(role)
                 await member.add_roles(role_1)
                 await message.remove_reaction(payload.emoji, member)
-                log = open('log.txt', 'a', encoding='utf-8')
+                log = open('log.txt', 'a', encoding='cp1251')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Пользователь {member} успешно прошел авторизацию!\n')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Выданы роли:\n')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({role})\n')
@@ -40,11 +40,11 @@ class VerificationCog(commands.Cog):
                     description=f'🟢 Пользователь **{member}** успешно прошел авторизацию!\n\n**`Выданы роли:`**\n- ( {role} )\n- ( {role_1} )'))
 
         except KeyError as e:
-            print('[ERROR] KeyError, no role found for ' + emoji)
+            print('[VERIFICATION COG ERROR] KeyError, no role found for ' + emoji)
         except Exception as e:
-            print('[VERIFICATION EXCEPTION] ' + repr(e))
+            print('[VERIFICATION COG EXCEPTION] ' + repr(e))
         except UnboundLocalError as e:
-            print('[VERIFICATION EXCEPTION] ' + repr(e))
+            print('[VERIFICATION COG EXCEPTION] ' + repr(e))
 
 
 def setup(bot):

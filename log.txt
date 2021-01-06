@@ -36,6 +36,11 @@ In embed.fields.0.value: This field is required
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: TypeError: 'int' object is not callable
 ...
+[РђР’РўРћР Р?Р—РђР¦Р?РЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ CMep4#3984 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР Р?Р—РђР¦Р?РЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (вњ” verified)
+[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (рџЋ„Member)
+...
 [ERROR] Пользователь: NeverMind
 [ERROR] Команда: Юкки, репорт <@!601762965636513792>  скрытое оскорбление
 [ERROR] Сервер:  Meta Peace Team®

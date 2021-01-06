@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes">
-      <change afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New help.py embed (need to changes)">
+      <changelist_data name="Alexey Shvetsov" email="devildesigner@users.noreply.github.com" />
+      <change beforePath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/verification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,10 +81,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cogs/phrases" />
+      <recent name="$PROJECT_DIR$/cogs/economy" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\phrases" />
     </key>
   </component>
@@ -72,9 +98,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../PyCharm/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/YukkiRemastered.py" />
@@ -295,28 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608908455684</updated>
     </task>
-    <task id="LOCAL-00026" summary="сhanges">
-      <created>1609194150616</created>
+    <task id="LOCAL-00026" summary="New help.py embed (need to changes)">
+      <created>1609072826019</created>
       <option name="number" value="00026" />
       <option name="presentableId" value="LOCAL-00026" />
       <option name="project" value="LOCAL" />
-      <updated>1609194150616</updated>
+      <updated>1609072826019</updated>
     </task>
-    <task id="LOCAL-00027" summary="сhanges">
-      <created>1609240049073</created>
+    <task id="LOCAL-00027" summary="New help.py embed (need to changes)">
+      <created>1609085649098</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1609240049073</updated>
+      <updated>1609085649099</updated>
     </task>
-    <task id="LOCAL-00028" summary="Some changes">
-      <created>1609315461537</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1609315461538</updated>
-    </task>
-    <option name="localTasksCounter" value="29" />
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -324,19 +343,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -352,44 +359,56 @@
     <MESSAGE value="- Some changes" />
     <MESSAGE value="Read README.md" />
     <MESSAGE value="Important changes in user_report.py" />
-    <MESSAGE value="сhanges" />
-    <MESSAGE value="Some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes" />
+    <MESSAGE value="New help.py embed (need to changes)" />
+    <option name="LAST_COMMIT_MESSAGE" value="New help.py embed (need to changes)" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="264" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609054038309">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="264" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1609054038309" />
+    <state width="1577" height="218" key="GridCell.Tab.0.bottom" timestamp="1609085037675">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1577" height="218" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1609085037675" />
+    <state width="1577" height="218" key="GridCell.Tab.0.center" timestamp="1609085037673">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1577" height="218" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1609085037673" />
+    <state width="1577" height="218" key="GridCell.Tab.0.left" timestamp="1609085037672">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1577" height="218" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1609085037672" />
+    <state width="1577" height="218" key="GridCell.Tab.0.right" timestamp="1609085037674">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state width="1577" height="218" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1609085037674" />
+    <state x="306" y="95" key="SettingsEditor" timestamp="1609931701030">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="306" y="95" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1609931701030" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>300</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>213</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>302</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="28" />
+          <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
