@@ -25,12 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New help.py embed (need to changes)">
-      <changelist_data name="Alexey Shvetsov" email="devildesigner@users.noreply.github.com" />
-      <change beforePath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609085649099</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="New help.py embed (need to changes)">
+      <created>1609944588305</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1609944588308</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,41 +370,33 @@
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="264" y="103" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.900@0.0.1600.900" timestamp="1609054038309" />
-    <state width="1577" height="218" key="GridCell.Tab.0.bottom" timestamp="1609085037675">
+    <state width="1577" height="197" key="GridCell.Tab.0.bottom" timestamp="1609945250937">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="218" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1609085037675" />
-    <state width="1577" height="218" key="GridCell.Tab.0.center" timestamp="1609085037673">
+    <state width="1577" height="197" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1609945250937" />
+    <state width="1577" height="197" key="GridCell.Tab.0.center" timestamp="1609945250936">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="218" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1609085037673" />
-    <state width="1577" height="218" key="GridCell.Tab.0.left" timestamp="1609085037672">
+    <state width="1577" height="197" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1609945250936" />
+    <state width="1577" height="197" key="GridCell.Tab.0.left" timestamp="1609945250935">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="218" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1609085037672" />
-    <state width="1577" height="218" key="GridCell.Tab.0.right" timestamp="1609085037674">
+    <state width="1577" height="197" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1609945250935" />
+    <state width="1577" height="197" key="GridCell.Tab.0.right" timestamp="1609945250936">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1577" height="218" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1609085037674" />
+    <state width="1577" height="197" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1609945250936" />
     <state x="306" y="95" key="SettingsEditor" timestamp="1609931701030">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="306" y="95" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1609931701030" />
+    <state x="470" y="209" width="672" height="678" key="search.everywhere.popup" timestamp="1610112413455">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="470" y="209" width="672" height="678" key="search.everywhere.popup/0.0.1600.900@0.0.1600.900" timestamp="1610112413455" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/phrases/help.py</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
