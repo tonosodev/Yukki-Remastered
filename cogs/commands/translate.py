@@ -6,7 +6,7 @@ import googletrans
 from googletrans import Translator
 from discord.ext import commands
 
-from config import commands_permission, translate_command_aliases
+from config import commands_permission, translate_command_aliases, bot_initialize
 
 
 class GoogleTranslateCog(commands.Cog):
@@ -39,8 +39,7 @@ class GoogleTranslateCog(commands.Cog):
 
             embed.set_author(icon_url='https://www.flaticon.com/premium-icon/icons/svg/1828/1828665.svg',
                              name='Бот | Ошибка')
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
             await ctx.send(embed=embed)
 
@@ -49,8 +48,7 @@ class GoogleTranslateCog(commands.Cog):
             embed = discord.Embed(description=f'**Список всех языков:** {languages}', timestamp=datetime.utcnow(),
                                   color=0x00FF00)
 
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.channel.purge(limit=1)
             await ctx.author.send(embed=embed)
 

@@ -2,6 +2,8 @@ import discord
 import random
 from discord.ext import commands
 
+from config import bot_initialize
+
 
 class OnMemberJoinCog(commands.Cog):
     def __init__(self, bot):
@@ -37,12 +39,13 @@ class OnMemberJoinCog(commands.Cog):
                 'Никто:\nАбсолютно никто:\n{}: МНЕ СКАЗАЛИ ЧТО ТУТ ЕСТЬ ФУРРРИ!'.format(user))
 
             message_channel = self.bot.get_channel(767819023178006569)
-            em = discord.Embed(description=f'{random.choice(JoinMessages)}',
-                               color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
-                                                            random.randint(1, 255)))
-            em.set_author(name='Приветствуем!', icon_url=member.avatar_url)
-            em.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
-            await message_channel.send(embed=em)
+            embed = discord.Embed(description=f'{random.choice(JoinMessages)}',
+                                  color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
+                                                               random.randint(1, 255)))
+            embed.set_author(name='Приветствуем!', icon_url=member.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                             icon_url=self.bot.user.avatar_url)
+            await message_channel.send(embed=embed)
         else:
             pass
 

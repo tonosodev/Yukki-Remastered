@@ -4,7 +4,7 @@ import discord
 import pyshorteners
 from discord.ext import commands
 
-from config import link_cutter_command_aliases, commands_permission
+from config import link_cutter_command_aliases, commands_permission, bot_initialize
 
 
 class LinkCutterCog(commands.Cog):
@@ -34,8 +34,7 @@ class LinkCutterCog(commands.Cog):
                                   timestamp=ctx.message.created_at)
             embed.add_field(name="Ссылка сокращена: ",
                             value="Обработана для {}".format(member) + "\nСсылка: " + short_url)
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.send(embed=embed, delete_after=20)
 
 

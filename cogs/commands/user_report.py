@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 from io import BytesIO
-from config import commands_permission, user_report_command_aliases, bot_settings
+from config import commands_permission, user_report_command_aliases, bot_settings, bot_initialize
 
 
 class UserReport(commands.Cog):
@@ -90,8 +90,7 @@ class UserReport(commands.Cog):
                     embed.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
 
                     embed.set_image(url=f"attachment://{files[0].filename}")
-                    embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                                     icon_url=self.bot.user.avatar_url)
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
                     await load_variable.delete()
                     await ctx.message.delete()
@@ -105,8 +104,7 @@ class UserReport(commands.Cog):
                     embed_success.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
                     embed_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
                     embed_success.add_field(name='__**Причина**__:', value=reason, inline=False)
-                    embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                                     icon_url=self.bot.user.avatar_url)
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
                     await ctx.send(embed=embed_success, delete_after=15)
 

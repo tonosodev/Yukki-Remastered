@@ -7,7 +7,7 @@ from Cybernator import Paginator
 from discord.ext import commands
 from psutil._common import bytes2human
 
-from config import bot_status_aliases, commands_permission
+from config import bot_status_aliases, commands_permission, bot_initialize
 
 
 class DevOpStatusCog(commands.Cog):
@@ -59,8 +59,7 @@ class DevOpStatusCog(commands.Cog):
 
         embed1.add_field(name=f'Информацию запросил:', value=f'{ctx.author.mention}', inline=False)
         embed1.set_thumbnail(url=self.bot.user.avatar_url)
-        embed1.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                          icon_url=self.bot.user.avatar_url)  # создаение футера
+        embed1.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
         # ==================
 

@@ -4,7 +4,7 @@ import discord
 import requests
 from discord.ext import commands
 
-from config import wiki_command_aliases, commands_permission
+from config import wiki_command_aliases, commands_permission, bot_initialize
 
 
 class WikiCog(commands.Cog):
@@ -38,8 +38,7 @@ class WikiCog(commands.Cog):
                                                                random.randint(1, 255)))
             embed.set_author(name='Google | Википедия', url='https://en.wikipedia.org/',
                              icon_url='https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png')
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await msg.delete()
             await ctx.reply(embed=embed)
 

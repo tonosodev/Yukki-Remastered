@@ -2,7 +2,7 @@ import discord
 import random
 from discord.ext import commands
 
-from config import magicball_command_aliases, commands_permission
+from config import magicball_command_aliases, commands_permission, bot_initialize
 
 
 class MagicballCog(commands.Cog):
@@ -134,8 +134,7 @@ class MagicballCog(commands.Cog):
                 description=random.choice(answers),
                 color=0xf5ce42  # Цвет эмбеда
             )
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
             await ctx.reply(embed=embed)
 

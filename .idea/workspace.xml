@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes">
-      <change afterPath="$PROJECT_DIR$/cogs/commands/yt_comment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Yukki Remastered.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some important changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/avatar.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/avatar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/covid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/link_cutter.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/link_cutter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/magicball.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/magicball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/wiki.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609315461538</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Some important changes">
+      <created>1610566321809</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1610566321809</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -359,26 +365,12 @@
     <MESSAGE value="Important changes in user_report.py" />
     <MESSAGE value="сhanges" />
     <MESSAGE value="Some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes" />
+    <MESSAGE value="Some important changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some important changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>300</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>213</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>302</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
           <line>16</line>

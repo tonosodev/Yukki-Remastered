@@ -4,7 +4,7 @@ import discord
 import requests
 from discord.ext import commands
 
-from config import commands_permission, covid_command_aliases
+from config import commands_permission, covid_command_aliases, bot_initialize
 
 
 class CovidCog(commands.Cog):
@@ -37,8 +37,7 @@ class CovidCog(commands.Cog):
                     embed.add_field(name=f'В тяжелом состоянии:', value=f'{item["critical"]}  человек')
                     embed.add_field(name='Запросил:', value=f'{ctx.author.mention}', inline=False)
                     embed.set_thumbnail(url=item["countryInfo"]['flag'])
-                    embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                                     icon_url=self.bot.user.avatar_url)
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
                     await msg.delete()
                     await ctx.send(embed=embed, delete_after=20)
                     await ctx.message.delete()
