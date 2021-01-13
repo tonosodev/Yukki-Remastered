@@ -73,7 +73,7 @@ try:
             yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
 except:
     print(
-        f"\n##################################################\nFile '{filename[:-3]}' " + bot_initialize[
+        f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " + bot_initialize[
             'cog_load_error'] + "\n##################################################\n" + bot_initialize[
             'copyright_message'])
 

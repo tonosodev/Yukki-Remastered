@@ -1,103 +1,125 @@
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, репорт <@!601762965636513792> test
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ <@!601762965636513792> test
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ вќ§в™Ґcherryв™Ґвќ§#7662 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (вњ” verified)
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (рџЋ„Member)
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ вќ§в™Ґcherryв™Ґвќ§#7662 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] - (вњ” verified)
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] - (рџЋ„Member)
 ...
-[ERROR] Пользователь: TPABOMAH
-[ERROR] Команда: Юкки, репорт <@!304988046019919883> GNIDA S
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: TPABOMAH
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ <@!304988046019919883> GNIDA S
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
-[ERROR] Пользователь: TPABOMAH
-[ERROR] Команда: Юкки, репорт <@!641398600727003197> 1
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: TPABOMAH
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ <@!641398600727003197> 1
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
 In embed.fields.0.name: This field is required
 In embed.fields.0.value: This field is required
 ...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
 In embed.fields.0.value: This field is required
 ...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: TypeError: 'int' object is not callable
+...
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ CMep4#3984 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] - (вњ” verified)
+[РђР’РўРћР пїЅ?Р—РђР¦пїЅ?РЇ] - (рџЋ„Member)
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ <@!601762965636513792>  пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ <@!601762965636513792> пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: KeyError: ''
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ 10
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: TypeError: __init__() missing 1 required positional argument: 'message'
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: KeyError: '2:url_name_1'
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: KeyError: '2:url_name_1'
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[РђР’РўРћР РР—РђР¦РРЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ V.Generalov#7582 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
+[РђР’РўРћР РР—РђР¦РРЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
+[РђР’РўРћР РР—РђР¦РРЇ] - (вњ” verified)
+[РђР’РўРћР РР—РђР¦РРЇ] - (рџЋ„Member)
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: [_Vladik_]
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ <@641398600727003197> -1
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: TypeError: translate() missing 1 required positional argument: 'self'
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: [_Vladik_]
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ <@641398600727003197> 1
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: TypeError: translate() missing 1 required positional argument: 'self'
+...
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: NeverMind
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅпїЅ: пїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Meta Peace TeamпїЅ
+[ERROR] пїЅпїЅпїЅпїЅпїЅпїЅ:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
 [ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
+[ERROR] Команда: Юкки, коммент Бесполезная хуета.
 [ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: TypeError: 'int' object is not callable
+[ERROR] Ошибка:  Command raised an exception: NameError: name 'io' is not defined
 ...
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ CMep4#3984 СѓСЃРїРµС€РЅРѕ РїСЂРѕС€РµР» Р°РІС‚РѕСЂРёР·Р°С†РёСЋ!
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] Р’С‹РґР°РЅС‹ СЂРѕР»Рё:
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (вњ” verified)
-[РђР’РўРћР Р?Р—РђР¦Р?РЇ] - (рџЋ„Member)
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, репорт <@!601762965636513792>  скрытое оскорбление
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, репорт <@!601762965636513792> скрытое оскорбление
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: KeyError: ''
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, очисти 10
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, инфо
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, инфо
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: TypeError: __init__() missing 1 required positional argument: 'message'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: KeyError: '2:url_name_1'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: KeyError: '2:url_name_1'
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
-[ERROR] Пользователь: NeverMind
-[ERROR] Команда: Юкки, помощь
-[ERROR] Сервер:  Meta Peace Team®
-[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
-...
+[АВТОРИЗАЦИЯ] Пользователь Biomusor_pzds#2430 успешно прошел авторизацию!
+[АВТОРИЗАЦИЯ] Выданы роли:

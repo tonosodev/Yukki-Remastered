@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 
-from config import avatar_command_aliases, commands_permission
+from config import avatar_command_aliases, commands_permission, bot_initialize
 
 
 class UserAvatar(commands.Cog):
@@ -23,7 +23,7 @@ class UserAvatar(commands.Cog):
         embed.set_author(icon_url='https://www.flaticon.com/premium-icon/icons/svg/2919/2919600.svg',
                          name='Участник | Аватар')
         embed.add_field(name="Запросил:", value=f"{ctx.author.mention}", inline=False)
-        embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+        embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
 
         await msg.delete()
         await ctx.send(embed=embed)

@@ -71,7 +71,7 @@ mongo_db = {
 # ===================================================================#
 bot_initialize = {
     "activity_status": "за порядком ☕",
-    "cog_load_error": "LOAD ERROR!\nCHECK AND CORRECT CODE!",
+    "cog_load_error": "LOADING ERROR!\nCHECK TROUBLES AND CORRECT CODE!",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",
     "activity_status_success": "[SUCCESS] Discord activity status is ready!",
@@ -82,7 +82,8 @@ bot_initialize = {
 
     "new_user_authorize": "",
 
-    "copyright_message": "\n\t  Yukki© 2020 | All rights reserved"
+    "copyright_message": "\n\t  Yukki© 2021 | All rights reserved",
+    "embeds_footer_message": "© 2021 | Все права защищены"
 }
 
 # ===================================================================#
@@ -122,6 +123,8 @@ commands_permission = {
                                      766293535832932392, 766264901479825428],
     "user_report_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
                                        766293535832932392, 766264901479825428],
+    "yt_comment_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
+                                      766293535832932392, 766264901479825428],
     # ===========================
     "help_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
                                 766293535832932392, 766264901479825428],
@@ -142,6 +145,7 @@ avatar_command_aliases = ['ава', 'Ава', 'аватар', 'Аватар']
 translate_command_aliases = ['переведи', 'перевод', 'Переведи', 'Перевод']
 user_report_command_aliases = ['репорт', 'жалоба', 'зарепорть', 'пожаловаться', 'Репорт', 'Жалоба', 'Зарепортить',
                                'Пожаловаться']
+yt_comment_aliases = ['коммент', 'Коммент', 'комментарий', 'Комментарий']
 # ==========================
 bot_status_aliases = ['бот', 'Бот', 'БОТ', 'Бот_статус', 'бот_статус', 'бот_инфо', 'Бот_инфо', 'инфо', 'серверинфо',
                       'Инфо', 'Серверинфо']
