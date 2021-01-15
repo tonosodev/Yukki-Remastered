@@ -17,7 +17,7 @@ class MagicballCog(commands.Cog):
             embed = discord.Embed(title="🔮 Магический шар 🧙‍♀️")
             embed.add_field(name="Невозможно получить вопрос",
                             value="{}, Вам необходимо указать вопрос, на который хотите получить ответ.".format(member))
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                              icon_url=self.bot.user.avatar_url)
             await ctx.send(embed=embed)
         else:
@@ -134,7 +134,8 @@ class MagicballCog(commands.Cog):
                 description=random.choice(answers),
                 color=0xf5ce42  # Цвет эмбеда
             )
-            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                             icon_url=self.bot.user.avatar_url)
 
             await ctx.reply(embed=embed)
 

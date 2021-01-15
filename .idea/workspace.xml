@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some important changes">
+      <change afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/covid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/link_cutter.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/link_cutter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/commands/magicball.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/magicball.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/translate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/wiki.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/wiki.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +65,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\phrases" />
     </key>
   </component>
@@ -327,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610566321809</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Some important changes">
+      <created>1610567027228</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1610567027228</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,6 +394,16 @@
           <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
           <line>18</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/events/verification.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/events/verification.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

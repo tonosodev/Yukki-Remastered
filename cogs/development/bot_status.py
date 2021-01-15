@@ -1,7 +1,5 @@
-import datetime
-import random
-
 import discord
+import datetime
 import psutil
 from Cybernator import Paginator
 from discord.ext import commands
@@ -17,10 +15,12 @@ class DevOpStatusCog(commands.Cog):
     @commands.command(aliases=bot_status_aliases)
     @commands.has_any_role(*commands_permission['bot_status_permission'])
     async def status(self, ctx):
+        msg = await ctx.reply("`Пожалуйста, подождите. . .`")
         members_count = 0
         guild_count = len(self.bot.guilds)
 
         members = ctx.guild.members
+        emoji = '<a:Z_Hykrasaboost:713135184370860072>'
         bots = len([m for m in members if m.bot])
         users = len(members) - bots
         online = len(list(filter(lambda x: x.status == discord.Status.online, members)))
@@ -38,8 +38,8 @@ class DevOpStatusCog(commands.Cog):
                                color=0x6A5ACD, timestamp=ctx.message.created_at)
         embed1.set_thumbnail(url=ctx.guild.icon_url)
 
-        embed1.add_field(name=f"Пользователей", value=f"🐥 Участников: **{users}**\n"
-                                                      f"‍🔧  Ботов: **{bots}**\n"
+        embed1.add_field(name=f"Пользователей", value=f"👥 Участников: **{users}**\n"
+                                                      # f"‍🔧  Ботов: **{bots}**\n"
                                                       f"🟢 Онлайн: **{online}**\n"
                                                       f"🟠 Отошёл: **{idle}**\n"
                                                       f"🔴 Не Беспокоить: **{dnd}**\n"
@@ -59,7 +59,8 @@ class DevOpStatusCog(commands.Cog):
 
         embed1.add_field(name=f'Информацию запросил:', value=f'{ctx.author.mention}', inline=False)
         embed1.set_thumbnail(url=self.bot.user.avatar_url)
-        embed1.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+        embed1.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                          icon_url=self.bot.user.avatar_url)
 
         # ==================
 
@@ -85,24 +86,26 @@ class DevOpStatusCog(commands.Cog):
         embed2 = discord.Embed(title='Статистика системы', color=0x6A5ACD)
 
         embed2.add_field(name='Использование CPU',
-                         value=f'Используется:\n **{psutil.cpu_percent()}%**',
+                         value=f'💻 Используется:\n **{psutil.cpu_percent()}%**',
                          inline=True)
 
         embed2.add_field(name='Использование RAM',
                          value=
-                         f'Всего: **{bytes2human(mem.total)}**\n'
-                         f'Используется: **{bytes2human(mem.used)}**',
+                         f'📀 Всего: **{bytes2human(mem.total)}**\n'
+                         f'💿 Используется: **{bytes2human(mem.used)}**',
                          inline=True)
 
         embed2.add_field(name='Задержка системы',
-                         value=f'Ping: **{ping * 1000:.0f}ms**\n'
+                         value=f'📡 Ping: **{ping * 1000:.0f}ms**\n'
                                f'`{ping_emoji}`',
                          inline=True)
         embed2.add_field(name="Аптайм системы от:",
-                         value=f'{datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d | %H:%M:%S")}')
+                         value=f'🕥 {datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%Y-%m-%d | %H:%M:%S")}')
 
         embeds = [embed1, embed2]
 
+        await msg.delete()
+        await ctx.message.delete()
         message = await ctx.send(embed=embed1)
         page = Paginator(self.bot, message, only=ctx.author, use_more=False, embeds=embeds, language="ru",
                          footer_icon=self.bot.user.avatar_url, timeout=30, use_exit=True, delete_message=True,

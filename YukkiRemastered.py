@@ -30,11 +30,11 @@ async def unload(ctx, extensions):
     await ctx.send("Yukki unloaded success!")
 
 
-@yukki.command()  # Reload command
-async def reload(ctx, extensions):
-    yukki.unload_extension(f'cogs.{extensions}')
-    yukki.load_extension(f'cogs.{extensions}')
-    await ctx.send("Yukki reloaded success!")
+#@yukki.command()  # Reload command
+#async def reload(ctx, extensions):
+#    yukki.unload_extension(f'cogs.{extensions}')
+#    yukki.load_extension(f'cogs.{extensions}')
+#    await ctx.send("Yukki reloaded success!")
 
 
 # @yukki.command()
@@ -71,6 +71,9 @@ try:
     for filename in os.listdir('./cogs/phrases'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
+    for filename in os.listdir('./cogs/recovery'):
+        if filename.endswith('.py'):
+            yukki.load_extension(f'cogs.recovery.{filename[:-3]}')
 except:
     print(
         f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " + bot_initialize[

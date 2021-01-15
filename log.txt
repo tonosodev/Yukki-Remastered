@@ -123,3 +123,13 @@ In embed.fields.0.value: This field is required
 ...
 [АВТОРИЗАЦИЯ] Пользователь Biomusor_pzds#2430 успешно прошел авторизацию!
 [АВТОРИЗАЦИЯ] Выданы роли:
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, say 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Channel "1" not found.
+...
