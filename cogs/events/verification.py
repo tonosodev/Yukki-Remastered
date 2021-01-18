@@ -32,8 +32,8 @@ class VerificationCog(commands.Cog):
                 log = open('log.txt', 'a', encoding='cp1251')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Пользователь {member} успешно прошел авторизацию!\n')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Выданы роли:\n')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({role})\n')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({role_1})\n')
+                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({str(role)})\n')
+                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({str(role_1)})\n')
                 log.write('...\n')
                 log.close()
                 await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
