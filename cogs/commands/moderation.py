@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from config import bot_initialize, bot_settings, kick_command_aliases, clear_command_aliases, add_role_command_aliases, \
     remove_role_command_aliases, ban_command_aliases, mute_command_aliases, unmute_command_aliases, \
-    version_command_aliases, unban_command_aliases, commands_permission, server_roles
+    version_command_aliases, unban_command_aliases, commands_permission
 
 
 class ModerationCog(commands.Cog):
