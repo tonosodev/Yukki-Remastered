@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some important changes">
-      <change afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/magicball.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/magicball.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/moderation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/bot_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,21 +374,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/moderation.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/events/verification.py</url>
           <line>38</line>

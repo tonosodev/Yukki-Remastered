@@ -20,7 +20,6 @@ class DevOpStatusCog(commands.Cog):
         guild_count = len(self.bot.guilds)
 
         members = ctx.guild.members
-        emoji = '<a:Z_Hykrasaboost:713135184370860072>'
         bots = len([m for m in members if m.bot])
         users = len(members) - bots
         online = len(list(filter(lambda x: x.status == discord.Status.online, members)))

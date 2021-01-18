@@ -228,8 +228,7 @@ class ModerationCog(commands.Cog):
             emb = discord.Embed(title=f'Мут 🔇', description=f'У участника {member.mention} уже имеется мут.',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
 
@@ -237,39 +236,34 @@ class ModerationCog(commands.Cog):
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить владельца гильдии!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.guild.me.id:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно меня замутить!', color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif ctx.author.top_role.position < member.top_role.position:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше вашей!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.author.id:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить самого себя!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.top_role > ctx.guild.me.top_role:
             emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше моей!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif not reason:
@@ -281,8 +275,7 @@ class ModerationCog(commands.Cog):
             emb.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
             emb.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
             emb.add_field(name='__**Причина**__:', value='Не указана.', inline=False)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await member.add_roles(mute_role, reason='Причина не указана.', atomic=True)
             await logs.send(embed=emb)
 
@@ -295,8 +288,7 @@ class ModerationCog(commands.Cog):
             emb.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
             emb.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
             emb.add_field(name='__**Причина**__:', value=reason, inline=False)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await member.add_roles(mute_role, reason=reason, atomic=True)
             await logs.send(embed=emb)
 
@@ -311,15 +303,13 @@ class ModerationCog(commands.Cog):
                                 description=f'Роль участника {member.mention} выше Вашей!',
                                 color=0x6A5ACD)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif mute_role.position > ctx.guild.me.top_role.position:
             emb = discord.Embed(title=f'Анмут 🔉', description=f'Роль мута выше Вашей!', color=0x6A5ACD)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif reason is None:
@@ -329,8 +319,7 @@ class ModerationCog(commands.Cog):
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** Не указана.',
                                 color=0x6A5ACD)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
         else:
             await ctx.message.delete()
@@ -339,8 +328,7 @@ class ModerationCog(commands.Cog):
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** {reason}',
                                 color=0x6A5ACD)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                           icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
     @commands.command(aliases=version_command_aliases)
