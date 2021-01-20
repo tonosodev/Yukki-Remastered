@@ -1,0 +1,15 @@
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: InvalidArgument: emoji argument must be str, Emoji, or Reaction not list.
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: add_reaction() takes 2 positional arguments but 5 were given
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: str() takes at most 3 arguments (4 given)
+...

@@ -14,7 +14,8 @@ class RecoveryCog(commands.Cog):
     @commands.has_any_role(*commands_permission['recovery_command_permission'])
     async def recovery(self, ctx):
         embed = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
-        embed.set_thumbnail(url=ctx.guild.icon_url)
+        embed.set_thumbnail(url=ctx.author.avatar_url)
+
         embed.add_field(name='WARNING:',
                         value="Make sure you are going to make the right choice of action before use.\n"
                               "**Attention!**\n"
@@ -29,25 +30,24 @@ class RecoveryCog(commands.Cog):
                                                      f'💥 __**protocol: Self-Destruction**__', inline=False)
         embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                          icon_url=self.bot.user.avatar_url)
-        rec = await ctx.reply(embed=embed)
-        await rec.add_reaction("⭕")
-        await rec.add_reaction("❌")
-        await rec.add_reaction("♦")
-        await rec.add_reaction("💥")
-
-        if rec.content.startswith('$thumb'):
-            owner = ctx.message.author.id
-            if ctx.user is owner:
-                def check(reaction, user):
-                    return user == ctx.message.author and str(reaction.emoji) == '⭕'
-                try:
-                    reaction, user = await self.bot.wait_for('reaction_add', timeout=30.0, check=check)
-                except asyncio.TimeoutError:
-                    await ctx.message.delete()
+        msg = await ctx.reply(embed=embed)
+        await msg.add_reaction("⭕")
+        await msg.add_reaction("❌")
+        await msg.add_reaction("♦")
+        await msg.add_reaction("💥")
+        try:
+            react_user = await self.bot.wait_for('reaction_add',
+                                                 check=lambda reaction, react: reaction.emoji == '⭕')
+            if react_user:
+                if ctx.message.author is True:
+                    await ctx.send(ctx.message.author.id)
+                    await msg.clear_reactions()
                 else:
-                    await ctx.send('debug')
+                    await ctx.send("User error")
             else:
-                pass
+                await ctx.send("Local error")
+        except:
+            await ctx.send("Global error")
 
 
 def setup(bot):
