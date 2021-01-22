@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 from config import bot_initialize, bot_settings, kick_command_aliases, clear_command_aliases, add_role_command_aliases, \
     remove_role_command_aliases, ban_command_aliases, mute_command_aliases, unmute_command_aliases, \
-    version_command_aliases, unban_command_aliases, commands_permission
+    version_command_aliases, unban_command_aliases, commands_permission, server_roles
 
 
 class ModerationCog(commands.Cog):
@@ -214,6 +214,7 @@ class ModerationCog(commands.Cog):
     @commands.command(aliases=mute_command_aliases)
     @commands.has_any_role(*commands_permission['mute_command_permission'])
     async def mute(self, ctx, member: discord.Member, *, reason: str = None):
+        member_role = discord.utils.get(ctx.message.guild.roles, id=server_roles['member_role'])
         mute_role = discord.utils.get(ctx.message.guild.roles, name='MUTED')
         logs = self.bot.get_channel(bot_settings['log_channel'])
         if not mute_role:
@@ -225,7 +226,7 @@ class ModerationCog(commands.Cog):
             mute_role = discord.utils.get(ctx.message.guild.roles, name='MUTED')
 
         elif mute_role in member.roles:
-            emb = discord.Embed(title=f'Мут 🔇', description=f'У участника {member.mention} уже имеется мут.',
+            emb = discord.Embed(title=f'Мут 🔇', description=f'Участник {member.mention} уже имеет мут.',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
@@ -233,34 +234,34 @@ class ModerationCog(commands.Cog):
 
 
         elif member.id == ctx.guild.owner.id:
-            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить владельца гильдии!',
+            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно заглушить владельца гильдии!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.guild.me.id:
-            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно меня замутить!', color=0x4B0082)
+            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно заглушить этого участника!', color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif ctx.author.top_role.position < member.top_role.position:
-            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше вашей!',
+            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно заглушить участника с ролью выше вашей!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.id == ctx.author.id:
-            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить самого себя!',
+            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно заглушить самого себя!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=emb, delete_after=15)
 
         elif member.top_role > ctx.guild.me.top_role:
-            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно замутить участника с ролью выше моей!',
+            emb = discord.Embed(title=f'Мут 🔇', description='Невозможно заглушить участника с ролью выше моей!',
                                 color=0x4B0082)
             emb.set_author(name=ctx.author, icon_url=ctx.author.avatar_url)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
@@ -276,8 +277,10 @@ class ModerationCog(commands.Cog):
             emb.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
             emb.add_field(name='__**Причина**__:', value='Не указана.', inline=False)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+            await member.remove_roles(member_role)
             await member.add_roles(mute_role, reason='Причина не указана.', atomic=True)
             await logs.send(embed=emb)
+
 
         else:
             await ctx.message.delete()
@@ -289,6 +292,7 @@ class ModerationCog(commands.Cog):
             emb.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
             emb.add_field(name='__**Причина**__:', value=reason, inline=False)
             emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+            await member.remove_roles(member_role)
             await member.add_roles(mute_role, reason=reason, atomic=True)
             await logs.send(embed=emb)
 
@@ -296,6 +300,7 @@ class ModerationCog(commands.Cog):
     @commands.has_any_role(*commands_permission['unmute_command_permission'])
     async def unmute(self, ctx, member: discord.Member = None, *, reason: str = None):
         mute_role = discord.utils.get(ctx.message.guild.roles, name='MUTED')
+        member_role = discord.utils.get(ctx.message.guild.roles, id=server_roles['member_role'])
         logs = self.bot.get_channel(bot_settings['log_channel'])
 
         if member.top_role > ctx.guild.me.top_role:
@@ -315,6 +320,7 @@ class ModerationCog(commands.Cog):
         elif reason is None:
             await ctx.message.delete()
             await member.remove_roles(mute_role)
+            await member.add_roles(member_role, reason='Причина не указана.', atomic=True)
             emb = discord.Embed(title=f'Анмут 🔉',
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** Не указана.',
                                 color=0x6A5ACD)
@@ -324,6 +330,7 @@ class ModerationCog(commands.Cog):
         else:
             await ctx.message.delete()
             await member.remove_roles(mute_role)
+            await member.add_roles(member_role, reason=reason, atomic=True)
             emb = discord.Embed(title=f'Анмут 🔉',
                                 description=f'Снят мут с пользователя {member.mention}.\n**Причина:** {reason}',
                                 color=0x6A5ACD)

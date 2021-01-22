@@ -15,3 +15,4 @@
 - Transfer general function from oldest versions ⚙ ️
 - Connect economy system to mongo.db
 - Adaptive old information Embeds
+- Edit params in managers_data to - [VK] [GitHub] [PoH] (source in)

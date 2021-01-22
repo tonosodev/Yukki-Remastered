@@ -55,7 +55,7 @@ class HelpCommandCog(commands.Cog):
                          value='Использование: Юкки, ковид "country"\nВыводит статистику коронавируса в указанной стране.',
                          inline=False)
         embed2.add_field(name='__**LINK-CUTTER**__',
-                         value='Использование: Юкки, сократи "source"\nСокращает ссылку на указанный ресурс.',
+                         value='Использование: Юкки, сократи "https://source"\nСокращает ссылку на указанный ресурс.',
                          inline=False)
 
         # EMBED 3

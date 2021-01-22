@@ -1,5 +1,3 @@
-import asyncio
-
 import discord
 from discord.ext import commands
 
@@ -38,16 +36,15 @@ class RecoveryCog(commands.Cog):
         try:
             react_user = await self.bot.wait_for('reaction_add',
                                                  check=lambda reaction, react: reaction.emoji == '⭕')
-            if react_user:
-                if ctx.message.author is True:
-                    await ctx.send(ctx.message.author.id)
-                    await msg.clear_reactions()
-                else:
-                    await ctx.send("User error")
+            if react_user is ctx.message.author.id == "641398600727003197":
+                await ctx.send(ctx.message.author.id)
+                await msg.clear_reactions()
             else:
-                await ctx.send("Local error")
+                await ctx.send("User error")
+                await msg.clear_reactions()
         except:
             await ctx.send("Global error")
+            await msg.clear_reactions()
 
 
 def setup(bot):
