@@ -13,8 +13,7 @@ class VerificationCog(commands.Cog):
 
         channel = self.bot.get_channel(payload.channel_id)  # получаем объект канала
         message = await channel.fetch_message(payload.message_id)  # получаем объект сообщения
-        member = utils.get(message.guild.members,
-                           id=payload.user_id)  # получаем объект пользователя который поставил реакцию
+        member = utils.get(message.guild.members, id=payload.user_id)  # получаем объект пользователя который поставил реакцию
 
         try:
             if payload.message_id == verification['verification_post_id'] and payload.channel_id \
@@ -31,9 +30,6 @@ class VerificationCog(commands.Cog):
                 await message.remove_reaction(payload.emoji, member)
                 log = open('log.txt', 'a', encoding='cp1251')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Пользователь {member} успешно прошел авторизацию!\n')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'Выданы роли:\n')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({str(role)})\n')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'- ({str(role_1)})\n')
                 log.write('...\n')
                 log.close()
                 await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(

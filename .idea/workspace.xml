@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Recovery editing">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Cleanup and some changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/covid.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/covid.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/moderation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/verification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -362,7 +358,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611154718998</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Cleanup and some changes">
+      <created>1611326360920</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1611326360920</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +407,8 @@
     <MESSAGE value="Any changes" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="Recovery editing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recovery editing" />
+    <MESSAGE value="Cleanup and some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup and some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
