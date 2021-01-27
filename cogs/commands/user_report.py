@@ -1,3 +1,5 @@
+import asyncio
+
 import discord
 from discord.ext import commands
 import random
@@ -31,7 +33,7 @@ class UserReport(commands.Cog):
             embed.add_field(name='__**Пример правильного заполнения**__:', value="*см. во вложении.", inline=False)
             embed.set_image(
                 url='https://sun9-48.userapi.com/impg/xvWDgPDXtJlEXP2NeWY6E5zGld0WUxc5JE6Pvw/s6FniY0Yz0M.jpg?size=594x595&quality=96&proxy=1&sign=eb265d60619fb69cd078a2e3816a1c6c&type=album')
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                              icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=embed)
             self.report.reset_cooldown(ctx)
@@ -45,7 +47,7 @@ class UserReport(commands.Cog):
             embed.add_field(name='__**Причина**__:', value="Вы не можете просто взять, и пожаловаться на самого себя..."
                                                            "\nОставьте это другим пользователям!", inline=False)
             embed.add_field(name='__**Действие**__:', value='Задержка на использование команды обнулена.')
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                              icon_url=self.bot.user.avatar_url)
             await ctx.reply(embed=embed)
             self.report.reset_cooldown(ctx)
@@ -64,7 +66,7 @@ class UserReport(commands.Cog):
                                 value=f"Пропишите «{bot_settings['bot_prefix']}репорт» для вывода информации по заполнению формы!",
                                 inline=False)
                 embed.add_field(name='__**Действие**__:', value='Задержка на использование команды обнулена.')
-                embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
+                embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                                  icon_url=self.bot.user.avatar_url)
                 await ctx.reply(embed=embed)
                 self.report.reset_cooldown(ctx)
@@ -90,7 +92,8 @@ class UserReport(commands.Cog):
                     embed.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
 
                     embed.set_image(url=f"attachment://{files[0].filename}")
-                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                     icon_url=self.bot.user.avatar_url)
 
                     await load_variable.delete()
                     await ctx.message.delete()
@@ -104,9 +107,11 @@ class UserReport(commands.Cog):
                     embed_success.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
                     embed_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
                     embed_success.add_field(name='__**Причина**__:', value=reason, inline=False)
-                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                     icon_url=self.bot.user.avatar_url)
 
                     await ctx.send(embed=embed_success, delete_after=15)
+                    await ctx.author.send(embed=embed_success)
 
                     msg = await logs.send(embed=embed, files=files)
                     warn_reaction = await msg.add_reaction("‼")
@@ -115,6 +120,17 @@ class UserReport(commands.Cog):
                     ban_reaction = await msg.add_reaction("📛")
                     close_ticket_reaction = await msg.add_reaction("❌")
 
+                    def check(reaction, user):
+                        are_same_messages = reaction.message.channel == msg.channel and reaction.message.id == msg.id
+                        guild_id = self.bot.get_guild(766213910595633153)
+                        return user == ctx.author and str(reaction.emoji) == '❌' and are_same_messages and guild_id
+
+                    try:
+                        reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=check)
+                    except asyncio.TimeoutError:
+                        await logs.send(f'Время на обработку заявки **{str(token)}** вышло!')
+                    else:
+                        await logs.send('👍')
 
                 except:
                     await load_variable.delete()
@@ -131,7 +147,7 @@ class UserReport(commands.Cog):
                                     value=f"Пропишите «{bot_settings['bot_prefix']}репорт» для вывода информации по заполнению формы!",
                                     inline=False)
                     embed.add_field(name='__**Действие**__:', value='Задержка на использование команды обнулена.')
-                    embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
+                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                                      icon_url=self.bot.user.avatar_url)
                     await ctx.reply(embed=embed)
 

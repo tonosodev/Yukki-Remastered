@@ -1,3 +1,6 @@
+
+##### POWERED BY NeverMind#4082 #################################################
+
 import discord
 import os
 
@@ -30,8 +33,8 @@ async def unload(ctx, extensions):
     await ctx.send("Yukki unloaded success!")
 
 
-#@yukki.command()  # Reload command
-#async def reload(ctx, extensions):
+# @yukki.command()  # Reload command
+# async def reload(ctx, extensions):
 #    yukki.unload_extension(f'cogs.{extensions}')
 #    yukki.load_extension(f'cogs.{extensions}')
 #    await ctx.send("Yukki reloaded success!")
@@ -68,7 +71,7 @@ try:
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.development.{filename[:-3]}')
 
-    for filename in os.listdir('./cogs/phrases'):
+    for filename in os.listdir('cogs/phrases'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
     for filename in os.listdir('./cogs/recovery'):
@@ -76,7 +79,8 @@ try:
             yukki.load_extension(f'cogs.recovery.{filename[:-3]}')
 except:
     print(
-        f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " + bot_initialize[
+        f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " +
+        bot_initialize[
             'cog_load_error'] + "\n##################################################\n" + bot_initialize[
             'copyright_message'])
 
@@ -94,15 +98,18 @@ async def on_command_error(ctx, error):
     elif isinstance(error, commands.MissingPermissions) or isinstance(error, discord.Forbidden) or isinstance(error,
                                                                                                               commands.MissingRole) or \
             isinstance(error, commands.MissingAnyRole):
-        return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'), delete_after=10)
+        return await ctx.reply(embed=discord.Embed(description=f'❗️ {ctx.author.name}, у Вас недостаточно прав!'),
+                               delete_after=10)
 
     elif isinstance(error, commands.MissingRequiredArgument):
         return await ctx.reply(
-            embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'), delete_after=10)
+            embed=discord.Embed(description=f'❗️ {ctx.author.name}, при выполнении команды ожидался аргумент.'),
+            delete_after=10)
 
     elif isinstance(error, commands.CommandOnCooldown):
         await ctx.reply(embed=discord.Embed(
-            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"), delete_after=5)
+            description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"),
+            delete_after=5)
     else:
         if "Command raised an exception: UnboundLocalError:" in str(error):
             return
@@ -132,6 +139,7 @@ async def on_command_error(ctx, error):
             await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                 description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))
             raise error
+
 
 # ----------------------------- #
 #          YUKKI RUN            #
