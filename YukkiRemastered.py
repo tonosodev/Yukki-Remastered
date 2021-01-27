@@ -6,7 +6,7 @@ import os
 
 from discord.ext import commands
 from discord.ext.commands import when_mentioned_or
-from config import bot_settings, mongo_db, bot_initialize
+from config import bot_settings, bot_initialize
 
 queue = []
 PREFIX = bot_settings['bot_prefix']
@@ -78,6 +78,7 @@ try:
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.recovery.{filename[:-3]}')
 except:
+    # noinspection PyUnboundLocalVariable
     print(
         f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " +
         bot_initialize[
