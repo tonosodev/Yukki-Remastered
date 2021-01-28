@@ -107,8 +107,8 @@ class UserReport(commands.Cog):
                     embed_success.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
                     embed_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
                     embed_success.add_field(name='__**Причина**__:', value=reason, inline=False)
-                    embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
-                                     icon_url=self.bot.user.avatar_url)
+                    embed_success.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                             icon_url=self.bot.user.avatar_url)
 
                     await ctx.send(embed=embed_success, delete_after=15)
                     await ctx.author.send(embed=embed_success)
@@ -126,11 +126,36 @@ class UserReport(commands.Cog):
                         return user == ctx.author and str(reaction.emoji) == '❌' and are_same_messages and guild_id
 
                     try:
-                        reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=check)
+                        reaction, user = await self.bot.wait_for('reaction_add', timeout=30.0, check=check)
                     except asyncio.TimeoutError:
-                        await logs.send(f'Время на обработку заявки **{str(token)}** вышло!')
+                        await logs.send(f'Время на обработку заявки **#{str(token)}** вышло!')
                     else:
-                        await logs.send('👍')
+                        files = []
+                    for file in ctx.message.attachments:
+                        fp = BytesIO()
+                        await file.save(fp)
+                        files.append(discord.File(fp, filename=file.filename, spoiler=file.is_spoiler()))
+
+                        embed_report_success = discord.Embed(title="Жалоба 💬",
+                                                             color=discord.Color.from_rgb(random.randint(1, 255),
+                                                                                          random.randint(1, 255),
+                                                                                          random.randint(1, 255)))
+                        embed_report_success.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
+                        embed_report_success.add_field(name='__**Состояние**__:', value='Рассмотрена.', inline=False)
+                        embed_report_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
+                        embed_report_success.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
+                        embed_report_success.add_field(name='__**Уникальный номер**__:', value='#' + str(token),
+                                                       inline=False)
+                        embed_report_success.add_field(name='__**Причина**__:', value=reason, inline=False)
+                        embed_report_success.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
+
+                        embed_report_success.set_image(url=f"attachment://{files[0].filename}")
+                        embed_report_success.set_footer(
+                            text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                            icon_url=self.bot.user.avatar_url)
+                        await msg.edit(embed=embed_report_success)
+                        await msg.clear_reactions()
+                        await logs.send(f'Заявка **#{str(token)}** отклонена руководителем.')
 
                 except:
                     await load_variable.delete()

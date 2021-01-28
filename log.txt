@@ -68,3 +68,38 @@
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: edit() takes 1 positional argument but 2 were given
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
