@@ -28,7 +28,7 @@ class VerificationCog(commands.Cog):
                 await member.add_roles(role)
                 await member.add_roles(role_1)
                 await message.remove_reaction(payload.emoji, member)
-                log = open('log.txt', 'a', encoding='cp1251')
+                log = open('log.txt', 'a')
                 log.write(f'[АВТОРИЗАЦИЯ] ' + f'Пользователь {member} успешно прошел авторизацию!\n')
                 log.write('...\n')
                 log.close()

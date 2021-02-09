@@ -10,7 +10,7 @@ class PrivateRoom(commands.Cog):
 
     @commands.Cog.listener()
     async def on_voice_state_update(self, member, channel, after):
-        if after.channel != None:
+        if after.channel is not None:
             if after.channel.id == 769475442603196417:
                 # print(f"[DEBUG]: {member} создаёт приватный канал! ")
                 for guild in self.bot.guilds:

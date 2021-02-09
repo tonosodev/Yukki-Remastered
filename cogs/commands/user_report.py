@@ -23,7 +23,7 @@ class UserReport(commands.Cog):
             embed = discord.Embed(title="Жалоба ❌",
                                   color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                                random.randint(1, 255)))
-            embed.add_field(name='__**Ошибка при отправке жалобы**__:', value=f'{ctx.author.mention}', inline=False)
+            embed.add_field(name='__**Ошибка при отправке жалобы от**__:', value=f'{ctx.author.mention}', inline=False)
             embed.add_field(name='__**Перед отправкой соблюдайте следующие пункты**__:',
                             value='- Укажите @пользователя и "причину"'
                                   '\n- Прикрепите снимок нарушения со стороны пользователя к сообщению', inline=False)
@@ -130,6 +130,9 @@ class UserReport(commands.Cog):
                     except asyncio.TimeoutError:
                         await logs.send(f'Время на обработку заявки **#{str(token)}** вышло!')
                     else:
+
+                        # Редактирование основного эмбеда в случае отмены жалобы
+
                         files = []
                     for file in ctx.message.attachments:
                         fp = BytesIO()
@@ -140,8 +143,9 @@ class UserReport(commands.Cog):
                                                              color=discord.Color.from_rgb(random.randint(1, 255),
                                                                                           random.randint(1, 255),
                                                                                           random.randint(1, 255)))
-                        embed_report_success.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
+                        embed_report_success.add_field(name='__**Заявитель**__:', value=ctx.author.mention, inline=False)
                         embed_report_success.add_field(name='__**Состояние**__:', value='Рассмотрена.', inline=False)
+                        embed_report_success.add_field(name='__**Решение**__:', value='Заявка **отклонена**.\n__**Наказание:**__ \n||Не вынесено.||')
                         embed_report_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
                         embed_report_success.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
                         embed_report_success.add_field(name='__**Уникальный номер**__:', value='#' + str(token),
@@ -155,7 +159,6 @@ class UserReport(commands.Cog):
                             icon_url=self.bot.user.avatar_url)
                         await msg.edit(embed=embed_report_success)
                         await msg.clear_reactions()
-                        await logs.send(f'Заявка **#{str(token)}** отклонена руководителем.')
 
                 except:
                     await load_variable.delete()

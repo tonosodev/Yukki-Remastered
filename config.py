@@ -2,7 +2,7 @@
 #                          GENERAL SETTINGS                          #
 # ===================================================================#
 bot_settings = {
-    "bot_token": "NzY2MjcwOTkwMDA3MDA5MzMw.X4g7eA.PLdlBX2vFVI-HMcD97bDofXRDWs",
+    "bot_token": "NzY2MjcwOTkwMDA3MDA5MzMw.X4g7eA.VGtQzkr36_i535EDvcOUlJZNNg0",
     "bot_name": "Yukki",
     "bot_prefix": "Юкки, ",
     "log_channel": 766218369279852554,  # ID-канала для отправки лога оповещений бота

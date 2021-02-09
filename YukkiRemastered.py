@@ -1,7 +1,4 @@
 ##### POWERED BY NeverMind#4082 #################################################
-import asyncio
-import random
-from io import BytesIO
 
 import discord
 import os
@@ -14,43 +11,9 @@ queue = []
 PREFIX = bot_settings['bot_prefix']
 TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
+error_logs = yukki.get_channel(bot_settings['system_log_channel'])
 yukki.remove_command("help")
 
-error_logs = yukki.get_channel(bot_settings['system_log_channel'])
-
-
-@yukki.command()
-async def test(ctx):
-    files = []
-    text = 'На рассмотрении...'
-    text2 = 'Рассмотрена.'
-    for file in ctx.message.attachments:
-        fp = BytesIO()
-        await file.save(fp)
-        files.append(discord.File(fp, filename=file.filename, spoiler=file.is_spoiler()))
-
-    embed = discord.Embed(title="Жалоба 💬",
-                          color=discord.Color.from_rgb(random.randint(1, 255),
-                                                       random.randint(1, 255),
-                                                       random.randint(1, 255)))
-    embed.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
-    embed.add_field(name='__**Состояние**__:', value=text, inline=False)
-    embed.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
-
-    embed.set_image(url=f"attachment://{files[0].filename}")
-    msg = await ctx.send(embed=embed, files=files)
-    await asyncio.sleep(1)
-    embed1 = discord.Embed(title="Жалоба 💬",
-                          color=discord.Color.from_rgb(random.randint(1, 255),
-                                                       random.randint(1, 255),
-                                                       random.randint(1, 255)))
-    embed1.add_field(name='__**Выдана**__:', value=ctx.author.mention, inline=False)
-    embed1.add_field(name='__**Состояние**__:', value=text2, inline=False)
-    embed1.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
-
-    embed1.set_image(url=f"attachment://{files[0].filename}")
-
-    await msg.edit(embed=embed1)
 
 # ----------------------------- #
 #         YUKKI COGS            #
@@ -65,14 +28,14 @@ async def load(ctx, extensions):
 @commands.has_permissions(administrator=True)
 async def unload(ctx, extensions):
     yukki.unload_extension(f'cogs.{extensions}')
-    await ctx.send("Yukki unloaded success!")
+    await ctx.send("Shutting down. . .")
 
 
 # @yukki.command()  # Reload command
 # async def reload(ctx, extensions):
 #    yukki.unload_extension(f'cogs.{extensions}')
 #    yukki.load_extension(f'cogs.{extensions}')
-#    await ctx.send("Yukki reloaded success!")
+#    await ctx.send("Yukki reloaded!")
 
 
 # @yukki.command()
@@ -185,4 +148,4 @@ try:
 except:
     print(bot_initialize['token_error'])
 finally:
-    pass
+    print("Ошибка при запуске Юкки.")
