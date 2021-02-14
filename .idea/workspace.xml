@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_report.py reactions edited.">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes">
+      <change afterPath="$PROJECT_DIR$/cogs/development/member_activity.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/moderation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/private_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/private_room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/verification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Python File" />
       </list>
     </option>
   </component>
@@ -60,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -400,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611852741348</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Some changes">
+      <created>1612864681959</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1612864681959</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -437,7 +440,6 @@
     <MESSAGE value="Read README.md" />
     <MESSAGE value="Important changes in user_report.py" />
     <MESSAGE value="сhanges" />
-    <MESSAGE value="Some changes" />
     <MESSAGE value="Some important changes" />
     <MESSAGE value="Any changes" />
     <MESSAGE value="cleanup" />
@@ -446,6 +448,7 @@
     <MESSAGE value="user_report changes" />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="user_report.py reactions edited." />
-    <option name="LAST_COMMIT_MESSAGE" value="user_report.py reactions edited." />
+    <MESSAGE value="Some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes" />
   </component>
 </project>
