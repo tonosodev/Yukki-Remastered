@@ -56,7 +56,7 @@ class ConnectCog(commands.Cog):
             while True:
                 await self.bot.change_presence(status=discord.Status.online,
                                                activity=discord.Game(random.choice(activity_status_game), type=3))
-                await asyncio.sleep(15)
+                await asyncio.sleep(15)  # Thread time
                 await self.bot.change_presence(status=discord.Status.idle,
                                                activity=discord.Activity(name=random.choice(activity_status_competes), type=5))
                 await asyncio.sleep(15)

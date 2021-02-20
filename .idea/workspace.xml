@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Added member_activity.py">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New bot activity system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/development/member_activity.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/member_activity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/events/on_ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_ready.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -413,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613332063251</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="New bot activity system">
+      <created>1613830087903</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1613830087903</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -460,6 +465,7 @@
     <MESSAGE value="user_report.py reactions edited." />
     <MESSAGE value="Some changes" />
     <MESSAGE value="Added member_activity.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added member_activity.py" />
+    <MESSAGE value="New bot activity system" />
+    <option name="LAST_COMMIT_MESSAGE" value="New bot activity system" />
   </component>
 </project>

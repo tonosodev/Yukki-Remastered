@@ -17,7 +17,7 @@ class UserReport(commands.Cog):
     async def report(self, ctx, member: discord.Member = None, *, reason=None):
         logs = self.bot.get_channel(bot_settings['report_channel'])
         load_variable = await ctx.reply(f"{ctx.author.mention}, пожалуйста, подождите. . .")
-        token = random.randint(0, 999999999)
+        token = random.randint(111111111, 999999999)
         if member is None:
             await load_variable.delete()
             embed = discord.Embed(title="Жалоба ❌",
