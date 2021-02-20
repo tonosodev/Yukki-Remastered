@@ -148,4 +148,4 @@ try:
 except:
     print(bot_initialize['token_error'])
 finally:
-    print("Ошибка при запуске Юкки.")
+    print("Ошибка инициализации Yukki.")

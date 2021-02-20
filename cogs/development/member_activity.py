@@ -93,6 +93,7 @@ class MemberActivityCog(commands.Cog):
                 desc += f"[Маленькая картинка]({current_activity.small_image_url})"
 
         embed = discord.Embed(title="Активность", description=desc, color=0x16b568)
+        embed.set_thumbnail(url=member.activities.large_image_url)
         await ctx.send(embed=embed)
 
 

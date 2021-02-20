@@ -64,8 +64,10 @@ mongo_db = {
 # ===================================================================#
 #                             INITIALIZE                             #
 # ===================================================================#
+activity_status_watch = ["за порядком ☕", "лампочный телевизор"]
+activity_status_game = ["клубок ниток 🧶", "Cuphead"]
+activity_status_competes = ["шахматы", "алфавит"]
 bot_initialize = {
-    "activity_status": "за порядком ☕",
     "cog_load_error": "LOADING ERROR!\nCHECK TROUBLES AND CORRECT CODE!",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",

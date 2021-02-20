@@ -1,7 +1,12 @@
+import asyncio
+
 import discord
+import time
+import random
 from discord.ext import commands
 from pymongo import MongoClient
-from config import mongo_db, bot_initialize
+from config import mongo_db, bot_initialize, activity_status_watch, activity_status_competes, \
+    activity_status_game
 
 
 class ConnectCog(commands.Cog):
@@ -27,9 +32,11 @@ class ConnectCog(commands.Cog):
             cluster = MongoClient(mongo_db['mongo_settings_cluster'])
             db = mongo_db['mongo_settings_db']
             coll = mongo_db['mongo_settings_coll']
-            print("\n##################################################\n" + bot_initialize['mongo_success_notification'] + "\n##################################################\n")
+            print("\n##################################################\n" + bot_initialize[
+                'mongo_success_notification'] + "\n##################################################\n")
         except:
-            print("\n##################################################\n" + bot_initialize['mongo_error_notification'] + "\n##################################################\n")
+            print("\n##################################################\n" + bot_initialize[
+                'mongo_error_notification'] + "\n##################################################\n")
         finally:
             pass
 
@@ -38,17 +45,29 @@ class ConnectCog(commands.Cog):
         # ----------------------------- #
 
         # await self.bot.change_presence(status=discord.Status.online, activity=discord.Game('клубок ниток 🧶', type=3))
-        status_msg = bot_initialize['activity_status']
+
+        # status_msg = bot_initialize['activity_status']
+
         try:
-            await self.bot.change_presence(
-                activity=discord.Activity(type=discord.ActivityType.watching, name=str(status_msg)))
             print("\n##################################################\n" + bot_initialize['activity_status_success'])
+            print('[SUCCESS] Discord.py version ' + (
+                str(discord.__version__)) + " | " + bot_initialize[
+                      'discord_py_version'] + "\n##################################################\n")
+            while True:
+                await self.bot.change_presence(status=discord.Status.online,
+                                               activity=discord.Game(random.choice(activity_status_game), type=3))
+                await asyncio.sleep(15)
+                await self.bot.change_presence(status=discord.Status.idle,
+                                               activity=discord.Activity(name=random.choice(activity_status_competes), type=5))
+                await asyncio.sleep(15)
+                await self.bot.change_presence(
+                    activity=discord.Activity(type=discord.ActivityType.watching, name=random.choice(activity_status_watch)),
+                    status=discord.Status.dnd)
+                await asyncio.sleep(15)
         except:
             print("\n##################################################\n" + bot_initialize['activity_status_error'])
         finally:
             pass
-        print('[SUCCESS] Discord.py version ' + (
-            str(discord.__version__)) + " | " + bot_initialize['discord_py_version'] + "\n##################################################\n")
 
 
 def setup(bot):
