@@ -16,85 +16,83 @@ class MemberActivityCog(commands.Cog):
         self.bot = bot
 
     @commands.command(aliases=member_activity)
-    async def activity(self, ctx, member: discord.Member = None):
-        member = ctx.author if not member else member
-
-        if len(member.activities) <= 0:
-            return await ctx.send("Этот пользователь не играет в игру")
-        current_activity = member.activities[0]
-
-        desc = ""
-
-        if current_activity.type:
-            if current_activity.type == discord.ActivityType.playing:
-                desc += "Тип активности: Игра\n\n"
-
-            elif current_activity.type == discord.ActivityType.streaming:
-                desc += "Тип активности: Стрим\n\n"
-
-            elif current_activity.type == discord.ActivityType.listening and not isinstance(current_activity,
-                                                                                            discord.Spotify):
-                desc += "Тип активности: Музыка\n\n"
-
-            elif current_activity.type == discord.ActivityType.listening and isinstance(current_activity,
-                                                                                        discord.Spotify):
-                desc += "Тип активности: Spotify\n\n"
-
-            elif current_activity.type == discord.ActivityType.watching:
-                desc += "Тип активности: Просмотр\n\n"
-
+    async def __user_info(self, ctx, member: discord.Member = None):
+        def isnitro():
+            if member.premium_since:
+                return f'{member.premium_since.strftime("%d/%m/%Y")}'
             else:
-                desc += "Тип активности: Кастом\n\n"
+                return 'Отсутствует'
 
-        if isinstance(current_activity, discord.CustomActivity):
-            desc += f"Название: {current_activity.name}\n\n"
-            desc += f"Создано: {current_activity.created_at.strftime('%d-%m-%Y %H:%M:%S')}"
+        def isbot():
+            if member.bot:
+                return 'Да'
+            else:
+                return 'Нет'
 
-        if isinstance(current_activity, discord.Spotify):
-            desc += f"Название альбома: {current_activity.album}\n\n"
+        def isnick():
+            if member.nick:
+                return f'{member.nick}'
+            else:
+                return 'без изменений'
 
+        def isactivity():
+            desc = ""
+            if not member.activity:
+                desc += 'Нету статуса'
+            # elif member.activity.name:
+            #    desc += f'{member.activity.name}'
+            else:
+                current_activity = member.activities[0]
+                if current_activity.type:
+                    if current_activity.type == discord.ActivityType.listening and not isinstance(current_activity,
+                                                                                                  discord.Spotify):
+                        desc += "Тип активности: Музыка\n"
+
+                    elif current_activity.type == discord.ActivityType.listening and isinstance(current_activity,
+                                                                                                discord.Spotify):
+                        desc += "Тип активности: Spotify\n"
+                        desc += f"Название трека: {current_activity.title}\n"
+                        desc += f"Название альбома: {current_activity.album}\n"
+                        desc += f"Артисты: {', '.join(current_activity.artists)}\n"
+                        total_seconds = current_activity.duration.seconds
+                        hours = total_seconds // 3600
+                        minutes = (total_seconds - hours * 3600) // 60
+                        seconds = total_seconds - (hours * 3600 + minutes * 60)
+                        desc += f"Продолжительность трека: {hours if str(hours) != '0' else '00'}:{minutes if str(minutes) != '0' else '00'}:{seconds if str(seconds) != '0' else '00'}\n"
+
+
+                    elif current_activity.type == discord.ActivityType.watching:
+                        desc += "Тип активности: Просмотр\n"
+
+                    else:
+                        desc += "Тип активности: Кастом\n"
+                        desc += f"Играет в: {current_activity.name}\n"
+                        desc += f"Создано: {current_activity.created_at.strftime('%d-%m-%Y %H:%M:%S')}"
+            return desc
+
+        if member is None:
+            member = ctx.author
+            embed = discord.Embed(title=f'Информация о {member.name}#{member.discriminator}', color=member.color)
+            embed.add_field(name="ID Юзера:", value=member.id)
+            embed.add_field(name="Ник на сервере:", value=isnick())
+            embed.add_field(name="Присоеденился на сервер:", value=member.joined_at.strftime("%d/%m/%Y"))
+            embed.add_field(name="Бот?", value=isbot())
+            embed.add_field(name="Роли:", value=" ".join(role.mention for role in member.roles[1:]))
+            embed.add_field(name="Высшая роль:", value=member.top_role.mention)
+            embed.add_field(name="Активность:", value=isactivity())
+            embed.add_field(name="Дата получения нитро:", value=isnitro())
+            await ctx.reply(embed=embed)
         else:
-            if current_activity.name:
-                desc += f"Название: {current_activity.name}\n\n"
-
-        if not isinstance(current_activity, discord.Spotify):
-            if current_activity.details:
-                desc += f"Детали: {current_activity.details}\n\n"
-
-            if current_activity.state:
-                desc += f"Состояние: {current_activity.state}\n\n"
-
-        else:
-            desc += f"Артисты: {', '.join(current_activity.artists)}\n\n"
-            total_seconds = current_activity.duration.seconds
-            hours = total_seconds // 3600
-            minutes = (total_seconds - hours * 3600) // 60
-            seconds = total_seconds - (hours * 3600 + minutes * 60)
-            desc += f"Продолжительность трека: {hours if str(hours) != '0' else '00'}:{minutes if str(minutes) != '0' else '00'}:{seconds if str(seconds) != '0' else '00'}\n\n"
-            desc += f"Название трека: {current_activity.title}\n\n"
-
-        if current_activity.start:
-            desc += f"Начал: {current_activity.start.strftime('%d.%m.%Y %H:%M:%S')}\n\n"
-
-        if current_activity.end:
-            desc += f"Закончит: {current_activity.end.strftime('%d.%m.%Y %H:%M:%S')}\n\n"
-
-        if not isinstance(current_activity, discord.Spotify):
-            if current_activity.large_image_text:
-                desc += f"Текст большой картинки: {current_activity.large_image_text}\n\n"
-
-            if current_activity.small_image_text:
-                desc += f"Текст маленькой картинки: {current_activity.small_image_text}\n\n"
-
-            if current_activity.large_image_url:
-                desc += f"[Большая картинка]({current_activity.large_image_url})\n\n"
-
-            if current_activity.small_image_url:
-                desc += f"[Маленькая картинка]({current_activity.small_image_url})"
-
-        embed = discord.Embed(title="Активность", description=desc, color=0x16b568)
-        embed.set_thumbnail(url=member.activities.large_image_url)
-        await ctx.send(embed=embed)
+            embed = discord.Embed(title=f'Информация о {member.name}#{member.discriminator}', color=member.color)
+            embed.add_field(name="ID Юзера:", value=member.id)
+            embed.add_field(name="Ник на сервере:", value=isnick())
+            embed.add_field(name="Присоеденился на сервер:", value=member.joined_at.strftime("%d/%m/%Y"))
+            embed.add_field(name="Бот?", value=isbot())
+            embed.add_field(name="Роли:", value=" ".join(role.mention for role in member.roles[1:]))
+            embed.add_field(name="Высшая роль:", value=member.top_role.mention)
+            embed.add_field(name="Активность:", value=isactivity())
+            embed.add_field(name="Дата получения нитро:", value=isnitro())
+            await ctx.reply(embed=embed)
 
 
 def setup(bot):
