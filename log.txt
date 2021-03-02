@@ -6,6 +6,205 @@
 [ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
 [ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!569156098708209684>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Spotify' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!569156098708209684>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Spotify' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197> | {Nedo} Dev
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'tuple' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: TPABOMAH
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> sam ueban
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'tuple' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'tuple' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Game' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!298162910885314561>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: tuple index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: Artificial Intelligence
+[ERROR] Команда: Юкки, активность <@!298162910885314561>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!298162910885314561>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'start'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'start'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_text'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197> | {Nedo} Dev
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'tuple' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!298162910885314561>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'start'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'start'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_text'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'tuple' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Spotify' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Spotify' object has no attribute 'large_image_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'large_image_text'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: isinstance() arg 2 must be a type or tuple of types
+...
+[АВТОРИЗАЦИЯ] Пользователь DenyS#1469 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[АВТОРИЗАЦИЯ] Пользователь PosReady NT | Dev#5277 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, get_guild
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: get_guild() missing 1 required positional argument: 'id'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, translate ru Teitoku, to access this commands for 16 hours, pleave vote for me at ru
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: translate() missing 1 required positional argument: 'self'
+...
+[ERROR] Пользователь: NeverMind
 [ERROR] Команда: Юкки, репорт <@!519877715361398796> | {Nedo} Dev | {Nedo} Dev | {Nedo} Dev  1
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
@@ -24,4 +223,92 @@
 [ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'CustomActivity' object has no attribute 'details'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'strftime'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'strftime'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, серверинфо
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: KeyError: 'Состояние серверов'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, серверинфо
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: can only concatenate str (not "dict") to str
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, серверинфо
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: 'Embed' object is not subscriptable
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'strftime'
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, статистика
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, статистика
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'display_name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, статистика
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, статистика
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, статистика
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NameError: name 'embed_self' is not defined
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embed.fields.1.value: This field is required
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, переведи ru hello world
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: translate() missing 1 required positional argument: 'self'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, слот
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
 ...

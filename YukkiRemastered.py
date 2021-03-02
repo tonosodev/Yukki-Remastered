@@ -2,6 +2,7 @@
 
 import discord
 import os
+import requests
 
 from discord.ext import commands
 from discord.ext.commands import when_mentioned_or
@@ -13,6 +14,18 @@ TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
 error_logs = yukki.get_channel(bot_settings['system_log_channel'])
 yukki.remove_command("help")
+
+
+@yukki.command(aliases=['обними'])
+async def hug(ctx, user: discord.Member):  # b'\xfc'
+    await ctx.message.delete()
+    r = requests.get("https://nekos.life/api/v2/img/hug")
+    res = r.json()
+    embed = discord.Embed(description=f'{ctx.message.author.mention} обнимает {user.mention} 💜')
+    embed.set_image(url=res['url'])
+    embed.set_footer(text=f'{yukki.user.name}' + bot_initialize['embeds_footer_message'],
+                     icon_url=yukki.user.avatar_url)
+    await ctx.send(embed=embed)
 
 
 # ----------------------------- #
@@ -31,11 +44,11 @@ async def unload(ctx, extensions):
     await ctx.send("Shutting down. . .")
 
 
-# @yukki.command()  # Reload command
-# async def reload(ctx, extensions):
-#    yukki.unload_extension(f'cogs.{extensions}')
-#    yukki.load_extension(f'cogs.{extensions}')
-#    await ctx.send("Yukki reloaded!")
+@yukki.command()  # Reload command
+async def reload(ctx, extensions):
+    yukki.unload_extension(f'cogs.{extensions}')
+    yukki.load_extension(f'cogs.{extensions}')
+    await ctx.send("Yukki reloaded!")
 
 
 # @yukki.command()
@@ -56,6 +69,10 @@ try:
     for filename in os.listdir('./cogs/commands'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.commands.{filename[:-3]}')
+
+    for filename in os.listdir('./cogs/administration_commands'):
+        if filename.endswith('.py'):
+            yukki.load_extension(f'cogs.administration_commands.{filename[:-3]}')
 
     for filename in os.listdir('./cogs/events'):
         if filename.endswith('.py'):

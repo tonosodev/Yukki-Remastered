@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New bot activity system">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Cleanup">
+      <change afterPath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/development/member_info.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logo.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/say.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/slowmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/slowmode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/translate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/virtual_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/virtual_memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/bot_status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/member_activity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/economy/slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/economy/slot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/events/on_ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_ready.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +72,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="discord-application" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\development" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\phrases" />
     </key>
   </component>
   <component name="RunManager">
@@ -418,7 +433,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613830087903</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Cleanup">
+      <created>1613836694264</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1613836694264</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -461,11 +483,32 @@
     <MESSAGE value="Recovery editing" />
     <MESSAGE value="Cleanup and some changes" />
     <MESSAGE value="user_report changes" />
-    <MESSAGE value="Cleanup" />
     <MESSAGE value="user_report.py reactions edited." />
     <MESSAGE value="Some changes" />
     <MESSAGE value="Added member_activity.py" />
     <MESSAGE value="New bot activity system" />
-    <option name="LAST_COMMIT_MESSAGE" value="New bot activity system" />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/member_info.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/member_info.py</url>
+          <line>83</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

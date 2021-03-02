@@ -20,12 +20,13 @@ class SlotCog(commands.Cog):
         logs = self.bot.get_channel(slot['slot_notification_channel'])
         member = discord.Member
 
-        parrot = ':gem:'  # Эмодзи совпадения слотпинов
+        parrot = '<a:shard_3:816330981908807711>'  # Эмодзи совпадения слотпинов
         slotspin = ':purple_heart:'  # Эмодзи слотпинов (начальные)
-        slots = ['<:s_leaf:769180703916687371>', '<:s_leaf:769180703916687371>', '<:s_leaf:769180703916687371>',
-                 '<:s_flowers:769180731631992832>', '<:s_forest:769180705354678292>', '<:s_tomato:769185902986788874>',
-                 '<:s_lime:769185042819317790>', '<:s_lime:769185042819317790>', '<:s_lime:769185042819317790>',
-                 '<:s_lime:769185042819317790>', '<:s_lime:769185042819317790>', '<:s_lime:769185042819317790>']
+        coin = '<:yukki_dollar:816330956137824266>'
+        slots = ['<:slotpin3:816335798592471092>', '<:slotpin3:816335798592471092>', '<:slotpin3:816335798592471092>',
+                 '<:slotpin5:816335802778255430>', '<:slotpin4:816335799427268630>', '<:slotpin1:816335796092403762>',
+                 '<:slotpin2:816335796922875945>', '<:slotpin2:816335796922875945>', '<:slotpin2:816335796922875945>',
+                 '<:slotpin2:816335796922875945>', '<:slotpin2:816335796922875945>', '<:slotpin2:816335796922875945>']
         slot1 = slots[random.randint(0, 11)]
         slot2 = slots[random.randint(0, 11)]
         slot3 = slots[random.randint(0, 11)]
@@ -36,6 +37,7 @@ class SlotCog(commands.Cog):
         slot7 = slots[random.randint(0, 11)]
         slot8 = slots[random.randint(0, 11)]
         slot9 = slots[random.randint(0, 11)]
+        slot10 = slots[random.randint(0, 11)]
         slot10 = slots[random.randint(0, 11)]
         slot11 = slots[random.randint(0, 11)]
         slot12 = slots[random.randint(0, 11)]
@@ -111,43 +113,43 @@ class SlotCog(commands.Cog):
             slot16, parrot, slot18, slot19, slot20, parrot, slot22, slot23, slot24, slot25)
 
         msg = await ctx.send(
-                "{}\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>".format(
-                    slotOutput1, ctx.message.author.mention))
+            "{}\n {}, рулетка запущенна!\nС Вашего счета списано 80 {}".format(
+                slotOutput1, ctx.message.author.mention, coin))
 
         await asyncio.sleep(2)
         await msg.edit(
-            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущена!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>'.format(
+            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущена!\nС Вашего счета списано 80 {}'.format(
                 slot1, slotspin, slotspin, slotspin, slotspin, slot6, slotspin, slotspin, slotspin, slotspin, slot11,
                 slotspin, slotspin, slotspin, slotspin, slot16, slotspin, slotspin, slotspin, slotspin, slot21,
                 slotspin,
-                slotspin, slotspin, slotspin, ctx.message.author.mention))
+                slotspin, slotspin, slotspin, ctx.message.author.mention, coin))
         await asyncio.sleep(2)
         await msg.edit(
-            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущена!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>'.format(
+            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущена!\nС Вашего счета списано 80 {}'.format(
                 slot1, slot2, slotspin, slotspin, slotspin, slot6, slot7, slotspin, slotspin, slotspin, slot11, slot12,
                 slotspin, slotspin, slotspin, slot16, slot17, slotspin, slotspin, slotspin, slot21, slot22, slotspin,
-                slotspin, slotspin, ctx.message.author.mention))
+                slotspin, slotspin, ctx.message.author.mention, coin))
         await asyncio.sleep(2)
         await msg.edit(
-            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>'.format(
+            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 {}'.format(
                 slot1, slot2, slot3, slotspin, slotspin, slot6, slot7, slot8, slotspin, slotspin, slot11, slot12,
                 slot13,
                 slotspin, slotspin, slot16, slot17, slot18, slotspin, slotspin, slot21, slot22, slot23, slotspin,
                 slotspin,
-                ctx.message.author.mention))
+                ctx.message.author.mention, coin))
         await asyncio.sleep(2)
         await msg.edit(
-            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>'.format(
+            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 {}'.format(
                 slot1, slot2, slot3, slot4, slotspin, slot6, slot7, slot8, slot9, slotspin, slot11, slot12, slot13,
                 slot14,
                 slotspin, slot16, slot17, slot18, slot19, slotspin, slot21, slot22, slot23, slot24, slotspin,
-                ctx.message.author.mention))
+                ctx.message.author.mention, coin))
         await asyncio.sleep(2)
         await msg.edit(
-            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 <:Yukki_Dollar:769711177826566144>'.format(
+            content='| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n {}, рулетка запущенна!\nС Вашего счета списано 80 {}'.format(
                 slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14,
                 slot15, slot16, slot17, slot18, slot19, slot20, slot21, slot22, slot23, slot24, slot25,
-                ctx.message.author.mention))
+                ctx.message.author.mention, coin))
 
         if slot1 == slot2 == slot3 == slot4 == slot5:
             await msg.edit(
@@ -157,7 +159,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -170,7 +172,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -182,7 +184,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -194,7 +196,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -206,7 +208,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -218,7 +220,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -230,7 +232,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -242,7 +244,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -254,7 +256,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -266,7 +268,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -278,7 +280,7 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
@@ -290,14 +292,14 @@ class SlotCog(commands.Cog):
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
             emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** <:Yukki_Dollar:769711177826566144>'.format(random_reward))
+                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
             emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         else:
             await msg.edit(
-                content="{}\n {}, Вы проиграли и потеряли стартовый капитал в 80 <:Yukki_Dollar:769711177826566144>".format(
-                    slotOutput, ctx.message.author.mention),
+                content="{}\n {}, Вы проиграли и потеряли стартовый капитал в 80 {}".format(
+                    slotOutput, ctx.message.author.mention, coin),
                 delete_after=10)
 
 

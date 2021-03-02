@@ -114,53 +114,51 @@ class UserReport(commands.Cog):
                     await ctx.author.send(embed=embed_success)
 
                     msg = await logs.send(embed=embed, files=files)
+                    warn_reaction = await msg.add_reaction("‼")
+                    mute_reaction = await msg.add_reaction("🔇")
+                    kick_reaction = await msg.add_reaction("🔥")
+                    ban_reaction = await msg.add_reaction("📛")
                     close_ticket_reaction = await msg.add_reaction("❌")
 
                     def check(reaction, user):
                         are_same_messages = reaction.message.channel == msg.channel and reaction.message.id == msg.id
                         guild_id = self.bot.get_guild(766213910595633153)
-                        return user == ctx.guild.owner and str(reaction.emoji) == '❌' and are_same_messages
+                        return user == ctx.author and str(reaction.emoji) == '❌' and are_same_messages and guild_id
 
                     try:
-                        reaction, user = await self.bot.wait_for('reaction_add', timeout=86400.0, check=check)
+                        reaction, user = await self.bot.wait_for('reaction_add', timeout=30.0, check=check)
                     except asyncio.TimeoutError:
                         await logs.send(f'Время на обработку заявки **#{str(token)}** вышло!')
                     else:
-                        if user is not ctx.guild.owner:
-                            await reaction.remove(user)
-                        else:
-                            # Редактирование основного эмбеда в случае отмены жалобы
 
-                            files = []
-                        for file in ctx.message.attachments:
-                            fp = BytesIO()
-                            await file.save(fp)
-                            files.append(discord.File(fp, filename=file.filename, spoiler=file.is_spoiler()))
+                        # Редактирование основного эмбеда в случае отмены жалобы
 
-                            embed_report_success = discord.Embed(title="Жалоба 💬",
-                                                                 color=discord.Color.from_rgb(random.randint(1, 255),
-                                                                                              random.randint(1, 255),
-                                                                                              random.randint(1, 255)))
-                            embed_report_success.add_field(name='__**Заявитель**__:', value=ctx.author.mention,
-                                                           inline=False)
-                            embed_report_success.add_field(name='__**Состояние**__:', value='Рассмотрена.',
-                                                           inline=False)
-                            embed_report_success.add_field(name='__**Решение**__:',
-                                                           value='Заявка **закрыта**.\n__**Наказание:**__ \n||Вынесено.||')
-                            embed_report_success.add_field(name='__**Нарушитель**__:', value=member.mention,
-                                                           inline=False)
-                            embed_report_success.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
-                            embed_report_success.add_field(name='__**Уникальный номер**__:', value='#' + str(token),
-                                                           inline=False)
-                            embed_report_success.add_field(name='__**Причина**__:', value=reason, inline=False)
-                            embed_report_success.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
+                        files = []
+                    for file in ctx.message.attachments:
+                        fp = BytesIO()
+                        await file.save(fp)
+                        files.append(discord.File(fp, filename=file.filename, spoiler=file.is_spoiler()))
 
-                            embed_report_success.set_image(url=f"attachment://{files[0].filename}")
-                            embed_report_success.set_footer(
-                                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
-                                icon_url=self.bot.user.avatar_url)
-                            await msg.edit(embed=embed_report_success)
-                            await msg.clear_reactions()
+                        embed_report_success = discord.Embed(title="Жалоба 💬",
+                                                             color=discord.Color.from_rgb(random.randint(1, 255),
+                                                                                          random.randint(1, 255),
+                                                                                          random.randint(1, 255)))
+                        embed_report_success.add_field(name='__**Заявитель**__:', value=ctx.author.mention, inline=False)
+                        embed_report_success.add_field(name='__**Состояние**__:', value='Рассмотрена.', inline=False)
+                        embed_report_success.add_field(name='__**Решение**__:', value='Заявка **отклонена**.\n__**Наказание:**__ \n||Не вынесено.||')
+                        embed_report_success.add_field(name='__**Нарушитель**__:', value=member.mention, inline=False)
+                        embed_report_success.add_field(name='__**ID Нарушителя**__:', value=member.id, inline=False)
+                        embed_report_success.add_field(name='__**Уникальный номер**__:', value='#' + str(token),
+                                                       inline=False)
+                        embed_report_success.add_field(name='__**Причина**__:', value=reason, inline=False)
+                        embed_report_success.add_field(name='__**Вложение**__:', value='Прикреплено.', inline=False)
+
+                        embed_report_success.set_image(url=f"attachment://{files[0].filename}")
+                        embed_report_success.set_footer(
+                            text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                            icon_url=self.bot.user.avatar_url)
+                        await msg.edit(embed=embed_report_success)
+                        await msg.clear_reactions()
 
                 except:
                     await load_variable.delete()
