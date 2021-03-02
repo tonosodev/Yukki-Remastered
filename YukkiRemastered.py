@@ -2,7 +2,6 @@
 
 import discord
 import os
-import requests
 
 from discord.ext import commands
 from discord.ext.commands import when_mentioned_or
@@ -12,55 +11,12 @@ queue = []
 PREFIX = bot_settings['bot_prefix']
 TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
-error_logs = yukki.get_channel(bot_settings['system_log_channel'])
 yukki.remove_command("help")
-
-
-@yukki.command(aliases=['обними'])
-async def hug(ctx, user: discord.Member):  # b'\xfc'
-    await ctx.message.delete()
-    r = requests.get("https://nekos.life/api/v2/img/hug")
-    res = r.json()
-    embed = discord.Embed(description=f'{ctx.message.author.mention} обнимает {user.mention} 💜')
-    embed.set_image(url=res['url'])
-    embed.set_footer(text=f'{yukki.user.name}' + bot_initialize['embeds_footer_message'],
-                     icon_url=yukki.user.avatar_url)
-    await ctx.send(embed=embed)
 
 
 # ----------------------------- #
 #         YUKKI COGS            #
 # ----------------------------- #
-@yukki.command()  # Load command
-async def load(ctx, extensions):
-    yukki.load_extension(f'cogs.{extensions}')
-    await ctx.send("Yukki loaded success!")
-
-
-@yukki.command()  # Unload command
-@commands.has_permissions(administrator=True)
-async def unload(ctx, extensions):
-    yukki.unload_extension(f'cogs.{extensions}')
-    await ctx.send("Shutting down. . .")
-
-
-@yukki.command()  # Reload command
-async def reload(ctx, extensions):
-    yukki.unload_extension(f'cogs.{extensions}')
-    yukki.load_extension(f'cogs.{extensions}')
-    await ctx.send("Yukki reloaded!")
-
-
-# @yukki.command()
-# async def welcome(ctx):
-#    emb = discord.Embed(color=0xFF69B4)
-#    emb.set_image(url="https://imagizer.imageshack.com/v2/xq90/924/94Box3.png")
-#    await ctx.send(embed=emb)
-#    a = await ctx.send(
-#        "```fix\nПройдите быструю верификацию кликнув на эмодзи под данным сообщением, чтобы получить доступ к основному функционалу сервера!\n```")
-#    await a.add_reaction('<a:verify:768537178221051944>')
-
-
 try:
     for filename in os.listdir('./cogs'):
         if filename.endswith('.py'):

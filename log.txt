@@ -312,3 +312,128 @@ In embed.fields.1.value: This field is required
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: TPABOMAH
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '*./cogs/'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NameError: name 'ext' is not defined
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'int' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: edit() takes 1 positional argument but 2 were given
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, reload
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: clear_reaction() missing 1 required positional argument: 'emoji'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, обними <@!569156098708209684>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "user".
+...

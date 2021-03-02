@@ -88,8 +88,9 @@ class MemberActivityCog(commands.Cog):
                                       inline=False)
             embed_self_info.add_field(name="__**Высшая роль**__:", value=member.top_role.mention, inline=True)
             embed_self_info.add_field(name="__**Текущая активность**__:", value=isactivity(), inline=False)
-            embed_self_info.add_field(name="__**Присоеденился**__:", value=member.joined_at.strftime("%d/%m/%Y"),
+            embed_self_info.add_field(name="__**Присоеденился**__:", value=f"{str(member.joined_at)[:16]}",
                                       inline=True)
+            embed_self_info.add_field(name="__**Аккаунт создан**__:", value=f"{str(member.created_at)[:16]}", inline=False),
             embed_self_info.add_field(name="__**ID пользователя**__:", value=f"||{member.id}||", inline=False)
             # embed.add_field(name="Бот?", value=isbot())
             embed_self_info.add_field(name="__**Дата получения Nitro**__:", value=isnitro(), inline=True)
@@ -101,9 +102,10 @@ class MemberActivityCog(commands.Cog):
 
             embed_self_stats = discord.Embed(title=f"Статистика пользователя {member.name}#{member.discriminator}",
                                              color=member.color)
-            embed_self_stats.add_field(name="__**Баланс**__:", value='None <:yukki_dollar:816330956137824266>', inline=False)
+            embed_self_stats.add_field(name="__**Баланс**__:", value='None <:yukki_dollar:816330956137824266>',
+                                       inline=False)
             embed_self_stats.add_field(name="__**Достижения**__:", value='None', inline=False)
-            embed_self_stats.add_field(name="__**Предупреждений**__:", value='None', inline=False)
+            embed_self_stats.add_field(name="__**Предупреждений**__:", value='None / None', inline=False)
             embed_self_stats.set_thumbnail(url=member.avatar_url)
 
             #

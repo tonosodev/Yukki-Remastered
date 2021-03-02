@@ -88,48 +88,40 @@ bot_initialize = {
 # ===================================================================#
 #                             PERMISSIONS                            #
 # ===================================================================#
+owner = 766231587104620554
+support = 766233124681547776
+head_tech_spec = 766293535832932392
+sponsor = 791227395331457047
+member = 766232996285775903
+
 commands_permission = {
-    "reload_command_permission": [766231587104620554],
-    "recovery_command_permission": [766231587104620554],
+    "recovery_command_permission": [owner, head_tech_spec],
     # ==========================
-    "ping_permission": [766293535832932392, 766233124681547776, 766231587104620554],
-    "virtual_ram_permission": [766293535832932392, 766233124681547776, 766231587104620554],
-    "server_status_permission": [766293535832932392, 766233124681547776, 766231587104620554, 791227395331457047],
-    "say_permission": [766293535832932392, 766233124681547776, 766231587104620554],
+    "server_status_permission": [owner, support, head_tech_spec, sponsor],
+    "say_permission": [owner, support, head_tech_spec],
+    "slowmode_command_permission": [owner, support, head_tech_spec],
     # ==========================
-    "kick_command_permission": [766233124681547776, 766231587104620554],
-    "clear_command_permission": [766233124681547776, 766231587104620554, 766293535832932392, 791227395331457047],
-    "add_role_command_permission": [766233124681547776, 766231587104620554],
-    "remove_role_command_permission": [766233124681547776, 766231587104620554],
-    "ban_command_permission": [766233124681547776, 766231587104620554],
-    "unban_command_permission": [766233124681547776, 766231587104620554],
-    "mute_command_permission": [766233124681547776, 766231587104620554],
-    "unmute_command_permission": [766233124681547776, 766231587104620554],
-    "version_command_permission": [766233124681547776, 766231587104620554, 766293535832932392, 791227395331457047,
-                                   768985670127058985],
+    "kick_command_permission": [owner, support],
+    "clear_command_permission": [owner, support, head_tech_spec, sponsor],
+    "add_role_command_permission": [owner, support],
+    "remove_role_command_permission": [owner, support],
+    "ban_command_permission": [owner, support],
+    "unban_command_permission": [owner, support],
+    "mute_command_permission": [owner, support],
+    "unmute_command_permission": [owner, support],
+    "version_command_permission": [owner, support, head_tech_spec, sponsor, member],
     # ==========================
-    "slot_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                766293535832932392, 766264901479825428],
-    "slowmode_command_permission": [766293535832932392, 766233124681547776, 766231587104620554],
-    "link_cutter_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                       766293535832932392, 766264901479825428],
-    "magicball_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                     766293535832932392, 766264901479825428],
-    "wiki_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                766293535832932392, 766264901479825428],
-    "covid_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                 766293535832932392, 766264901479825428],
-    "avatar_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                  766293535832932392, 766264901479825428],
-    "translate_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                     766293535832932392, 766264901479825428],
-    "user_report_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                       766293535832932392, 766264901479825428],
-    "yt_comment_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                      766293535832932392, 766264901479825428],
+    "slot_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "link_cutter_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "magicball_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "wiki_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "covid_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "avatar_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "translate_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "user_report_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "hug_command_permission": [owner, support, head_tech_spec, sponsor, member],
     # ===========================
-    "help_command_permission": [766232921685622795, 766232996285775903, 766231587104620554, 766233124681547776,
-                                766293535832932392, 766264901479825428],
+    "help_command_permission": [owner, support, head_tech_spec, sponsor, member]
 }
 # ===================================================================#
 #                              ALIASES                               #
@@ -147,7 +139,7 @@ avatar_command_aliases = ['ава', 'Ава', 'аватар', 'Аватар']
 translate_command_aliases = ['переведи', 'перевод', 'Переведи', 'Перевод']
 user_report_command_aliases = ['репорт', 'жалоба', 'зарепорть', 'пожаловаться', 'Репорт', 'Жалоба', 'Зарепортить',
                                'Пожаловаться']
-yt_comment_aliases = ['коммент', 'Коммент', 'комментарий', 'Комментарий']
+hug_command_aliases = ['обними', 'Обними', 'обнимашки', 'Обнимашки', 'обнимаю', 'Обнимаю', 'обниму', 'Обниму']
 member_activity = ['активити', 'Активити', 'активность', 'Активность', 'статистика', 'Статистика']
 # ==========================
 server_status_aliases = ['инфо', 'Инфо', 'серверинфо', 'Серверинфо']
