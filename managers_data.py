@@ -27,7 +27,7 @@ MetaPeace_head_tech_spec_url = {
 }
 
 MetaPeace_supports_url = {
-    "1:url_1": 'https://none',
+    "1:url_1": 'https://vk.com/id626739624',
     "1:url_2": 'https://none',
 
     "2:url_1": 'https://none',

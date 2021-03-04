@@ -147,7 +147,11 @@ class UserReport(commands.Cog):
                                                                  check=lambda react, user:
                                                                  any([role in user.roles for role in roles])
                                                                  and react.message.id == msg.id and str(
-                                                                     react.emoji) in ["<:sys_warn:816798299541078046>", "<:sys_mute:816800250148552735>", "<:sys_kick:816799762245877810>", "<:sys_ban:816797326474739744>", "<:mark:816332017477615698>"])
+                                                                     react.emoji) in ["<:sys_warn:816798299541078046>",
+                                                                                      "<:sys_mute:816800250148552735>",
+                                                                                      "<:sys_kick:816799762245877810>",
+                                                                                      "<:sys_ban:816797326474739744>",
+                                                                                      "<:mark:816332017477615698>"])
                     except asyncio.TimeoutError:
                         return await msg.clear_reactions()
 

@@ -575,3 +575,114 @@ In embed.fields.1.value: This field is required
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'avatar_url'
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'infoimgimg.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: OSError: cannot open resource
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'cogs.pillow.infoimgimg.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: '/cogs/pillow/infoimgimg.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: OSError: cannot open resource
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'str' object has no attribute 'read'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'display_name'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'upload'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member_avatar_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member_avatar_url'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'passport_NeverMind.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Context' object has no attribute 'member'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: ValueError: images do not match
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'paste'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: ValueError: images do not match
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: '.\\pillow\\infoimgimg.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'passport_NeverMind.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'passport_NeverMind.png'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: TypeError: 'member_descriptor' object is not callable
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, user <@!569156098708209684>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embed.image.url: Scheme ".\pillow\members\id569156098708209684.png" is not supported. Scheme must be one of ('http', 'https').
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, user <@!569156098708209684>
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: '.\\pillow\\members\\id569156098708209684.png'
+...
