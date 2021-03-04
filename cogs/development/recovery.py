@@ -1,5 +1,6 @@
 import asyncio
 import os
+import sys
 
 import discord
 from discord.ext import commands
@@ -19,7 +20,7 @@ class RecoveryCog(commands.Cog):
 
         member = discord.Member = "641398600727003197"
         embed_recovery = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
-        embed_recovery.set_thumbnail(url=ctx.author.avatar_url)
+        embed_recovery.set_thumbnail(url=self.bot.user.avatar_url)
 
         embed_recovery.add_field(name='WARNING:',
                                  value="Make sure you are going to make the right choice of action before use.\n"
@@ -41,17 +42,21 @@ class RecoveryCog(commands.Cog):
         await msg.add_reaction("♦")
         await msg.add_reaction("💥")
 
-        def reload_reaction(reaction, user):
-            return user == ctx.message.author and str(reaction.emoji) == '⭕'
-
         try:
-            await self.bot.wait_for('reaction_add', timeout=60.0, check=reload_reaction)
+            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=lambda react,
+                                                                                                user: user.id == ctx.author.id and react.message.id == msg.id and str(
+                react.emoji) in ["⭕", "❌", "♦", "💥"])
         except asyncio.TimeoutError:
-            await msg.clear_reactions()
-        else:
+            return await msg.clear_reactions()
+
+            #
+            # RELOAD REACTION
+            #
+
+        if str(reaction.emoji) == "⭕":
             embed_reload = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
-            embed_reload.set_thumbnail(url=ctx.author.avatar_url)
-            embed_reload.add_field(name="⭕ __**Reload**__", value=f"{ctx.author.mention}, начинаю перезапуск. . .")
+            embed_reload.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_reload.add_field(name="⭕ __**Reload**__", value=f"{ctx.author.mention}, начинаю перезапуск . . .")
             embed_reload.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                                     icon_url=self.bot.user.avatar_url)
 
@@ -66,7 +71,7 @@ class RecoveryCog(commands.Cog):
 
             await msg.edit(embed=embed_reload)
             await msg.clear_reactions()
-            embed = discord.Embed(
+            embed_reloading = discord.Embed(
                 title="Перезапуск. . .",
                 color=0x808080,
                 timestamp=ctx.message.created_at
@@ -77,13 +82,13 @@ class RecoveryCog(commands.Cog):
 
                         self.bot.unload_extension(f'cogs.administration_commands.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.administration_commands.{filename[:-3]}')
-                        embed.add_field(
-                            name=f"[administration_commands] Перезапущено:",
+                        embed_reloading.add_field(
+                            name=f"[administration_commands] Перезапущено: {filename}",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -95,13 +100,13 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f"cogs.commands.{filename[:-3]}")
                         self.bot.load_extension(f"cogs.commands.{filename[:-3]}")
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[commands] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -113,13 +118,13 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f'cogs.events.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.events.{filename[:-3]}')
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[events] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -131,13 +136,13 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f'cogs.economy.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.economy.{filename[:-3]}')
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[economy] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -149,13 +154,13 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f'cogs.development.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.development.{filename[:-3]}')
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[development] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -167,13 +172,13 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f'cogs.phrases.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.phrases.{filename[:-3]}')
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[phrases] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
@@ -185,80 +190,95 @@ class RecoveryCog(commands.Cog):
                     try:
                         self.bot.unload_extension(f'cogs.recovery.{filename[:-3]}')
                         self.bot.load_extension(f'cogs.recovery.{filename[:-3]}')
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"[recovery] Перезапущено:",
                             value=f'`{filename}`',
                             inline=False
                         )
                     except Exception as e:
-                        embed.add_field(
+                        embed_reloading.add_field(
                             name=f"Ошибка при загрузке файла: `{filename}`",
                             value=str(e),
                             inline=False
                         )
                     await asyncio.sleep(0.5)
-        await msg.edit(embed=embed_reload_complete, delete_after=15)
-        print("\n[RECOVERY] System has been reloaded!\n")
-        await system_log.send(embed=embed)
+            await msg.edit(embed=embed_reload_complete, delete_after=15)
+            print("\n[RECOVERY] System has been reloaded!\n")
+            await system_log.send(embed=embed_reloading)
 
-        ############################################################################################################
+            #
+            # SHUTDOWN REACTION
+            #
 
-    """
-        def shutdown_reaction(reaction, user):
-            return user == ctx.message.author and str(reaction.emoji) == '❌'
+        elif str(reaction.emoji) == "❌":
+            embed_shutdown = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_shutdown.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_shutdown.add_field(name="❌ __**Shutdown**__",
+                                     value=f"{ctx.author.mention}, завершение работы . . .\nПри необходимости запустите систему в ручном режиме.")
+            embed_shutdown.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                      icon_url=self.bot.user.avatar_url)
 
-        try:
-            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=shutdown_reaction)
-        except asyncio.TimeoutError:
-            pass
-        else:
-            await ctx.channel.send(ctx.message.author.mention + ", завершение работы...", delete_after=10)
-            await msg.delete()
+            await msg.edit(embed=embed_shutdown)
+            await msg.clear_reactions()
 
-        ############################################################################################################
+            embed_shutdown = discord.Embed(
+                title="Юкки успешно ушла спатки!",
+                description="Ну всё, теперь запуск только ручками...",
+                color=0x808080,
+                timestamp=ctx.message.created_at
+            )
+            await system_log.send(embed=embed_shutdown)
+            sys.exit(0)
 
-        def recovery_reaction(reaction, user):
-            return user == ctx.message.author and str(reaction.emoji) == '♦'
+            #
+            # RECOVERY REACTION
+            #
 
-        try:
-            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=recovery_reaction)
-        except asyncio.TimeoutError:
-            pass
-        else:
-            await ctx.channel.send(ctx.message.author.mention + ", начинаю процесс восстановления...\nПроверьте лог.",
-                                   delete_after=10)
-            await msg.delete()
+        elif str(reaction.emoji) == "♦":
+            embed_recovery = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_recovery.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_recovery.add_field(name="♦ __**Recovery**__",
+                                     value=f"{ctx.author.mention}, начался процесс восстановления конфигурации системы. . .")
+            embed_recovery.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                      icon_url=self.bot.user.avatar_url)
 
-        ############################################################################################################
+            embed_recovery_complete = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_recovery_complete.set_thumbnail(url=ctx.author.avatar_url)
+            embed_recovery_complete.add_field(name="♦ __**Recovery**__",
+                                              value=f"{ctx.author.mention}, восстановление завершено!", inline=False)
+            embed_recovery_complete.add_field(name="__**Совет**__:",
+                                              value="для подробностей проверьте «Журнал Системы».",
+                                              inline=False)
+            embed_recovery_complete.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                               icon_url=self.bot.user.avatar_url)
 
-        def protocol_reaction(reaction, user):
-            return user == ctx.message.author and str(reaction.emoji) == '💥'
+            await msg.edit(embed=embed_recovery)
+            await msg.clear_reactions()
 
-        try:
-            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=protocol_reaction)
-        except asyncio.TimeoutError:
-            pass
-        else:
-            await ctx.channel.send(
-                ctx.message.author.mention + ", ты все же решился?\nПротокол самоуничтожения приведен в исполнение.\nВсего хорошего, папочка...",
-                delete_after=10)
-        await msg.delete()
+            embed_recovering = discord.Embed(
+                title="Восстановление конфигурации системы . . .",
+                description="Файл config.py успешно восстановлен!",
+                color=0x808080,
+                timestamp=ctx.message.created_at
+            )
+            await system_log.send(embed=embed_recovering)
+
+            #
+            # PROTOCOL REACTION
+            #
+
+        elif str(reaction.emoji) == "💥":
+            embed_protocol = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                     value=f"{ctx.author.mention}, начался процесс исполнения 'protocol: Self-Destruction' . . .")
+            embed_protocol.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                                      icon_url=self.bot.user.avatar_url)
+
+            await msg.edit(embed=embed_protocol)
 
 
-#        try:
-#            react_user = await self.bot.wait_for('reaction_add',
-#                                                 check=lambda reaction, react: reaction.emoji == '⭕')
-#            if react_user is member:
-#                await ctx.send(ctx.message.author.id)
-#                await msg.clear_reactions()
-#            else:
-#                await ctx.send("`[REACTION EXCEPTION]`\n__**User not verified!**__")
-#                await msg.clear_reactions()
-#        finally:
-#            await ctx.send("`[REACTION ERROR]`\n__**Global error...**__")
-#            await msg.clear_reactions()
-
-"""
+############################################################################################################
 
 
 def setup(bot):

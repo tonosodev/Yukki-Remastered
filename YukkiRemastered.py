@@ -1,4 +1,5 @@
 ##### POWERED BY NeverMind#4082 #################################################
+import asyncio
 
 import discord
 import os
@@ -12,7 +13,6 @@ PREFIX = bot_settings['bot_prefix']
 TOKEN = bot_settings['bot_token']
 yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
 yukki.remove_command("help")
-
 
 # ----------------------------- #
 #         YUKKI COGS            #
@@ -52,9 +52,7 @@ except:
     # noinspection PyUnboundLocalVariable
     print(
         f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " +
-        bot_initialize[
-            'cog_load_error'] + "\n##################################################\n" + bot_initialize[
-            'copyright_message'])
+        bot_initialize['cog_load_error'] + "\n##################################################\n" + bot_initialize['copyright_message'])
 
 
 # -------------------------------#
@@ -121,4 +119,4 @@ try:
 except:
     print(bot_initialize['token_error'])
 finally:
-    print("Ошибка инициализации Yukki.")
+    print("Ошибка инициализации или иницализация завершения работы Yukki.")

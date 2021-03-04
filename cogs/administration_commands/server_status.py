@@ -15,6 +15,7 @@ class ServerStatusCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
 
+
     @commands.command(aliases=server_status_aliases)
     @commands.has_any_role(*commands_permission['server_status_permission'])
     async def status(self, ctx):
@@ -106,7 +107,7 @@ class ServerStatusCog(commands.Cog):
         embed_server_info.add_field(name=f"__**Уровень буста**__",
                                     value=f"<a:nitro:816330886567034880> **{ctx.guild.premium_tier}** | Бустов: **{ctx.guild.premium_subscription_count}**",
                                     inline=False)
-        embed_server_info.add_field(name=f'__**Сервер {ctx.guild.name}**__',
+        embed_server_info.add_field(name=f'__**Сервер 𝓜𝓮𝓽𝓪𝓟𝓮𝓪𝓬𝓮𝓣𝓮𝓪𝓶®**__',
                                     value="[[**кликните**]](https://discord.gg/VSAcZUX22a)",
                                     inline=True)
         embed_server_info.add_field(name=f"__**Дата создания сервера**__",

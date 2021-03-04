@@ -93,11 +93,11 @@ support = 766233124681547776
 head_tech_spec = 766293535832932392
 sponsor = 791227395331457047
 member = 766232996285775903
-
+debug_server_owner = 816635673175130122
 commands_permission = {
     "recovery_command_permission": [owner, head_tech_spec],
     # ==========================
-    "server_status_permission": [owner, support, head_tech_spec, sponsor],
+    "server_status_permission": [debug_server_owner, owner, support, head_tech_spec, sponsor],
     "say_permission": [owner, support, head_tech_spec],
     "slowmode_command_permission": [owner, support, head_tech_spec],
     # ==========================
@@ -123,6 +123,8 @@ commands_permission = {
     # ===========================
     "help_command_permission": [owner, support, head_tech_spec, sponsor, member]
 }
+user_report_reaction_permission_owner = owner
+user_report_reaction_permission_support = support
 # ===================================================================#
 #                              ALIASES                               #
 # ===================================================================#

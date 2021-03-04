@@ -2,16 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes">
-      <change afterPath="$PROJECT_DIR$/cogs/debug/reload.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/yt_comment.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/hug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/development/member_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/member_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/hug.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/hug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/debug/ping.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/debug/virtual_memory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/private_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/private_room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/recovery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +70,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\development" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\recovery" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
     </key>
   </component>
   <component name="RunManager">
@@ -438,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614705648605</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Some changes">
+      <created>1614723200295</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1614723200295</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -507,24 +516,49 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/cogs/administration_commands/server_status.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
-          <line>49</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
-          <line>67</line>
-          <option name="timeStamp" value="15" />
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>262</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
-          <line>199</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>287</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>321</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>345</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>214</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_report.py</url>
+          <line>228</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/recovery.py</url>
+          <line>236</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -437,3 +437,141 @@ In embed.fields.1.value: This field is required
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Converting to "int" failed for parameter "user".
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, обними <@!601762965636513792>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "user".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, обними <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "user".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, обними <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, сократи https://music.yandex.kz/album/4773281/track/40053564
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: ReadTimeout: HTTPConnectionPool(host='tinyurl.com', port=80): Read timed out. (read timeout=2)
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, обними <@!641398600727003197>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, замуть <@!519877715361398796>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!766270990007009330>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, активность <@!519877715361398796>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'send'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, кикни <@&766231587104620554>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Member "<@&766231587104620554>" not found.
+...
+[ERROR] Пользователь: Ёж
+[ERROR] Команда: Юкки, репорт <@641398600727003197> плохой дев плохой
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> сам поди.
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Converting to "int" failed for parameter "member".
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: PosReady NT | Dev
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> ишо
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[АВТОРИЗАЦИЯ] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] Команда: Юкки, репорт <@!641398600727003197> test
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!298162910885314561>
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: argument of type 'bool' is not iterable
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!569156098708209684> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: argument of type 'bool' is not iterable
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> debug
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, recovery
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'avatar_url'
+...
