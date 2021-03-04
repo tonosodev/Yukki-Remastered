@@ -148,7 +148,7 @@ class MemberActivityCog(commands.Cog):
                                                color=member.color)
             embed_member_stats.add_field(name="__**Баланс**__:", value='None', inline=False)
             embed_member_stats.add_field(name="__**Достижения**__:", value='None', inline=False)
-            embed_member_stats.add_field(name="__**Предупреждений**__:", value='None', inline=False)
+            embed_member_stats.add_field(name="__**Предупреждений**__:", value='None / None', inline=False)
             embed_member_stats.set_thumbnail(url=member.avatar_url)
 
             #
