@@ -4,8 +4,7 @@ import sys
 
 import discord
 from discord.ext import commands
-from config import commands_permission, bot_initialize, bot_settings, user_report_reaction_permission_owner, \
-    recovery_reaction_permission_head_tech, server_roles
+from config import commands_permission, bot_initialize, bot_settings, server_roles
 
 
 class RecoveryCog(commands.Cog):
@@ -43,7 +42,8 @@ class RecoveryCog(commands.Cog):
         await msg.add_reaction("💥")
 
         try:
-            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=lambda react, user:  user.id == ctx.author.id and react.message.id == msg.id and str(
+            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=lambda react,
+                                                                                                user: user.id == ctx.author.id and react.message.id == msg.id and str(
                 react.emoji) in ["⭕", "❌", "♦", "💥"])
         except asyncio.TimeoutError:
             return await msg.clear_reactions()
@@ -333,38 +333,61 @@ class RecoveryCog(commands.Cog):
                 icon_url=self.bot.user.avatar_url)
             await msg.edit(embed=embed_protocol_shutdown_complete)
             await asyncio.sleep(3)
-            embed_protocol_data_send = discord.Embed(
-                title=f"{self.bot.user.name} | Control Panel")
-            embed_protocol_data_send.set_thumbnail(url=self.bot.user.avatar_url)
-            embed_protocol_data_send.add_field(name="💥 __**protocol: Self-Destruction**__",
-                                               value=f"Кэшируем данные запроса протокола и отправляем их разработчику для дальнейшего решения снятия Вашей управляющей роли...\nВпрочем, сделаю это сама.")
-            embed_protocol_data_send.set_footer(
-                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
-                icon_url=self.bot.user.avatar_url)
-            await msg.edit(embed=embed_protocol_data_send)
 
-            head_tech_guild_role = discord.utils.get(user.guild.roles, id=server_roles['tech.support_role'])
-            try:
-                await user.remove_roles(head_tech_guild_role)
-                print(f"[RECOVERY] С пользователя {user} была снята роль {head_tech_guild_role}")
-            except:
-                print(f"[RECOVERY] Невозможно снять роль {head_tech_guild_role} с пользователя {user}.")
+            #
+            # Check, if user is guild owner
+            #
 
-            await ctx.guild.owner.send(
-                f"{user.mention} активировал протокол самоуничтожения Юкки.\nДля обеспечения безопасности с пользователя снята роль.")
-            await asyncio.sleep(10)
+            if user == ctx.guild.owner:
+                embed_protocol_is_owner = discord.Embed(
+                    title=f"{self.bot.user.name} | Control Panel")
+                embed_protocol_is_owner.set_thumbnail(url=self.bot.user.avatar_url)
+                embed_protocol_is_owner.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                  value=f"{user.mention}, папочка, я правда не обижаюсь... <:pappi_sad:792838961201807371>")
+                embed_protocol_is_owner.set_footer(
+                    text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                    icon_url=self.bot.user.avatar_url)
+                await msg.edit(embed=embed_protocol_is_owner)
+                await asyncio.sleep(10)
+                await msg.delete()
 
-            embed_protocol_goodbye = discord.Embed(
-                title=f"{self.bot.user.name} | Control Panel")
-            embed_protocol_goodbye.set_thumbnail(url=self.bot.user.avatar_url)
-            embed_protocol_goodbye.add_field(name="💥 __**protocol: Self-Destruction**__",
-                                             value=f"{user.mention} еще никогда не был так близко к совершению глупости, как в этот раз <:admin_face:769707992891129897>\nПротокол самоуничтожения отменен.\n`Пользователь не найден в списке доверенных лиц.`")
-            embed_protocol_goodbye.set_footer(
-                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
-                icon_url=self.bot.user.avatar_url)
-            await msg.edit(embed=embed_protocol_goodbye)
-            await asyncio.sleep(10)
-            await msg.delete()
+            #
+            # Else check is user is not owner, but having role
+            #
+
+            else:
+                embed_protocol_data_send = discord.Embed(
+                    title=f"{self.bot.user.name} | Control Panel")
+                embed_protocol_data_send.set_thumbnail(url=self.bot.user.avatar_url)
+                embed_protocol_data_send.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                   value=f"Кэшируем данные запроса протокола и отправляем их разработчику для дальнейшего решения снятия Вашей управляющей роли...\nВпрочем, сделаю это сама.")
+                embed_protocol_data_send.set_footer(
+                    text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                    icon_url=self.bot.user.avatar_url)
+                await msg.edit(embed=embed_protocol_data_send)
+
+                head_tech_guild_role = discord.utils.get(user.guild.roles, id=server_roles['tech.support_role'])
+                try:
+                    await user.remove_roles(head_tech_guild_role)
+                    print(f"[RECOVERY] С пользователя {user} была снята роль {head_tech_guild_role}")
+                except:
+                    print(f"[RECOVERY] Невозможно снять роль {head_tech_guild_role} с пользователя {user}.")
+
+                await ctx.guild.owner.send(
+                    f"{user.mention} активировал протокол самоуничтожения Юкки.\nДля обеспечения безопасности с пользователя снята роль.")
+                await asyncio.sleep(10)
+
+                embed_protocol_goodbye = discord.Embed(
+                    title=f"{self.bot.user.name} | Control Panel")
+                embed_protocol_goodbye.set_thumbnail(url=self.bot.user.avatar_url)
+                embed_protocol_goodbye.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                 value=f"{user.mention} еще никогда не был так близко к совершению глупости, как в этот раз <:admin_face:769707992891129897>\nПротокол самоуничтожения отменен.\n`Пользователь не найден в списке доверенных лиц.`")
+                embed_protocol_goodbye.set_footer(
+                    text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                    icon_url=self.bot.user.avatar_url)
+                await msg.edit(embed=embed_protocol_goodbye)
+                await asyncio.sleep(10)
+                await msg.delete()
         ############################################################################################################
 
 
