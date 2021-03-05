@@ -96,7 +96,6 @@ class UserReport(commands.Cog):
                 self.report.reset_cooldown(ctx)
 
             # Отправка эмбеда жалобы
-
             elif reason is not None:
                 try:
                     files = []

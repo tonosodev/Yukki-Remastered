@@ -4,7 +4,8 @@ import sys
 
 import discord
 from discord.ext import commands
-from config import commands_permission, bot_initialize, bot_settings
+from config import commands_permission, bot_initialize, bot_settings, user_report_reaction_permission_owner, \
+    recovery_reaction_permission_head_tech, server_roles
 
 
 class RecoveryCog(commands.Cog):
@@ -15,7 +16,6 @@ class RecoveryCog(commands.Cog):
     @commands.has_any_role(*commands_permission['recovery_command_permission'])
     async def recovery(self, ctx):
         system_log = self.bot.get_channel(bot_settings['system_log_channel'])
-
         await ctx.message.delete()
 
         member = discord.Member = "641398600727003197"
@@ -43,8 +43,7 @@ class RecoveryCog(commands.Cog):
         await msg.add_reaction("💥")
 
         try:
-            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=lambda react,
-                                                                                                user: user.id == ctx.author.id and react.message.id == msg.id and str(
+            reaction, user = await self.bot.wait_for('reaction_add', timeout=60.0, check=lambda react, user:  user.id == ctx.author.id and react.message.id == msg.id and str(
                 react.emoji) in ["⭕", "❌", "♦", "💥"])
         except asyncio.TimeoutError:
             return await msg.clear_reactions()
@@ -268,17 +267,105 @@ class RecoveryCog(commands.Cog):
             #
 
         elif str(reaction.emoji) == "💥":
+            await msg.clear_reactions()
             embed_protocol = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
             embed_protocol.set_thumbnail(url=self.bot.user.avatar_url)
             embed_protocol.add_field(name="💥 __**protocol: Self-Destruction**__",
-                                     value=f"{ctx.author.mention}, начался процесс исполнения 'protocol: Self-Destruction' . . .")
+                                     value=f"{ctx.author.mention}, начался процесс исполнения 'protocol: Self-Destruction'...")
             embed_protocol.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                                       icon_url=self.bot.user.avatar_url)
-
             await msg.edit(embed=embed_protocol)
+            await asyncio.sleep(3)
+            embed_protocol_github_delete = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_github_delete.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_github_delete.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                   value=f"Удаление проекта из репозиториев GitHub...")
+            embed_protocol_github_delete.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_github_delete)
+            await asyncio.sleep(8)
+            embed_protocol_github_delete_complete = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_github_delete_complete.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_github_delete_complete.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                            value=f"Удаление проекта из репозиториев GitHub...\nУспешно!")
+            embed_protocol_github_delete_complete.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_github_delete_complete)
+            await asyncio.sleep(3)
+            embed_protocol_yukki_directory_delete = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_yukki_directory_delete.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_yukki_directory_delete.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                            value=f"Удаление директории ./cogs и конфигурации проекта...")
+            embed_protocol_yukki_directory_delete.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_yukki_directory_delete)
+            await asyncio.sleep(6)
+            embed_protocol_yukki_directory_delete_complete = discord.Embed(
+                title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_yukki_directory_delete_complete.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_yukki_directory_delete_complete.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                                     value=f"Удаление директории ./cogs и конфигурации проекта...\nУспешно!")
+            embed_protocol_yukki_directory_delete_complete.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_yukki_directory_delete_complete)
+            await asyncio.sleep(3)
+            embed_protocol_shutdown = discord.Embed(
+                title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_shutdown.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_shutdown.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                              value=f"Завершение работы перед удалением файла инициализации...")
+            embed_protocol_shutdown.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_shutdown)
+            await asyncio.sleep(5)
+            embed_protocol_shutdown_complete = discord.Embed(
+                title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_shutdown_complete.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_shutdown_complete.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                                       value=f"Завершение работы перед удалением файла инициализации...\nУспешно!")
+            embed_protocol_shutdown_complete.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_shutdown_complete)
+            await asyncio.sleep(3)
+            embed_protocol_data_send = discord.Embed(
+                title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_data_send.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_data_send.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                               value=f"Кэшируем данные запроса протокола и отправляем их разработчику для дальнейшего решения снятия Вашей управляющей роли...\nВпрочем, сделаю это сама.")
+            embed_protocol_data_send.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_data_send)
 
+            head_tech_guild_role = discord.utils.get(user.guild.roles, id=server_roles['tech.support_role'])
+            try:
+                await user.remove_roles(head_tech_guild_role)
+                print(f"[RECOVERY] С пользователя {user} была снята роль {head_tech_guild_role}")
+            except:
+                print(f"[RECOVERY] Невозможно снять роль {head_tech_guild_role} с пользователя {user}.")
 
-############################################################################################################
+            await ctx.guild.owner.send(
+                f"{user.mention} активировал протокол самоуничтожения Юкки.\nДля обеспечения безопасности с пользователя снята роль.")
+            await asyncio.sleep(10)
+
+            embed_protocol_goodbye = discord.Embed(
+                title=f"{self.bot.user.name} | Control Panel")
+            embed_protocol_goodbye.set_thumbnail(url=self.bot.user.avatar_url)
+            embed_protocol_goodbye.add_field(name="💥 __**protocol: Self-Destruction**__",
+                                             value=f"{user.mention} еще никогда не был так близко к совершению глупости, как в этот раз <:admin_face:769707992891129897>\nПротокол самоуничтожения отменен.\n`Пользователь не найден в списке доверенных лиц.`")
+            embed_protocol_goodbye.set_footer(
+                text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                icon_url=self.bot.user.avatar_url)
+            await msg.edit(embed=embed_protocol_goodbye)
+            await asyncio.sleep(10)
+            await msg.delete()
+        ############################################################################################################
 
 
 def setup(bot):

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/cogs/development/pillow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/Fitamint Script.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/Modern_Sans_Light.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/infoimgimg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes and added pillow structure (beta)">
+      <change afterPath="$PROJECT_DIR$/cogs/development/cyberpunk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/development/new_verification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/BlenderPro-Book.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/members/id766270990007009330.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/photo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/member_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/member_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/pillow.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/pillow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,17 +67,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\pillow" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\events" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\recovery" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered" />
     </key>
   </component>
   <component name="RunManager">
@@ -462,7 +468,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614816867169</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Some changes and added pillow structure (beta)">
+      <created>1614834577810</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1614834577810</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -513,23 +526,24 @@
     <MESSAGE value="Some changes" />
     <MESSAGE value="Important recovery.py and user_report.py changes" />
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="Some changes and added pillow structure (beta)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes and added pillow structure (beta)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>127</line>
+          <line>126</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/development/member_info.py</url>
+          <url>file://$PROJECT_DIR$/cogs/commands/member_info.py</url>
           <line>126</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/development/member_info.py</url>
+          <url>file://$PROJECT_DIR$/cogs/commands/member_info.py</url>
           <line>83</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>

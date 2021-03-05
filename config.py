@@ -15,7 +15,8 @@ bot_settings = {
 # ===================================================================#
 verification = {
     "verification_channel_id": 766217891971465216,  # ID-канала для обработки добавления реакции
-    "verification_post_id": 789959038770872341  # ID-поста для обработки добавления реакции
+    "verification_post_id": 789959038770872341,  # ID-поста для обработки добавления реакции
+    "verification_log_id": 767819023178006569
 }
 verification_roles = {
     '<a:verify:768537178221051944>': 766232921685622795  # Verified
@@ -30,10 +31,14 @@ reports = {
 #                               ROLES                                #
 # ===================================================================#
 server_roles = {
+    "everyone_role": 766213910595633153,
     "not_verified_role": 768118967759405056,
     "verified_role": 766232921685622795,
     "member_role": 766232996285775903,
-    "muted_role": 766366691466149898
+    "muted_role": 766366691466149898,
+    "tech.support_role": 766293535832932392,
+    "support_role": 766233124681547776,
+    "owner_role": 766231587104620554
 }
 # ===================================================================#
 #                             ECONOMY                                #
@@ -125,6 +130,8 @@ commands_permission = {
 }
 user_report_reaction_permission_owner = owner
 user_report_reaction_permission_support = support
+recovery_reaction_permission_owner = owner
+recovery_reaction_permission_head_tech = head_tech_spec
 # ===================================================================#
 #                              ALIASES                               #
 # ===================================================================#

@@ -1,3 +1,5 @@
+import time
+
 import discord
 from Cybernator import Paginator
 from discord.ext import commands
@@ -16,6 +18,7 @@ class PillowCog(commands.Cog):
     @commands.command()
     async def user(self, ctx, member: discord.Member = None):
         img = Image.open(r".\pillow\infoimgimg.png")  # READY
+        start_time = time.time()
         # user_img = str(member.avatar_url)[:-10]
 
         # resp = requests.get(user_img, stream=True)
@@ -50,7 +53,7 @@ class PillowCog(commands.Cog):
                       font=font)  # draws info about when the user joined
             img.save(r".\pillow\members\id{}.png".format(str(member.id)))
             await ctx.send(file=discord.File(fp=r".\pillow\members\id{}.png".format(str(member.id))))
-
+            await ctx.send(f"Выполнено за {time.time() - start_time} секунд")
 
 def setup(bot):
     bot.add_cog(PillowCog(bot))
