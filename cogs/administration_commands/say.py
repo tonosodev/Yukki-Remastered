@@ -1,7 +1,7 @@
-from io import BytesIO
-
 import discord
 from discord.ext import commands
+from io import BytesIO
+
 from config import say_command_aliases, commands_permission
 
 

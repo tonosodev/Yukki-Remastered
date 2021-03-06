@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes in recovery.py and added pillow structure (beta)">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes in recovery.py">
+      <change afterPath="$PROJECT_DIR$/pillow/members/id601762965636513792.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/members/id694598900094599198.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/say.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/on_ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_ready.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,13 +137,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00001" summary="- Some changes">
-      <created>1608125673005</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1608125673005</updated>
     </task>
     <task id="LOCAL-00002" summary="- Some changes">
       <created>1608149875080</created>
@@ -471,7 +474,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614925269125</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Some changes in recovery.py">
+      <created>1614946783659</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1614946783659</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,16 +534,12 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="Some changes and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py and added pillow structure (beta)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in recovery.py and added pillow structure (beta)" />
+    <MESSAGE value="Some changes in recovery.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes in recovery.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>126</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/member_info.py</url>
           <line>126</line>
@@ -550,44 +556,44 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>135</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>262</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>287</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>321</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>345</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>214</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>228</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
           <line>236</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/events/verification.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>469</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>224</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>299</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>365</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>530</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>442</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

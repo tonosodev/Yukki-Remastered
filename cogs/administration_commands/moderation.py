@@ -3,6 +3,7 @@ from discord.ext import commands
 from config import bot_initialize, bot_settings, kick_command_aliases, clear_command_aliases, add_role_command_aliases, \
     remove_role_command_aliases, ban_command_aliases, mute_command_aliases, unmute_command_aliases, \
     version_command_aliases, unban_command_aliases, commands_permission, server_roles
+from managers_data import MetaPeace_owner_url
 
 
 class ModerationCog(commands.Cog):
@@ -36,7 +37,9 @@ class ModerationCog(commands.Cog):
                         url="https://imagizer.imageshack.com/img923/8017/ohEwnl.gif")
                     await member.send(embed=embed)
                     await member.send(
-                        f'\n```Если это произошло по ошибке, пожалуйста, успокойтесь и сообщите об этом администрации:``````fix\nDiscord: NeverMind#5885\nVKontakte: https://vk.com/devildesigner\n``````Приносим извинения за инцидент.```')
+                        f'\n```Если Вы считаете, что это произошло по ошибке, пожалуйста, успокойтесь и сообщите об инциденте разработчику:```'
+                        f'```fix\nDiscord: {ctx.guild.owner}\nVKontakte: {MetaPeace_owner_url["vk"]}\n```'
+                        f'```Приносим глубочайшие сожаления.```')
                 except Exception:
                     await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                         description=f'❗️ Не удалось отправить личное сообщение пользователю {member}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n'))
@@ -55,11 +58,15 @@ class ModerationCog(commands.Cog):
                 try:
                     embed = discord.Embed(color=0x8B0000,
                                           title="‼Вас выгнали с сервера\n Meta Peace Team®")
+                    embed.add_field(name="__**Причина блокировки**__:",
+                                    value=str(reason), inline=False)
                     embed.set_image(
                         url="https://imagizer.imageshack.com/img923/8017/ohEwnl.gif")
                     await member.send(embed=embed)
                     await member.send(
-                        f'\n```Если это произошло по ошибке, пожалуйста, успокойтесь и сообщите об этом администрации:``````fix\nDiscord: NeverMind#5885\nVKontakte: https://vk.com/devildesigner\n``````Приносим извинения за инцидент.```\nПричина блокировки:\n**{reason}**')
+                        f'\n```Если Вы считаете, что это произошло по ошибке, пожалуйста, успокойтесь и сообщите об инциденте разработчику:```'
+                        f'```fix\nDiscord: {ctx.guild.owner}\nVKontakte: {MetaPeace_owner_url["vk"]}\n```'
+                        f'```Приносим глубочайшие сожаления.```')
                 except Exception:
                     await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                         description=f'❗️ Не удалось отправить личное сообщение пользователю {member}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n'))
@@ -166,7 +173,9 @@ class ModerationCog(commands.Cog):
                         url="https://imagizer.imageshack.com/img923/8017/ohEwnl.gif")  # Устанавливаем картинку Embed'a
                     await member.send(embed=embed)
                     await member.send(
-                        f'\n```Если блокировка произошла по ошибке, пожалуйста, успокойтесь и сообщите об этом администрации:``````fix\nDiscord: NeverMind#5885\nVKontakte: https://vk.com/devildesigner\n``````Приносим извинения за инцидент.```')
+                        f'\n```Если Вы считаете, что это произошло по ошибке, пожалуйста, успокойтесь и сообщите об инциденте разработчику:```'
+                        f'```fix\nDiscord: {ctx.guild.owner}\nVKontakte: {MetaPeace_owner_url["vk"]}\n```'
+                        f'```Приносим глубочайшие сожаления.```')
                 except Exception:
                     await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                         description=f'❗️ Не удалось отправить личное сообщение пользователю {member}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n'))
@@ -183,11 +192,15 @@ class ModerationCog(commands.Cog):
             try:
                 embed = discord.Embed(color=0x8B0000,
                                       title="‼Вас заблокировали на сервере\n Meta Peace Team®")  # Создание Embed'a
+                embed.add_field(name="__**Причина блокировки**__:",
+                                value=str(reason), inline=False)
                 embed.set_image(
-                    url="https://imagizer.imageshack.com/img923/8017/ohEwnl.gif")  # Устанавливаем картинку Embed'a
+                    url="https://imagizer.imageshack.com/img923/8017/ohEwnl.gif")
                 await member.send(embed=embed)
                 await member.send(
-                    f'\n```Если блокировка произошла по ошибке, пожалуйста, успокойтесь и сообщите об этом администрации:``````fix\nDiscord: NeverMind#5885\nVKontakte: https://vk.com/devildesigner\n``````Приносим извинения за инцидент.```\nПричина блокировки:\n**{reason}**')
+                    f'\n```Если Вы считаете, что это произошло по ошибке, пожалуйста, успокойтесь и сообщите об инциденте разработчику:```'
+                    f'```fix\nDiscord: {ctx.guild.owner}\nVKontakte: {MetaPeace_owner_url["vk"]}\n```'
+                    f'```Приносим глубочайшие сожаления.```')
             except Exception:
                 await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                     description=f'❗️ Не удалось отправить личное сообщение пользователю {member}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n'))

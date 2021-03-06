@@ -381,7 +381,7 @@ class RecoveryCog(commands.Cog):
                     title=f"{self.bot.user.name} | Control Panel")
                 embed_protocol_goodbye.set_thumbnail(url=self.bot.user.avatar_url)
                 embed_protocol_goodbye.add_field(name="💥 __**protocol: Self-Destruction**__",
-                                                 value=f"{user.mention} еще никогда не был так близко к совершению глупости, как в этот раз <:admin_face:769707992891129897>\nПротокол самоуничтожения отменен.\n`Пользователь не найден в списке доверенных лиц.`")
+                                                 value=f"{user.mention} еще никогда не был так близко к совершению глупости, как в этот раз <a:Hehe:817429339615395890>\nПротокол самоуничтожения отменен.\n`Пользователь не найден в списке доверенных лиц.`")
                 embed_protocol_goodbye.set_footer(
                     text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                     icon_url=self.bot.user.avatar_url)

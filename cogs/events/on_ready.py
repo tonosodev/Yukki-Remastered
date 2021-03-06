@@ -18,9 +18,9 @@ class ConnectCog(commands.Cog):
             logo = open("logo.yml", "r", encoding="utf8")
             data = logo.read()
             print(data)
+            logo.close()
         except IOError:
             print(bot_initialize['logo_initialize_error'] + " " + logo.name)
-        finally:
             logo.close()
 
         # ----------------------------- #
@@ -36,16 +36,10 @@ class ConnectCog(commands.Cog):
         except:
             print("\n##################################################\n" + bot_initialize[
                 'mongo_error_notification'] + "\n##################################################\n")
-        finally:
-            pass
 
         # ----------------------------- #
         #        YUKKI ACTIVITY         #
         # ----------------------------- #
-
-        # await self.bot.change_presence(status=discord.Status.online, activity=discord.Game('клубок ниток 🧶', type=3))
-
-        # status_msg = bot_initialize['activity_status']
 
         try:
             print("\n##################################################\n" + bot_initialize['activity_status_success'])
@@ -71,8 +65,6 @@ class ConnectCog(commands.Cog):
         except:
             print("\n##################################################\n" + bot_initialize[
                 'activity_status_error'] + "\n##################################################\n")
-        finally:
-            pass
 
 
 def setup(bot):
