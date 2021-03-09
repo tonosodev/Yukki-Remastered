@@ -24,14 +24,15 @@ class HelpCommandCog(commands.Cog):
         embed1.add_field(name='📡 __**Информация**__:',
                          value=f'Важную к ознакомлению информацию всегда можно найти в следующих каналах:'
                                f'\n**Локальная информация**:'
-                               f'\n{self.bot.get_channel(766217771151261697).mention}'
                                f'\n{self.bot.get_channel(766217874422759434).mention}'
-                               f'\n{self.bot.get_channel(768556053682978816).mention}'
-                               f'\n**Серверные оповещения**:'
                                f'\n{self.bot.get_channel(766213910595633155).mention}'
-                               f'\n{self.bot.get_channel(766213910595633156).mention}'
+                               f'\n{self.bot.get_channel(766217771151261697).mention}'
+                               f'\n**Серверные оповещения**:'
+                               f'\n{self.bot.get_channel(767819023178006569).mention}'
+                               f'\n{self.bot.get_channel(766218369279852554).mention}'
                                f'\n**Советуемое к просмотру**:'
-                               f'\n{self.bot.get_channel(774065006186463283).mention}'
+                               f'\n{self.bot.get_channel(768556053682978816).mention}'
+                               f'\n{self.bot.get_channel(767917902791311370).mention}'
                                f'\n**Спонсоры**:'
                                f'\n{self.bot.get_channel(766217471514247169).mention}',
                          inline=False)

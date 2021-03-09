@@ -761,3 +761,84 @@ In embed.image.url: Scheme ".\pillow\members\id569156098708209684.png" is not su
 [ERROR] Сервер:  Meta Peace Team®
 [ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
 ...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, факт
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'Bot' object has no attribute 'get_from'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: IndexError: list index out of range
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: ValueError: None is not in list
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, помоги
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+...
+[АВТОРИЗАЦИЯ] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+...
+[АВТОРИЗАЦИЯ] Пользователь Ёж#3102 успешно прошел авторизацию!
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, news_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: 'member_descriptor' object is not callable
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: <@!766270990007009330> news_embed
+[ERROR] Сервер:  Yukki Playhouse
+[ERROR] Ошибка:  Command raised an exception: AttributeError: 'NoneType' object has no attribute 'mention'
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, news_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: 'datetime.datetime' object is not subscriptable
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, news_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: descriptor 'strftime' for 'datetime.date' objects doesn't apply to a 'str' object
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, news_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: descriptor 'strftime' for 'datetime.date' objects doesn't apply to a 'str' object
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, news_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: TypeError: descriptor 'date' of 'datetime.datetime' object needs an argument
+...
+[ERROR] Пользователь: NeverMind
+[ERROR] Команда: Юкки, roles_embed
+[ERROR] Сервер:  Meta Peace Team®
+[ERROR] Ошибка:  Command raised an exception: NameError: name 'msg2' is not defined
+...

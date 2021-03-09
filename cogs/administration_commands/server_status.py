@@ -61,11 +61,11 @@ class ServerStatusCog(commands.Cog):
             if region == discord.VoiceRegion.us_west:
                 return ":flag_us: Западная Америка"
             if region == discord.VoiceRegion.vip_amsterdam:
-                return "[VIP] :flag_nl: Амстердам"
+                return ":flag_nl: Амстердам"
             if region == discord.VoiceRegion.vip_us_east:
-                return "[VIP] :flag_us: Востоковая Америка"
+                return ":flag_us: Востоковая Америка"
             if region == discord.VoiceRegion.vip_us_west:
-                return "[VIP] :flag_us: Западная Америка"
+                return ":flag_us: Западная Америка"
             else:
                 return '🏳️ Не знаю'
 
@@ -108,7 +108,7 @@ class ServerStatusCog(commands.Cog):
                                     value=f"<a:nitro:816330886567034880> **{ctx.guild.premium_tier}** | Бустов: **{ctx.guild.premium_subscription_count}**",
                                     inline=False)
         embed_server_info.add_field(name=f'__**Сервер 𝓜𝓮𝓽𝓪𝓟𝓮𝓪𝓬𝓮𝓣𝓮𝓪𝓶®**__',
-                                    value="[[**кликните**]](https://discord.gg/VSAcZUX22a)",
+                                    value="[[**кликните**]](https://discord.gg/m4rCgqV5A2)",
                                     inline=True)
         embed_server_info.add_field(name=f"__**Дата создания сервера**__",
                                     value=f"{ctx.guild.created_at.strftime('%d/%#m/%Y')}")
@@ -183,21 +183,28 @@ class ServerStatusCog(commands.Cog):
 
         embed_system_information = discord.Embed(title='__**Состояние системы**__', color=0x6A5ACD)
         embed_system_information.set_thumbnail(url="https://img.icons8.com/cotton/2x/server.png")
-        embed_system_information.add_field(name='__**Использование CPU**__',
-                                           value=f'💻 Используется:\n **{psutil.cpu_percent()}%**',
+        embed_system_information.add_field(name=
+                                           '__**Использование CPU**__',
+                                           value=
+                                           '💻 Используется:\n **{psutil.cpu_percent()}%**',
                                            inline=True)
 
-        embed_system_information.add_field(name='__**Использование RAM**__',
+        embed_system_information.add_field(name=
+                                           '__**Использование RAM**__',
                                            value=
                                            f'💿 Используется: **{bytes2human(mem.used)} \ {bytes2human(mem.total)}**',
                                            inline=True)
 
-        embed_system_information.add_field(name='__**Задержка системы**__',
-                                           value=f'📡 Ping: **{ping * 1000:.0f}ms**\n'
-                                                 f'`{ping_emoji}`',
+        embed_system_information.add_field(name=
+                                           '__**Задержка системы**__',
+                                           value=
+                                           f'📡 Ping: **{ping * 1000:.0f}ms**\n'
+                                           f'`{ping_emoji}`',
                                            inline=True)
-        embed_system_information.add_field(name="__**Аптайм системы от**__:",
-                                           value=f'🕥 ||{datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%d/%m/%y | %H:%M")}||')
+        embed_system_information.add_field(name
+                                           ="__**Аптайм системы от**__:",
+                                           value=
+                                           f'🕥 ||{datetime.datetime.fromtimestamp(psutil.boot_time()).strftime("%d/%m/%y | %H:%M")}||')
 
         embeds = [embed_server_info, embed_discord_status, embed_system_information]
 

@@ -108,6 +108,8 @@ commands_permission = {
     # ==========================
     "kick_command_permission": [owner, support],
     "clear_command_permission": [owner, support, head_tech_spec, sponsor],
+    "fact_command_permission": [owner, support, head_tech_spec, sponsor, member],
+    "joke_command_permission": [owner, support, head_tech_spec, sponsor, member],
     "add_role_command_permission": [owner, support],
     "remove_role_command_permission": [owner, support],
     "ban_command_permission": [owner, support],
@@ -144,6 +146,8 @@ slowmode_command_aliases = ['слоумод', 'Слоумод', 'медленн�
 virtual_ram_aliases = ['озу', 'ОЗУ', 'RAM']
 wiki_command_aliases = ['вики', 'википедия', 'Вики', 'Википедия', 'педия', 'Педия']
 covid_command_aliases = ['ковид', 'Ковид', 'коронавирус', 'Коронавирус', 'covid', 'Covid']
+fact_command_aliases = ['факт', 'Факт']
+joke_command_aliases = ['шутка', 'Шутка', 'пошути', 'Пошути', 'шуткани', 'Шуткани', 'порофли', 'Порофли']
 avatar_command_aliases = ['ава', 'Ава', 'аватар', 'Аватар']
 translate_command_aliases = ['переведи', 'перевод', 'Переведи', 'Перевод']
 user_report_command_aliases = ['репорт', 'жалоба', 'зарепорть', 'пожаловаться', 'Репорт', 'Жалоба', 'Зарепортить',

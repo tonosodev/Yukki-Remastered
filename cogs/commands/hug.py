@@ -1,3 +1,5 @@
+import random
+
 import discord
 import requests
 
@@ -15,7 +17,9 @@ class HugCommentCog(commands.Cog):
         await ctx.message.delete()
         r = requests.get("https://nekos.life/api/v2/img/hug")
         res = r.json()
-        embed = discord.Embed(description='{} обнимает {} 💜'.format(ctx.author.mention, member.mention))
+        embed = discord.Embed(description='{} обнимает {} 💜'.format(ctx.author.mention, member.mention),
+                              color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
+                                                           random.randint(1, 255)))
         embed.set_image(url=res['url'])
         embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
                          icon_url=self.bot.user.avatar_url)

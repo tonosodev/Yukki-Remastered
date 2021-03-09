@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes in recovery.py">
-      <change afterPath="$PROJECT_DIR$/pillow/members/id601762965636513792.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/members/id694598900094599198.png" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_report.py global update">
+      <change afterPath="$PROJECT_DIR$/cogs/commands/fact.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/commands/joke.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/debug/weekly_colors.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/embeds/news_embed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/embeds/roles2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/say.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/say.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/on_ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_ready.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/recovery/recovery.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/recovery/recovery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/avatar.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/avatar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/hug.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/hug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/new_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/new_verification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,11 +79,11 @@
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\embeds" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\events" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,13 +141,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00002" summary="- Some changes">
-      <created>1608149875080</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1608149875080</updated>
     </task>
     <task id="LOCAL-00003" summary="- Some changes">
       <created>1608207524198</created>
@@ -481,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614946783659</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="user_report.py global update">
+      <created>1615070943913</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1615070943914</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -510,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite." />
     <MESSAGE value="- Any Fixes" />
     <MESSAGE value="- Authorization system ready&#10;- Config adapted" />
     <MESSAGE value="- Any changes" />
@@ -535,7 +538,8 @@
     <MESSAGE value="Some changes and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes in recovery.py" />
+    <MESSAGE value="user_report.py global update" />
+    <option name="LAST_COMMIT_MESSAGE" value="user_report.py global update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -567,7 +571,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>469</line>
+          <line>432</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -582,18 +586,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>365</line>
+          <line>356</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>530</line>
+          <line>501</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>442</line>
+          <line>417</line>
           <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>547</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -45,9 +45,14 @@ try:
     for filename in os.listdir('cogs/phrases'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.phrases.{filename[:-3]}')
+
     for filename in os.listdir('./cogs/recovery'):
         if filename.endswith('.py'):
             yukki.load_extension(f'cogs.recovery.{filename[:-3]}')
+
+    for filename in os.listdir('./cogs/embeds'):
+        if filename.endswith('.py'):
+            yukki.load_extension(f'cogs.embeds.{filename[:-3]}')
 except:
     # noinspection PyUnboundLocalVariable
     print(
