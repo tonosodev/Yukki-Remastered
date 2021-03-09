@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_report.py global update">
-      <change afterPath="$PROJECT_DIR$/cogs/commands/fact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/commands/joke.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/debug/weekly_colors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/embeds/news_embed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/embeds/roles2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/server_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/avatar.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/avatar.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/hug.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/hug.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/development/new_verification.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/new_verification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/phrases/help.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/phrases/help.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/managers_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/managers_data.py" afterDir="false" />
-    </list>
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -141,13 +124,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00003" summary="- Some changes">
-      <created>1608207524198</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1608207524198</updated>
     </task>
     <task id="LOCAL-00004" summary="- Some changes">
       <created>1608253718619</created>
@@ -485,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615070943914</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="Some changes">
+      <created>1615317872573</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1615317872573</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,14 +515,14 @@
     <MESSAGE value="Added member_activity.py" />
     <MESSAGE value="New bot activity system" />
     <MESSAGE value="Cleanup" />
-    <MESSAGE value="Some changes" />
     <MESSAGE value="Important recovery.py and user_report.py changes" />
     <MESSAGE value="Changes" />
     <MESSAGE value="Some changes and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py" />
     <MESSAGE value="user_report.py global update" />
-    <option name="LAST_COMMIT_MESSAGE" value="user_report.py global update" />
+    <MESSAGE value="Some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
