@@ -1,6 +1,4 @@
 ##### POWERED BY NeverMind#4082 #################################################
-import asyncio
-
 import discord
 import os
 
