@@ -34,7 +34,7 @@ class MetaPeaceRolesEmbed(commands.Cog):
         news_channel = ctx.guild.get_channel(766213910595633155)
 
         await ctx.message.delete()
-        await ctx.send(file=discord.File(r".\cogs\embeds\roles2.png"))
+        await ctx.send(file=discord.File(r".\cogs\embeds\roles_animation.gif"))
         msg = await ctx.send(
             # Header
             "<:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>\n\n"

@@ -169,7 +169,7 @@ class UserReport(commands.Cog):
                     ban_reaction = await msg.add_reaction("<:sys_ban:816797326474739744>")
 
                     try:
-                        reaction, manager = await self.bot.wait_for('reaction_add', timeout=3600.0,
+                        reaction, manager = await self.bot.wait_for('reaction_add', timeout=86400.0,
                                                                     check=lambda react, manager:
                                                                     any([role in manager.roles for role in roles])
                                                                     and react.message.id == msg.id and str(
