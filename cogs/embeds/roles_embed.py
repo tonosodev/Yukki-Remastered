@@ -31,12 +31,16 @@ class MetaPeaceRolesEmbed(commands.Cog):
 
         # EXTRA ROLES
         newspaper_role = ctx.guild.get_role(818748991135023125)
+        news_channel = ctx.guild.get_channel(766213910595633155)
 
         await ctx.message.delete()
         await ctx.send(file=discord.File(r".\cogs\embeds\roles2.png"))
         msg = await ctx.send(
+            # Header
             "<:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>   <:gdash:817934432661012480>   <:pdash:817934816950485042>\n\n"
+            # Body
             "<:blank:817933141514911754><:blank:817933141514911754><:blank:817933141514911754>ೋ•<a:magic:816330941424730132> **Хобби и интересы**\n\n"
+            # Description
             f"<:blank:817933141514911754><:blank:817933141514911754><:gamer:818865783479599154> ┇ {gamer_role.mention}\n"
             f"<:blank:817933141514911754><:blank:817933141514911754><:memer:818868967825080330> ┇ {memer_role.mention}\n"
             f"<:blank:817933141514911754><:blank:817933141514911754><:anime:818870007810883614> ┇ {anime_role.mention}\n"
@@ -46,12 +50,6 @@ class MetaPeaceRolesEmbed(commands.Cog):
             f"<:blank:817933141514911754><:blank:817933141514911754><:designer:818872164823728189> ┇ {designer_role.mention}\n"
             f"<:blank:817933141514911754><:blank:817933141514911754><:programmer:818874039178100776> ┇ {programmer_role.mention}\n\n"
             f"<:blank:817933141514911754>\n\n"
-            # Header
-
-            # Body
-            # Description
-
-            # Footer
         )
         # GENERAL EMOJIS
         gamer_emoji = await msg.add_reaction("<:gamer:818865783479599154>")
@@ -63,12 +61,13 @@ class MetaPeaceRolesEmbed(commands.Cog):
         designer_emoji = await msg.add_reaction("<:designer:818872164823728189>")
         programmer_emoji = await msg.add_reaction("<:programmer:818874039178100776>")
 
-
-        news_channel = ctx.guild.get_channel(766213910595633155)
         msg2 = await ctx.send(
+            # Footer
             f"<:blank:817933141514911754>\n\n"
             "<:wdash:817934436317528125>   <:pdash:817934816950485042>   <:wdash:817934436317528125>   <:pdash:817934816950485042>   <:wdash:817934436317528125>   <:pdash:817934816950485042>   <:wdash:817934436317528125>   <:pdash:817934816950485042>\n\n"
+            # Body
             "<:blank:817933141514911754><:blank:817933141514911754><:blank:817933141514911754>ೋ•<a:magic:816330941424730132> **Дополнительные**\n\n"
+            # Description
             f"..｡ﾟ+ <a:nwspaper:818848454708166707> ┇ {newspaper_role.mention} - новостная газета.\n"
             f"<:blank:817933141514911754>**Заметка:** ||__В Ваши личные сообщения будет отправляться рассылка информационных каналов!__||"
             f"<:blank:817933141514911754>"

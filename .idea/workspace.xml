@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="Some changes" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New sync system with GitHub">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/embeds/news_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/embeds/news_embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,13 +128,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00004" summary="- Some changes">
-      <created>1608253718619</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1608253718619</updated>
     </task>
     <task id="LOCAL-00005" summary="- Some changes">
       <created>1608253958390</created>
@@ -468,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615317872573</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="New sync system with GitHub">
+      <created>1615318499297</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1615318499298</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +501,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- Any Fixes" />
     <MESSAGE value="- Authorization system ready&#10;- Config adapted" />
     <MESSAGE value="- Any changes" />
     <MESSAGE value="- TODO update" />
@@ -522,7 +525,8 @@
     <MESSAGE value="Some changes in recovery.py" />
     <MESSAGE value="user_report.py global update" />
     <MESSAGE value="Some changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some changes" />
+    <MESSAGE value="New sync system with GitHub" />
+    <option name="LAST_COMMIT_MESSAGE" value="New sync system with GitHub" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
