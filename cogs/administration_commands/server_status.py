@@ -186,7 +186,7 @@ class ServerStatusCog(commands.Cog):
         embed_system_information.add_field(name=
                                            '__**Использование CPU**__',
                                            value=
-                                           '💻 Используется:\n **{psutil.cpu_percent()}%**',
+                                           f'💻 Используется:\n **{psutil.cpu_percent()}%**',
                                            inline=True)
 
         embed_system_information.add_field(name=

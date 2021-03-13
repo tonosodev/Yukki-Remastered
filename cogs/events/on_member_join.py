@@ -12,7 +12,7 @@ class OnMemberJoinCog(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
         if member.guild.id == 766213910595633153:
-            role = discord.utils.get(member.guild.roles, name='✖ not verified')
+            role = discord.utils.get(member.guild.roles, id=768118967759405056)
             await member.add_roles(role)
             user = member.mention
 
