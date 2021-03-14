@@ -1,6 +1,7 @@
 ##### POWERED BY NeverMind#4082 #################################################
 import discord
 import os
+import io
 
 from discord.ext import commands
 from discord.ext.commands import when_mentioned_or
@@ -55,7 +56,8 @@ except:
     # noinspection PyUnboundLocalVariable
     print(
         f"\n##################################################\n\t\t\tWARNING!\nFILE >> {filename[:-3]} << " +
-        bot_initialize['cog_load_error'] + "\n##################################################\n" + bot_initialize['copyright_message'])
+        bot_initialize['cog_load_error'] + "\n##################################################\n" + bot_initialize[
+            'copyright_message'])
 
 
 # -------------------------------#
@@ -63,6 +65,7 @@ except:
 # -------------------------------#
 @yukki.event
 async def on_command_error(ctx, error):
+    global msg
     if isinstance(error, commands.CommandNotFound):
         return await ctx.reply(embed=discord.Embed(
             description=f'❗️ {ctx.author.mention}, команда не найдена!\nПропишите " ' + bot_settings[
@@ -84,34 +87,36 @@ async def on_command_error(ctx, error):
             description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"),
             delete_after=5)
     else:
-        if "Command raised an exception: UnboundLocalError:" in str(error):
+
+        if isinstance(error, UnboundLocalError):
             return
 
         else:
             try:
-                log = open('log.txt', 'a', encoding='cp1251')
-                print(
-                    '*****************************\nЗапишу ошибку в файл ' + log.name + '\n*****************************\n')
-                log.write(f"[ERROR] " + f"Пользователь: {ctx.author.name}\n")
-                log.write(f"[ERROR] " + f"Команда: {ctx.message.content}\n")
-                log.write(f"[ERROR] " + f"Сервер:  {ctx.message.guild}\n")
-                log.write(f"[ERROR] " + f"Ошибка:  {error}\n")
-                log.write("...\n")
-                log.close()
-            except FileNotFoundError:
-                log = open('log.txt', 'w', encoding='cp1251')
-                print(
-                    '#############################\nФайл ' + log.name + ' не существует!\nСоздаю новый...\n#############################\n')
-                log.write(f"[ERROR] " + f"Пользователь: {ctx.author.name}\n")
-                log.write(f"[ERROR] " + f"Команда: {ctx.message.content}\n")
-                log.write(f"[ERROR] " + f"Сервер:  {ctx.message.guild}\n")
-                log.write(f"[ERROR] " + f"Ошибка:  {error}\n")
-                log.write("...\n")
-                log.close()
+                try:
+                    msg = (f"[ERROR] Пользователь: {ctx.author.name}\n"
+                           f"[ERROR] ID Пользователя: {ctx.author.id}\n"
+                           f"[ERROR] Команда: {ctx.message.content}\n"
+                           f"[ERROR] Сервер: {ctx.message.guild}\n"
+                           f"[ERROR] Ошибка: {error}\n"
+                           f". . .\n")
 
-            await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
-                description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))
-            raise error
+                    with io.open('log.txt', 'a', encoding='utf-8') as log:
+                        print(
+                            '*****************************\nЗапишу ошибку в файл ' + log.name + '\n*****************************\n')
+                        log.write(msg)
+                except UnicodeEncodeError:
+                    print(f"[ERROR] UnicodeEncodeError\n {error}")
+
+            except FileNotFoundError:
+                with io.open('log.txt', 'w', encoding='utf-8') as log:
+                    print(
+                        '#############################\nФайл ' + log.name + ' не существует!\nСоздаю новый...\n#############################\n')
+
+        await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
+            description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))
+
+    raise error
 
 
 # ----------------------------- #

@@ -1,3 +1,5 @@
+import io
+
 import discord
 from discord import utils
 from discord.ext import commands
@@ -28,14 +30,15 @@ class VerificationCog(commands.Cog):
                 await member.add_roles(role)
                 await member.add_roles(role_1)
                 await message.remove_reaction(payload.emoji, member)
-                log = open('log.txt', 'a')
-                log.write(f'[АВТОРИЗАЦИЯ] ' + f'Пользователь {member} успешно прошел авторизацию!\n')
-                log.write('...\n')
-                log.close()
+
+                with io.open('log.txt', 'a', encoding='utf-8') as log:
+                    log.write(f'[AUTHORIZE] Пользователь {member} успешно прошел авторизацию!\n'
+                              f'. . .\n')
+
                 await self.bot.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
                     description=f'🟢 Пользователь **{member}** успешно прошел авторизацию!\n\n**`Выданы роли:`**\n- ( {role} )\n- ( {role_1} )'))
 
-        except KeyError as e:
+        except KeyError:
             print('[VERIFICATION COG ERROR] KeyError, no role found for ' + emoji)
         except Exception as e:
             print('[VERIFICATION COG EXCEPTION] ' + repr(e))

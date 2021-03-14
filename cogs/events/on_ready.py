@@ -1,5 +1,6 @@
 import discord
 
+import io
 import asyncio
 import random
 from discord.ext import commands
@@ -15,13 +16,11 @@ class ConnectCog(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self):
         try:
-            logo = open("logo.yml", "r", encoding="utf8")
-            data = logo.read()
-            print(data)
-            logo.close()
+            with io.open("logo.yml", "r", encoding="utf-8") as logo:
+                data = logo.read()
+                print(data)
         except IOError:
             print(bot_initialize['logo_initialize_error'] + " " + logo.name)
-            logo.close()
 
         # ----------------------------- #
         #        YUKKI DATABASE         #

@@ -227,11 +227,13 @@ class RecoveryCog(commands.Cog):
                 timestamp=ctx.message.created_at
             )
             await system_log.send(embed=embed_shutdown)
-            sys.exit(0)
 
-            #
-            # RECOVERY REACTION
-            #
+            sys.exit(f"Пользователь {ctx.author.name} санкционировал завершение работы . . .")
+
+
+        #
+        # RECOVERY REACTION
+        #
 
         elif str(reaction.emoji) == "♦":
             embed_recovery = discord.Embed(title=f"{self.bot.user.name} | Control Panel")
