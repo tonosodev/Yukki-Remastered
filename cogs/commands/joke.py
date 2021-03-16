@@ -4,6 +4,7 @@ from discord.ext import commands
 import random
 import json
 import requests
+from loguru import logger
 from requests.exceptions import Timeout
 
 from config import commands_permission, bot_initialize, joke_command_aliases
@@ -12,6 +13,10 @@ from config import commands_permission, bot_initialize, joke_command_aliases
 class JokeCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Jokes loaded!")
 
     def get_from(self, url):
         headers = {'X-Requested-With': 'XMLHttpRequest',
@@ -32,7 +37,7 @@ class JokeCog(commands.Cog):
         yukki_comment = (
             "<:admin_face:769707992891129897>", "Вот и думай головой.", "Такие дела...", "М-да...", "Чушь какая!",
             "Сама в шоке.", "Более глупой шутки я еще не слышала...", "Кто это вообще придумал?!",
-            "А теперь дружно об этом забудем...", "Чего...", "Ну надо же!", "Гениально.", "Это - щедевор!",
+            "А теперь дружно об этом забудем...", "Чего...", "Ну надо же!", "Гениально.", "Это - щедевр!",
             "Крайне полезная информация, да, {} ?".format(ctx.message.author.mention),
             "Что скажешь, {} ?".format(ctx.message.author.mention), "От смеха со всеми ботами по пингу просели)",
         )

@@ -2,6 +2,7 @@ import random
 
 import discord
 from discord.ext import commands
+from loguru import logger
 
 from config import avatar_command_aliases, commands_permission, bot_initialize
 
@@ -9,6 +10,10 @@ from config import avatar_command_aliases, commands_permission, bot_initialize
 class UserAvatar(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog UserAvatar loaded!")
 
     @commands.command(aliases=avatar_command_aliases)
     @commands.has_any_role(*commands_permission['avatar_command_permission'])

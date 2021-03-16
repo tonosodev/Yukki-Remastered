@@ -4,6 +4,9 @@ import discord
 from discord.ext import commands
 import random
 from io import BytesIO
+
+from loguru import logger
+
 from config import commands_permission, user_report_command_aliases, bot_settings, bot_initialize, \
     user_report_reaction_permission_owner, user_report_reaction_permission_support, server_roles
 from managers_data import MetaPeace_owner_url
@@ -12,6 +15,10 @@ from managers_data import MetaPeace_owner_url
 class UserReport(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Reports loaded!")
 
     @commands.command(aliases=user_report_command_aliases)
     @commands.has_any_role(*commands_permission['user_report_command_permission'])

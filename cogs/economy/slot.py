@@ -2,7 +2,7 @@ import asyncio
 import random
 import discord
 from discord.ext import commands
-from config import slot_command_aliases, slot
+from config import slot_command_aliases, mini_games, bot_initialize
 
 
 class SlotCog(commands.Cog):
@@ -14,10 +14,10 @@ class SlotCog(commands.Cog):
     async def slot(self, ctx):
         # await ctx.reply('{}, временно на технических работах.'.format(ctx.message.author.mention), delete_after=10)
 
-        random_reward = random.randrange(slot['slot_minimum_win'], slot['slot_maximum_win'], 1)
+        random_reward = random.randrange(mini_games['slot_minimum_win'], mini_games['slot_maximum_win'], 1)
         await ctx.message.delete()
 
-        logs = self.bot.get_channel(slot['slot_notification_channel'])
+        logs = self.bot.get_channel(mini_games['notification_channel'])
         member = discord.Member
 
         parrot = '<a:shard_3:816330981908807711>'  # Эмодзи совпадения слотпинов
@@ -155,12 +155,13 @@ class SlotCog(commands.Cog):
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results0, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
 
@@ -168,132 +169,142 @@ class SlotCog(commands.Cog):
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results1, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot11 == slot12 == slot13 == slot14 == slot15:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results2, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot16 == slot17 == slot18 == slot19 == slot20:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results3, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
-            await logs.send(embed=emb)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
 
         elif slot21 == slot22 == slot23 == slot24 == slot25:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results4, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot1 == slot6 == slot11 == slot16 == slot21:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results5, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot2 == slot7 == slot12 == slot17 == slot22:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results6, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot3 == slot8 == slot13 == slot18 == slot23:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results7, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot4 == slot9 == slot14 == slot19 == slot24:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results8, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot5 == slot10 == slot15 == slot20 == slot25:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results9, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot1 == slot7 == slot13 == slot19 == slot25:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results10, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem:️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         elif slot5 == slot9 == slot13 == slot17 == slot21:
             await msg.edit(
                 content="{}\n {}, Вы выиграли!\nУвидеть свой выигрыш Вы можете в канале <#769205419276369931>".format(
                     results11, ctx.author.mention), delete_after=10)
-            emb = discord.Embed(title='Казино :gem: ️',
+            emb = discord.Embed(title='Слот-машина :gem:️',
+                                description=f'Пользователь **{ctx.message.author.mention}**\n'
+                                            f'выиграл в казино **{random_reward}** {coin}',
                                 color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                              random.randint(1, 255)))
-            emb.add_field(name='Пользователь **{}**'.format(ctx.message.author.name),
-                          value=' выиграл в казино **{}** {}'.format(random_reward, coin))
-            emb.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены', icon_url=self.bot.user.avatar_url)
+            emb.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'],
+                           icon_url=self.bot.user.avatar_url)
             await logs.send(embed=emb)
 
         else:

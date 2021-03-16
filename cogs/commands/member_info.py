@@ -8,6 +8,7 @@ This Class: member_activity
 import discord
 from Cybernator import Paginator
 from discord.ext import commands
+from loguru import logger
 
 from config import member_activity, bot_initialize
 
@@ -15,6 +16,10 @@ from config import member_activity, bot_initialize
 class MemberActivityCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog MemberInfo loaded!")
 
     @commands.command(aliases=member_activity)
     async def __user_info(self, ctx, member: discord.Member = None):

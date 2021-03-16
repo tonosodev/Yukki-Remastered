@@ -3,6 +3,7 @@ import random
 import discord
 import requests
 from discord.ext import commands
+from loguru import logger
 
 from config import wiki_command_aliases, commands_permission, bot_initialize
 
@@ -10,6 +11,10 @@ from config import wiki_command_aliases, commands_permission, bot_initialize
 class WikiCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Wiki loaded!")
 
     @commands.command(aliases=wiki_command_aliases)
     @commands.has_any_role(*commands_permission['wiki_command_permission'])

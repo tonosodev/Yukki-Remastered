@@ -5,6 +5,7 @@ from discord.ext import commands
 
 import json
 import requests
+from loguru import logger
 from requests.exceptions import Timeout
 
 from config import fact_command_aliases, commands_permission, bot_initialize
@@ -13,6 +14,10 @@ from config import fact_command_aliases, commands_permission, bot_initialize
 class FactCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Facts loaded!")
 
     def get_from(self, url):
         headers = {'X-Requested-With': 'XMLHttpRequest',

@@ -4,12 +4,18 @@ import discord
 import requests
 
 from discord.ext import commands
+from loguru import logger
+
 from config import commands_permission, hug_command_aliases, bot_initialize
 
 
 class HugCommentCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Hugs loaded!")
 
     @commands.command(aliases=hug_command_aliases)
     @commands.has_any_role(*commands_permission['hug_command_permission'])

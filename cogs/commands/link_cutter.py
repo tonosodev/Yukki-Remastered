@@ -1,4 +1,5 @@
 import random
+from asyncio.log import logger
 
 import discord
 import pyshorteners
@@ -10,6 +11,10 @@ from config import link_cutter_command_aliases, commands_permission, bot_initial
 class LinkCutterCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog LinkCutter loaded!")
 
     @commands.command(aliases=link_cutter_command_aliases)
     @commands.has_any_role(*commands_permission['link_cutter_command_permission'])

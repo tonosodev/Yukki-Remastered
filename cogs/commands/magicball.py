@@ -1,6 +1,7 @@
 import discord
 import random
 from discord.ext import commands
+from loguru import logger
 
 from config import magicball_command_aliases, commands_permission, bot_initialize
 
@@ -8,6 +9,10 @@ from config import magicball_command_aliases, commands_permission, bot_initializ
 class MagicballCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog MagicBall loaded!")
 
     @commands.command(aliases=magicball_command_aliases)
     @commands.has_any_role(*commands_permission['magicball_command_permission'])
