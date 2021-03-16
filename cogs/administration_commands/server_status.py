@@ -96,7 +96,7 @@ class ServerStatusCog(commands.Cog):
                                     # f"<:bot:816332020745371668> Ботов: **{bots}**\n"
                                           f"<:online:816332016551329832> Онлайн: **{online}**\n"
                                           f"<:sleep:816332016172662804> Отошёл: **{idle}**\n"
-                                          f"<:dnd:816332015845638194> Не Беспокоить: **{dnd}**\n"
+                                          f"<:dnd:816332015845638194> Не мешать: **{dnd}**\n"
                                           f"<:offline:816332016453812236> Оффлайн: **{offline}**")
 
         embed_server_info.add_field(name=f"__**Каналы**__",
