@@ -4,6 +4,9 @@ Session by: https://github.com/DevilDesigner
 Create Time: 2:49 PM
 This Class: tic_tac_toe
 """
+import random
+import time
+
 import discord
 from discord.ext import commands
 import asyncio
@@ -80,7 +83,10 @@ class TicTacToe(commands.Cog):
             return await ctx.reply("Вы не можете играть с самии собой!")
 
         elif member.bot:
-            return await ctx.reply("Юкки не любит крестики-нолики...")
+            if ctx.message.author == ctx.guild.owner:
+                return await ctx.reply("Папочка, ты снова меня обыграешь...")
+            else:
+                return await ctx.reply("Папа запретил мне играть с незнакомцами.")
 
         if ctx.author.id in self.playing:
             return await ctx.reply("Вы уже играете!")
@@ -180,27 +186,33 @@ class TicTacToe(commands.Cog):
                 self.playing.remove(member.id)
                 await channel.delete()
                 return await logs.send(
-                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>", color=0x00ff00,
+                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>",
+                                        color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
+                                                                     random.randint(1, 255)),
                                         description=f"{member.mention} - <:tttround:821381104183279616>\n{ctx.author.mention} - <:tttmark:821379069928013874>\n\n__**Ничья**__\n\n{self.GetBoard(board)}"))
             elif check == ctx.author.id:
                 self.playing.remove(ctx.author.id)
                 self.playing.remove(member.id)
                 await channel.delete()
                 return await logs.send(
-                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>", color=0x00ff00,
+                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>",
+                                        color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
+                                                                     random.randint(1, 255)),
                                         description=f"{member.mention} - <:tttround:821381104183279616>\n{ctx.author.mention} - <:tttmark:821379069928013874>\n\n__**Победил**__: {ctx.author.mention}\n\n{self.GetBoard(board)}"))
             elif check == member.id:
                 self.playing.remove(ctx.author.id)
                 self.playing.remove(member.id)
                 await channel.delete()
                 return await logs.send(
-                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>", color=0x00ff00,
+                    embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>",
+                                        color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
+                                                                     random.randint(1, 255)),
                                         description=f"{member.mention} - <:tttround:821381104183279616>\n"
                                                     f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
                                                     f"__**Победил**__: {member.mention}\n\n{self.GetBoard(board)}"))
 
-        await msg.edit(embed=discord.Embed(title=f"Играют {ctx.author} против {member}", color=0x00ff00,
-                                           description=f"""{ctx.author} - <:tttmark:821379069928013874>
+            await msg.edit(embed=discord.Embed(title=f"Играют {ctx.author} против {member}", color=0x00ff00,
+                                               description=f"""{ctx.author} - <:tttmark:821379069928013874>
                                                                 {member} - <:tttround:821381104183279616>\n
             __**Сейчас ходит**__: {self.bot.get_user(now).mention}\n
             {self.GetBoard(board)}

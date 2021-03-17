@@ -127,7 +127,7 @@ commands_permission = {
     "slowmode_command_permission": [owner, support, head_tech_spec],
     # ==========================
     "kick_command_permission": [owner, support],
-    "clear_command_permission": [owner, support, head_tech_spec, sponsor],
+    "clear_command_permission": [debug_server_owner, owner, support, head_tech_spec, sponsor],
     "fact_command_permission": [owner, support, head_tech_spec, sponsor, member],
     "joke_command_permission": [owner, support, head_tech_spec, sponsor, member],
     "add_role_command_permission": [owner, support],

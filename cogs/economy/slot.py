@@ -2,12 +2,17 @@ import asyncio
 import random
 import discord
 from discord.ext import commands
+from loguru import logger
 from config import slot_command_aliases, mini_games, bot_initialize
 
 
 class SlotCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+
+    @commands.Cog.listener()
+    async def on_ready(self):
+        logger.info("Cog Slot-Machine loaded!")
 
     @commands.command(aliases=slot_command_aliases)
     @commands.cooldown(1, 15, commands.BucketType.user)
