@@ -98,7 +98,7 @@ class TicTacToe(commands.Cog):
                                            description=f"Ожидаем согласия {member.mention} на игру...")
         reject_game_embed = discord.Embed(title="Крестики-нолики <:ttt:821377566870339614>",
                                           description=f"{member.mention} отказался от игры.")
-        timeout_game_embed = discord.Embed(title="Крестики-нолики <:ttt:821377566870339614>",
+        timeout_user_embed = discord.Embed(title="Крестики-нолики <:ttt:821377566870339614>",
                                            description=f"Время ожидания {member.mention} вышло.")
         msg = await ctx.reply(embed=waiting_game_embed)
         await msg.add_reaction("<:confirm:821318653563502612>")
@@ -112,7 +112,7 @@ class TicTacToe(commands.Cog):
             if str(r.emoji) == "<:reject:821318659162243103>":
                 return await msg.edit(embed=reject_game_embed, delete_after=10)
         except asyncio.TimeoutError:
-            return await msg.edit(embed=timeout_game_embed, delete_after=10)
+            return await msg.edit(embed=timeout_user_embed, delete_after=10)
 
         self.playing.append(member.id)
         self.playing.append(ctx.author.id)
@@ -126,11 +126,11 @@ class TicTacToe(commands.Cog):
         await channel.set_permissions(ctx.author, read_messages=True, send_messages=False)
         await channel.set_permissions(member, read_messages=True, send_messages=False)
         msg: discord.Message = await channel.send(
-            embed=discord.Embed(title=f"Играют:\n{ctx.author}\nпротив\n{member}", color=0x00ff00,
-                                description=f"""{ctx.author.mention} - <:tttmark:821379069928013874>
-        {member.mention} - <:tttround:821381104183279616>
+            embed=discord.Embed(title=f"Играют:\n{ctx.author.name}\nпротив\n{member.name}", color=0x00ff00,
+                                description=f"""{ctx.author.name} - <:tttmark:821379069928013874>
+        {member.name} - <:tttround:821381104183279616>
 
-        Сейчас ход: {ctx.author}
+        Сейчас ход: {ctx.author.mention}
         :black_large_square: | :black_large_square: | :black_large_square:
         --------------
         :black_large_square: | :black_large_square: | :black_large_square:
@@ -163,8 +163,19 @@ class TicTacToe(commands.Cog):
             await msg.add_reaction(r)
 
         while True:
-            react, user = await self.bot.wait_for("reaction_add",
-                                                  check=lambda r, u: r.message.id == msg.id and not u.bot)
+            try:
+                react, user = await self.bot.wait_for("reaction_add", timeout=60.0,
+                                                      check=lambda r, u: r.message.id == msg.id and not u.bot)
+            except asyncio.TimeoutError:
+                self.playing.remove(ctx.author.id)
+                self.playing.remove(member.id)
+                await channel.delete()
+                timeout_user_embed = discord.Embed(title="Крестики-нолики <:ttt:821377566870339614>",
+                                                   description=f"{member.mention} - <:tttround:821381104183279616>\n"
+                                                               f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
+                                                               f"__**Превышено время ожидания хода**__: {self.bot.get_user(now).mention}\n\n"
+                                                               f"{self.GetBoard(board)}")
+                return await logs.send(embed=timeout_user_embed)
 
             if str(react.emoji) not in reactions:
                 await msg.clear_reaction(react)
@@ -211,9 +222,10 @@ class TicTacToe(commands.Cog):
                                                     f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
                                                     f"__**Победил**__: {member.mention}\n\n{self.GetBoard(board)}"))
 
-            await msg.edit(embed=discord.Embed(title=f"Играют {ctx.author} против {member}", color=0x00ff00,
-                                               description=f"""{ctx.author} - <:tttmark:821379069928013874>
-                                                                {member} - <:tttround:821381104183279616>\n
+            await msg.edit(
+                embed=discord.Embed(title=f"Играют:\n{ctx.author.name}\nпротив\n{member.name}", color=0x00ff00,
+                                    description=f"""{ctx.author.name} - <:tttmark:821379069928013874>
+                                                                {member.name} - <:tttround:821381104183279616>\n
             __**Сейчас ходит**__: {self.bot.get_user(now).mention}\n
             {self.GetBoard(board)}
             """))
