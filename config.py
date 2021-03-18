@@ -96,6 +96,7 @@ activity_status_listen = ["Gorillaz", "Blue Foundation", "Bring Me The Horizon",
 activity_status_competes = ["шахматы", "Cuphead", "чаепитие"]
 
 bot_initialize = {
+    "server_name": "MetaPeaceTeam",
     "cog_load_error": "LOADING ERROR!\nCHECK TROUBLES AND CORRECT CODE!",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",

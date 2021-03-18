@@ -132,9 +132,9 @@ class TicTacToe(commands.Cog):
 
         Сейчас ход: {ctx.author.mention}
         :black_large_square: | :black_large_square: | :black_large_square:
-        --------------
+         ——————
         :black_large_square: | :black_large_square: | :black_large_square:
-        --------------
+         ——————
         :black_large_square: | :black_large_square: | :black_large_square:
         """))
 
@@ -174,6 +174,7 @@ class TicTacToe(commands.Cog):
                                                    description=f"{member.mention} - <:tttround:821381104183279616>\n"
                                                                f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
                                                                f"__**Превышено время ожидания хода**__: {self.bot.get_user(now).mention}\n\n"
+                                                               f"Результат:\n"
                                                                f"{self.GetBoard(board)}")
                 return await logs.send(embed=timeout_user_embed)
 
@@ -200,7 +201,10 @@ class TicTacToe(commands.Cog):
                     embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>",
                                         color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                                      random.randint(1, 255)),
-                                        description=f"{member.mention} - <:tttround:821381104183279616>\n{ctx.author.mention} - <:tttmark:821379069928013874>\n\n__**Ничья**__\n\n{self.GetBoard(board)}"))
+                                        description=f"{member.mention} - <:tttround:821381104183279616>\n"
+                                                    f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
+                                                    f"__**Ничья**__\n\n"
+                                                    f"{self.GetBoard(board)}"))
             elif check == ctx.author.id:
                 self.playing.remove(ctx.author.id)
                 self.playing.remove(member.id)
@@ -209,7 +213,10 @@ class TicTacToe(commands.Cog):
                     embed=discord.Embed(title=f"Крестики-нолики <:ttt:821377566870339614>",
                                         color=discord.Color.from_rgb(random.randint(1, 255), random.randint(1, 255),
                                                                      random.randint(1, 255)),
-                                        description=f"{member.mention} - <:tttround:821381104183279616>\n{ctx.author.mention} - <:tttmark:821379069928013874>\n\n__**Победил**__: {ctx.author.mention}\n\n{self.GetBoard(board)}"))
+                                        description=f"{member.mention} - <:tttround:821381104183279616>\n"
+                                                    f"{ctx.author.mention} - <:tttmark:821379069928013874>\n\n"
+                                                    f"__**Победил**__: {ctx.author.mention}\n\n"
+                                                    f"{self.GetBoard(board)}"))
             elif check == member.id:
                 self.playing.remove(ctx.author.id)
                 self.playing.remove(member.id)
@@ -225,10 +232,10 @@ class TicTacToe(commands.Cog):
             await msg.edit(
                 embed=discord.Embed(title=f"Играют:\n{ctx.author.name}\nпротив\n{member.name}", color=0x00ff00,
                                     description=f"""{ctx.author.name} - <:tttmark:821379069928013874>
-                                                                {member.name} - <:tttround:821381104183279616>\n
-            __**Сейчас ходит**__: {self.bot.get_user(now).mention}\n
-            {self.GetBoard(board)}
-            """))
+                                    {member.name} - <:tttround:821381104183279616>\n
+                                    __**Сейчас ходит**__: {self.bot.get_user(now).mention}\n
+                                    {self.GetBoard(board)}
+                                    """))
 
 
 def setup(bot):
