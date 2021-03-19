@@ -96,7 +96,6 @@ activity_status_listen = ["Gorillaz", "Blue Foundation", "Bring Me The Horizon",
 activity_status_competes = ["шахматы", "Cuphead", "чаепитие"]
 
 bot_initialize = {
-    "server_name": "MetaPeaceTeam",
     "cog_load_error": "LOADING ERROR!\nCHECK TROUBLES AND CORRECT CODE!",
     "token_error": "\n\n\tConnection error or TOKEN is invalid!\n\t\tCHECK TOKEN AND TRY AGAIN...\n\n",
     "logo_initialize_error": "Error reading from file",
@@ -120,6 +119,7 @@ head_tech_spec = 766293535832932392
 sponsor = 791227395331457047
 member = 766232996285775903
 debug_server_owner = 816635673175130122
+
 commands_permission = {
     "recovery_command_permission": [owner, head_tech_spec],
     # ==========================

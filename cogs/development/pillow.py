@@ -22,19 +22,19 @@ class PillowCog(commands.Cog):
             await ctx.reply("Укажите пользователя!")
         if member is not None:
 
-            avatar = await member.avatar_url_as(format="png", static_format="png").read()
-            avatar = Image.open(avatar)
+            #avatar = await member.avatar_url_as(format="png", static_format="png").read()
+            #avatar = Image.open(avatar)
 
-            #url = str(member.avatar_url)[:-10]
-            #url = requests.get(url, stream=True)
-            #avatar = Image.open(io.BytesIO(url.content))
+            url = str(member.avatar_url)[:-10]
+            url = requests.get(url, stream=True)
+            avatar = Image.open(io.BytesIO(url.content))
 
-            ico = await ctx.guild.icon_url_as(format="png", static_format="png").read()
-            server_icon = Image.open(ico)
+            #ico = await ctx.guild.icon_url_as(format="png", static_format="png").read()
+            #server_icon = Image.open(ico)
 
-           # ico = str(ctx.guild.icon_url)[:-10]
-           # ico = requests.get(ico, stream=True)
-           # server_icon = Image.open(io.BytesIO(ico.content))
+            ico = str(ctx.guild.icon_url)[:-10]
+            ico = requests.get(ico, stream=True)
+            server_icon = Image.open(io.BytesIO(ico.content))
 
             welcome = Image.open(r".\pillow\hi_pillow.png")
             welcome = welcome.convert('RGBA')
@@ -66,7 +66,7 @@ class PillowCog(commands.Cog):
             idraw.text((755.5, 680), f'{ctx.guild.name}', anchor="ms", font=footer, fill='#FFFFFF')
             # Маска для картинки
             draw.ellipse((0, 0) + (250, 230), fill=255)
-            draw_ico.ellipse((0, 0) + (100, 100), fill=255)
+            draw_ico.ellipse((0, 0) + (150, 150), fill=255)
             # Изменять вместе с размером аватарки
             mask = mask.resize((245, 234))
             ico_mask = ico_mask.resize((150, 150))

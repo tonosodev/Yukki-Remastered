@@ -29,14 +29,14 @@ class WeekColor(commands.Cog):
 
         if len(list(db.keys())) <= 0:
             need = now + datetime.timedelta(minutes=2)
-            with open("./data/WeekColor.json", "w") as file:
+            with open("./cogs/events/data/WeekColor.json", "w") as file:
                 ujson.dump({"date": need.strftime("%d.%m.%Y %H:%M:%S")}, file, indent=4, ensure_ascii=False)
         else:
             need = datetime.datetime.strptime(db["date"], "%d.%m.%Y %H:%M:%S")
 
         if now >= need and now.minute >= need.minute:
             need += datetime.timedelta(minutes=2)
-            with open("./data/WeekColor.json", "w") as file:
+            with open("./cogs/events/data/WeekColor.json", "w") as file:
                 ujson.dump({"date": need.strftime("%d.%m.%Y %H:%M:%S")}, file, indent=4, ensure_ascii=False)
 
             channel = self.bot.get_channel(767917902791311370)
