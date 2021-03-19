@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New on_member_join welcome">
-      <change afterPath="$PROJECT_DIR$/pillow/Slot Cyrillic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/profiles/member_profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New member_profiles and private-rooms system">
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/favourite_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/jabka_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/muted_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/owner_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/press_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/sponsor_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/support_profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/tech_spec_profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/debug/private_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/private_room.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/debug/weekly_colors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/development/pillow.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/pillow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/user_passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_passport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/weekly_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/weekly_colors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/Fitamint Script.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/Modern_Sans_Light.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/infoimgimg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id601762965636513792.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id694598900094599198.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/members/id766270990007009330.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +65,13 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow/profiles" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands\data" />
     </key>
@@ -146,20 +138,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00016" summary="- Some changes">
-      <created>1608499381723</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1608499381723</updated>
-    </task>
-    <task id="LOCAL-00017" summary="- TODO update">
-      <created>1608499461751</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1608499461751</updated>
     </task>
     <task id="LOCAL-00018" summary="- Some changes">
       <created>1608519905538</created>
@@ -490,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616106235683</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="New member_profiles system">
+      <created>1616165196902</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1616165196902</updated>
+    </task>
+    <task id="LOCAL-00066" summary="New member_profiles and private-rooms system">
+      <created>1616165302599</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1616165302599</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -519,8 +511,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Any changes" />
-    <MESSAGE value="cleanup" />
     <MESSAGE value="Recovery editing" />
     <MESSAGE value="Cleanup and some changes" />
     <MESSAGE value="user_report changes" />
@@ -544,7 +534,9 @@
     <MESSAGE value="New weekly color event" />
     <MESSAGE value="TicTacToe fixes" />
     <MESSAGE value="New on_member_join welcome" />
-    <option name="LAST_COMMIT_MESSAGE" value="New on_member_join welcome" />
+    <MESSAGE value="New member_profiles system" />
+    <MESSAGE value="New member_profiles and private-rooms system" />
+    <option name="LAST_COMMIT_MESSAGE" value="New member_profiles and private-rooms system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -616,13 +608,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
-          <line>174</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
-          <line>77</line>
-          <option name="timeStamp" value="94" />
+          <line>106</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -214,3 +214,87 @@ In embed.image.url: Scheme "[<discord.file.file object at 0x00000170fdf27d10>]" 
 . . .
 [AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
 . . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'None'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'None'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: 'None'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: checkTopRole() missing 1 required positional argument: 'member'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: checkTopRole() missing 1 required positional argument: 'member'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: checkTopRole() missing 1 required positional argument: 'member'
+. . .
+[ERROR] Пользователь: 𝓥𝓪𝓵𝓮𝓻𝓪 𝓑𝓸𝓻𝓸𝓿
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: Jabka
+[ERROR] ID Пользователя: 679691974663733363
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: 𝓥𝓪𝓵𝓮𝓻𝓪 𝓑𝓸𝓻𝓸𝓿
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
+. . .
