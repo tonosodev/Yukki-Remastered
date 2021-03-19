@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New sync system with GitHub">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New on_member_join welcome">
+      <change afterPath="$PROJECT_DIR$/pillow/Slot Cyrillic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/profiles/member_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/embeds/news_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/embeds/news_embed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/embeds/roles_embed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/debug/private_room.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/private_room.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/debug/weekly_colors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/pillow.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/pillow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/user_passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_passport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/weekly_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/weekly_colors.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/Fitamint Script.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/Modern_Sans_Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/infoimgimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id569156098708209684.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id601762965636513792.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id641398600727003197.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id694598900094599198.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/members/id766270990007009330.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python File" />
         <option value="Python Script" />
+        <option value="Python File" />
       </list>
     </option>
   </component>
@@ -64,13 +81,14 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\embeds" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\events" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\commands" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\events" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,83 +146,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00005" summary="- Some changes">
-      <created>1608253958390</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1608253958390</updated>
-    </task>
-    <task id="LOCAL-00006" summary="- Some changes">
-      <created>1608253965827</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1608253965827</updated>
-    </task>
-    <task id="LOCAL-00007" summary="- Some changes">
-      <created>1608254001048</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1608254001048</updated>
-    </task>
-    <task id="LOCAL-00008" summary="- UnboundLocalError bug fixed.&#10;- verification system need to rewrite.">
-      <created>1608258531615</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1608258531615</updated>
-    </task>
-    <task id="LOCAL-00009" summary="- Any Fixes">
-      <created>1608271804001</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1608271804001</updated>
-    </task>
-    <task id="LOCAL-00010" summary="- Authorization system ready&#10;- Config adapted">
-      <created>1608414653950</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1608414653950</updated>
-    </task>
-    <task id="LOCAL-00011" summary="- Any changes">
-      <created>1608416652871</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1608416652871</updated>
-    </task>
-    <task id="LOCAL-00012" summary="- Any changes">
-      <created>1608419435286</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1608419435286</updated>
-    </task>
-    <task id="LOCAL-00013" summary="- Any changes">
-      <created>1608420889628</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1608420889628</updated>
-    </task>
-    <task id="LOCAL-00014" summary="- Any changes">
-      <created>1608420984460</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1608420984460</updated>
-    </task>
-    <task id="LOCAL-00015" summary="- Some changes">
-      <created>1608499100186</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1608499100186</updated>
     </task>
     <task id="LOCAL-00016" summary="- Some changes">
       <created>1608499381723</created>
@@ -472,7 +413,84 @@
       <option name="project" value="LOCAL" />
       <updated>1615318499298</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="General cleanup">
+      <created>1615388635746</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1615388635746</updated>
+    </task>
+    <task id="LOCAL-00055" summary="General cleanup">
+      <created>1615388725911</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1615388725911</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Some changes">
+      <created>1615417448585</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1615417448585</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Roles System Update">
+      <created>1615599634807</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1615599634807</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Some optimization changes">
+      <created>1615680629730</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1615680629730</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Some optimization changes">
+      <created>1615758593251</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1615758593252</updated>
+    </task>
+    <task id="LOCAL-00060" summary="New Rules Embed">
+      <created>1615878429870</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1615878429871</updated>
+    </task>
+    <task id="LOCAL-00061" summary="New TicTacToe game, Slot fixes, new Log system and some changes">
+      <created>1615907547697</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1615907547697</updated>
+    </task>
+    <task id="LOCAL-00062" summary="New weekly color event">
+      <created>1616024962952</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1616024962952</updated>
+    </task>
+    <task id="LOCAL-00063" summary="TicTacToe fixes">
+      <created>1616027455542</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1616027455542</updated>
+    </task>
+    <task id="LOCAL-00064" summary="New on_member_join welcome">
+      <created>1616106235683</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1616106235683</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,14 +519,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="- Authorization system ready&#10;- Config adapted" />
-    <MESSAGE value="- Any changes" />
-    <MESSAGE value="- TODO update" />
-    <MESSAGE value="- Some changes" />
-    <MESSAGE value="Read README.md" />
-    <MESSAGE value="Important changes in user_report.py" />
-    <MESSAGE value="сhanges" />
-    <MESSAGE value="Some important changes" />
     <MESSAGE value="Any changes" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="Recovery editing" />
@@ -524,21 +534,29 @@
     <MESSAGE value="Some changes in recovery.py and added pillow structure (beta)" />
     <MESSAGE value="Some changes in recovery.py" />
     <MESSAGE value="user_report.py global update" />
-    <MESSAGE value="Some changes" />
     <MESSAGE value="New sync system with GitHub" />
-    <option name="LAST_COMMIT_MESSAGE" value="New sync system with GitHub" />
+    <MESSAGE value="General cleanup" />
+    <MESSAGE value="Some changes" />
+    <MESSAGE value="Roles System Update" />
+    <MESSAGE value="Some optimization changes" />
+    <MESSAGE value="New Rules Embed" />
+    <MESSAGE value="New TicTacToe game, Slot fixes, new Log system and some changes" />
+    <MESSAGE value="New weekly color event" />
+    <MESSAGE value="TicTacToe fixes" />
+    <MESSAGE value="New on_member_join welcome" />
+    <option name="LAST_COMMIT_MESSAGE" value="New on_member_join welcome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/member_info.py</url>
-          <line>126</line>
+          <line>131</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/member_info.py</url>
-          <line>83</line>
+          <line>88</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -548,48 +566,63 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
-          <line>236</line>
+          <line>238</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/events/verification.py</url>
-          <line>3</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>432</line>
+          <line>441</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>224</line>
+          <line>231</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>299</line>
+          <line>306</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>356</line>
+          <line>363</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>501</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>417</line>
+          <line>426</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>547</line>
-          <option name="timeStamp" value="57" />
+          <url>file://$PROJECT_DIR$/cogs/commands/fact.py</url>
+          <line>34</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/pillow.py</url>
+          <line>70</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/pillow.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/pillow.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

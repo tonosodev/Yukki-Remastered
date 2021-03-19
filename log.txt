@@ -1,0 +1,216 @@
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, сократи www.pornhub.com
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ShorteningErrorException: There was an error on trying to short the url: b'Error'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, серверинфо
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In emoji_id: Value "821231558240501771> " is not snowflake.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, rules_embed
+[ERROR] Сервер: Yukki Playhouse
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, rules_embed
+[ERROR] Сервер: Yukki Playhouse
+[ERROR] Ошибка: Command raised an exception: TypeError: send() takes from 1 to 2 positional arguments but 3 were given
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, rules_embed
+[ERROR] Сервер: Yukki Playhouse
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, к-н <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In emoji_id: Value "821318653563502612> " is not snowflake.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, кн <@!569156098708209684>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'int' object has no attribute 'mention'
+. . .
+[AUTHORIZE] Пользователь KoDi#1600 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, кн <@!519877715361398796>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10003): Unknown Channel
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, кн <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'int' object has no attribute 'mention'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: cannot open resource
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!519877715361398796>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!519877715361398796>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197> | Dev
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embed.image.url: Scheme "yukkiwelcome.png" is not supported. Scheme must be one of ('http', 'https').
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In embed.image.url: Scheme "[<discord.file.file object at 0x00000170fdf27d10>]" is not supported. Scheme must be one of ('http', 'https').
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: integer argument expected, got float
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: images do not match
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: cannot determine region size; use 4-item box
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: putalpha() takes 2 positional arguments but 3 were given
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'Response' object has no attribute 'putalpha'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: cannot determine region size; use 4-item box
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!641398600727003197>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, user <@!766270990007009330>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: <@!766270990007009330>  passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "passport" not found.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: <@!766270990007009330>  passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "passport" not found.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: <@!766270990007009330>  passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "passport" not found.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, passport
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'avatar_url'
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .

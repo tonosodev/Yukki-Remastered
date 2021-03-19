@@ -20,7 +20,7 @@ class UserPassportCog(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        logger.info("Cog UserPassport loaded!")
+        logger.info("Cog UserPassports loaded!")
 
 
     @commands.command(aliases=[''])
