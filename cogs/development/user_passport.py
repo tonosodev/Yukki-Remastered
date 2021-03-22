@@ -5,13 +5,15 @@ Create Time: 10:57 AM
 This Class: user_passport
 """
 import io
-import time
-
 import discord
 import requests
 from PIL import Image, ImageDraw, ImageFont
 from discord.ext import commands
 from loguru import logger
+from pymongo import MongoClient
+
+client = MongoClient(
+    "mongodb+srv://NeverMind:3Ctj5eEMI0vzwRY8@nevermindcluster.hfbwn.mongodb.net/YukkiModeration?retryWrites=true&w=majority")
 
 
 class UserPassportCog(commands.Cog):
@@ -28,6 +30,13 @@ class UserPassportCog(commands.Cog):
         msg = await ctx.reply("`Печатаем паспорт, пожалуйста, подождите. . .`")
         # start_time = time.time()
         member = ctx.author
+        warns = client.YukkiModeration.WarnCollection.find_one({"_id": member.id})
+
+        def is_warn():
+            if warns:
+                return len(warns['warns'])
+            else:
+                return "0"
 
         def is_nitro():
             if member.premium_since:
@@ -61,7 +70,7 @@ class UserPassportCog(commands.Cog):
                         desc += "Просматривает трансляцию"
 
                     else:
-                        desc += f"Пользовательский статус: {current_activity.name} | Создан: {current_activity.created_at.strftime('%d-%m-%Y')}"
+                        desc += f"Статус: {current_activity.name} | Создан: {current_activity.created_at.strftime('%d-%m-%Y')}"
             return desc
 
         # ROLES
@@ -125,10 +134,10 @@ class UserPassportCog(commands.Cog):
         idraw = ImageDraw.Draw(welcome)
 
         # Шрифты
-        headline_username = ImageFont.truetype(r".\pillow\VAG World.otf", size=25)
-        headline_copyright = ImageFont.truetype(r".\pillow\BlenderPro-Book.ttf", size=25)
-        other = ImageFont.truetype(r".\pillow\Slot Cyrillic.ttf", size=23)
-        actvity = ImageFont.truetype(r".\pillow\Slot Cyrillic.ttf", size=21)
+        headline_username = ImageFont.truetype(r".\pillow\fonts\VAG World.otf", size=25)
+        headline_copyright = ImageFont.truetype(r".\pillow\fonts\BlenderPro-Book.ttf", size=25)
+        other = ImageFont.truetype(r".\pillow\fonts\Slot Cyrillic.ttf", size=23)
+        actvity = ImageFont.truetype(r".\pillow\fonts\Slot Cyrillic.ttf", size=21)
         # Тексты
         text_username = idraw.text((312, 48), f'{member.name}#{member.discriminator}', anchor="ms",
                                    font=headline_username, fill='#FFFFFF')
@@ -142,6 +151,7 @@ class UserPassportCog(commands.Cog):
         text_id = idraw.text((123, 350), f'{member.id}', anchor="ms", font=other, fill="#FFFFFF")
         text_nick = idraw.text((550, 527), f'{is_nick()}', anchor="ms", font=other, fill="#FFFFFF")
         text_activity = idraw.text((550, 575), f'{is_activity()}', anchor="ms", font=actvity, fill="#FFFFFF")
+        text_warns = idraw.text((905, 447), f"{is_warn()} / 5", anchor="ms", font=actvity, fill="#FFFFFF")
 
         # Маска для картинки
         draw.ellipse((0, 0) + (250, 230), fill=255)
@@ -164,6 +174,7 @@ class UserPassportCog(commands.Cog):
         if member.id == 679691974663733363:
             await msg.delete()
             await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+
         else:
             if member.top_role is member_role:
                 await msg.delete()

@@ -5,7 +5,6 @@ Create Time: 2:49 PM
 This Class: tic_tac_toe
 """
 import random
-import time
 
 import discord
 from discord.ext import commands
@@ -117,7 +116,7 @@ class TicTacToe(commands.Cog):
         self.playing.append(member.id)
         self.playing.append(ctx.author.id)
         category: discord.CategoryChannel = self.bot.get_channel(820376219945795584)
-        channel: discord.TextChannel = await category.create_text_channel(name=f"{member.name} vs {ctx.author.name}")
+        channel: discord.TextChannel = await category.create_text_channel(name=f"ttt-{member.name}-VS-{ctx.author.name}")
         confirm_game_embed = discord.Embed(title="Крестики-нолики <:ttt:821377566870339614>",
                                            description=f"{member.mention} принял вызов!\n\n"
                                                        f"Играйте в канале: {channel.mention}")

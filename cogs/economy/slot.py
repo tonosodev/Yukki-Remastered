@@ -9,6 +9,7 @@ from config import slot_command_aliases, mini_games, bot_initialize
 class SlotCog(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
+        self.playing = []
 
     @commands.Cog.listener()
     async def on_ready(self):
@@ -23,7 +24,6 @@ class SlotCog(commands.Cog):
         await ctx.message.delete()
 
         logs = self.bot.get_channel(mini_games['notification_channel'])
-        member = discord.Member
 
         parrot = '<a:shard_3:816330981908807711>'  # Эмодзи совпадения слотпинов
         slotspin = ':purple_heart:'  # Эмодзи слотпинов (начальные)
@@ -43,7 +43,6 @@ class SlotCog(commands.Cog):
         slot8 = slots[random.randint(0, 11)]
         slot9 = slots[random.randint(0, 11)]
         slot10 = slots[random.randint(0, 11)]
-        slot10 = slots[random.randint(0, 11)]
         slot11 = slots[random.randint(0, 11)]
         slot12 = slots[random.randint(0, 11)]
         slot13 = slots[random.randint(0, 11)]
@@ -60,16 +59,27 @@ class SlotCog(commands.Cog):
         slot24 = slots[random.randint(0, 11)]
         slot25 = slots[random.randint(0, 11)]
 
-        slotOutput = '| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n'.format(
+        slotOutput = '| {} | {} | {} | {} | {} |\n' \
+                     '| {} | {} | {} | {} | {} |\n' \
+                     '| {} | {} | {} | {} | {} |\n' \
+                     '| {} | {} | {} | {} | {} |\n' \
+                     '| {} | {} | {} | {} | {} |\n'\
+            .format(
             slot1, slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14,
             slot15,
             slot16, slot17, slot18, slot19, slot20, slot21, slot22, slot23, slot24, slot25)
-        slotOutput1 = '| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n'.format(
+        slotOutput1 = '| {} | {} | {} | {} | {} |\n' \
+                      '| {} | {} | {} | {} | {} |\n' \
+                      '| {} | {} | {} | {} | {} |\n' \
+                      '| {} | {} | {} | {} | {} |\n' \
+                      '| {} | {} | {} | {} | {} |\n'\
+            .format(
             slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin,
             slotspin,
             slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin, slotspin,
             slotspin,
             slotspin, slotspin, slotspin, )
+
         results0 = '| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n| {} | {} | {} | {} | {} |\n'.format(
             parrot, parrot, parrot, parrot, parrot, slot6, slot7, slot8, slot9, slot10, slot11, slot12, slot13, slot14,
             slot15, slot16, slot17, slot18, slot19, slot20, slot21, slot22, slot23, slot24, slot25)

@@ -85,29 +85,39 @@ class ModerationCog(commands.Cog):
             await ctx.message.delete()
             self.clear.reset_cooldown(ctx)
         elif str:
-            if int(amount) > 100:
-                await ctx.reply(
-                    "{}, Вы не можете очистить более сотни сообщений раз в 30 секунд!\nТак что я сброшу кулдаун для этой команды, чтобы вы повторили попытку.".format(
-                        ctx.author.mention), delete_after=10)
+            if ctx.message.author.id == 641398600727003197:
                 await ctx.message.delete()
+                emb = discord.Embed(title='Очистка чата',
+                                    description=f'Управляющий {ctx.author.mention} очистил чат на ' + amount + ' сообщений!')
+                await ctx.channel.purge(limit=int(amount))
+                await ctx.send(embed=emb, delete_after=10)
                 self.clear.reset_cooldown(ctx)
-
-            elif int(amount) < 1:
-                await ctx.reply(
-                    "{}, Вы не можете очистить менее одного сообщения!\nТак что я сброшу кулдаун для этой команды, чтобы вы повторили попытку.".format(
-                        ctx.author.mention), delete_after=10)
-                await ctx.message.delete()
-                self.clear.reset_cooldown(ctx)
-
             else:
-                if amount is None:
-                    await ctx.reply('Укажите в аргумент количество сообщений, которые необходимо удалить!',
-                                    delete_after=10)
+                if int(amount) > 100:
+                    await ctx.reply(
+                        "{}, Вы не можете очистить более сотни сообщений раз в 30 секунд!\nТак что я сброшу кулдаун для этой команды, чтобы вы повторили попытку.".format(
+                            ctx.author.mention), delete_after=10)
+                    await ctx.message.delete()
+                    self.clear.reset_cooldown(ctx)
+
+                elif int(amount) < 1:
+                    await ctx.reply(
+                        "{}, Вы не можете очистить менее одного сообщения!\nТак что я сброшу кулдаун для этой команды, чтобы вы повторили попытку.".format(
+                            ctx.author.mention), delete_after=10)
+                    await ctx.message.delete()
+                    self.clear.reset_cooldown(ctx)
+
                 else:
-                    await ctx.channel.purge(limit=int(amount))
-                    emb = discord.Embed(title='Очистка чата',
-                                        description=f'Управляющий {ctx.author.mention} очистил чат на ' + amount + ' сообщений!')
-                    await ctx.send(embed=emb, delete_after=10)
+                    if amount is None:
+                        await ctx.reply('Укажите в аргумент количество сообщений, которые необходимо удалить!',
+                                        delete_after=10)
+
+                    else:
+                        await ctx.message.delete()
+                        await ctx.channel.purge(limit=int(amount))
+                        emb = discord.Embed(title='Очистка чата',
+                                            description=f'Управляющий {ctx.author.mention} очистил чат на ' + amount + ' сообщений!')
+                        await ctx.send(embed=emb, delete_after=10)
 
     @commands.command(aliases=add_role_command_aliases)
     @commands.has_any_role(*commands_permission['add_role_command_permission'])
