@@ -31,6 +31,43 @@ class UserPassportCog(commands.Cog):
         # start_time = time.time()
         member = ctx.author
         warns = client.YukkiModeration.WarnCollection.find_one({"_id": member.id})
+        flags = member.public_flags
+
+        def is_hs_balance():
+            if flags.hypesquad_balance:
+                return "./pillow/badges/hs_balance.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        def is_hs_brilliance():
+            if flags.hypesquad_brilliance:
+                return "./pillow/badges/hs_brilliance.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        def is_hs_bravery():
+            if flags.hypesquad_bravery:
+                return "./pillow/badges/hs_bravery.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        def is_partner():
+            if flags.partner:
+                return "./pillow/badges/partner.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        def is_supporter():
+            if flags.early_supporter:
+                return "./pillow/badges/supporter.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        def is_bot_developer():
+            if flags.verified_bot_developer or flags.early_verified_bot_developer:
+                return "./pillow/badges/dev.png"
+            else:
+                return "./pillow/badges/none_badge.png"
 
         def is_warn():
             if warns:
@@ -42,7 +79,7 @@ class UserPassportCog(commands.Cog):
             if member.premium_since:
                 return f'{member.premium_since.strftime("%d/%m/%Y")}'
             else:
-                return 'Подписка отсутствует'
+                return 'Не спонсирует'
 
         def is_nick():
             if member.nick:
@@ -108,67 +145,113 @@ class UserPassportCog(commands.Cog):
             else:
                 return "./pillow/profiles/member_profile.png"
 
-        url = str(member.avatar_url)[:-10]
-        url = requests.get(url, stream=True)
-        avatar = Image.open(io.BytesIO(url.content))
-
-        ico = str(ctx.guild.icon_url)[:-10]
-        ico = requests.get(ico, stream=True)
-        server_icon = Image.open(io.BytesIO(ico.content))
-
-        img_source = checkTopRole()
-
-        welcome = Image.open(img_source)
-        welcome = welcome.convert('RGBA')
+        # Автарка пользователя
+        avatar_url = str(member.avatar_url)[:-10]
+        avatar_url = requests.get(avatar_url, stream=True)
+        avatar = Image.open(io.BytesIO(avatar_url.content))
         avatar = avatar.convert('RGBA')
-
-        server_icon = server_icon.convert('RGBA')
-        # Размер аватарки
+        # Размер аватара
         avatar = avatar.resize((90, 90))
+
+        # Серверная иконка
+        icon_url = str(ctx.guild.icon_url)[:-10]
+        icon_url = requests.get(icon_url, stream=True)
+        server_icon = Image.open(io.BytesIO(icon_url.content))
+        server_icon = server_icon.convert('RGBA')
+        # Размер иконки
         server_icon = server_icon.resize((50, 50))
-        # Маска
-        mask = Image.new('L', (250, 230), 0)
+
+        # Значки профиля
+        hs_balance_url = is_hs_balance()
+        hs_balance = Image.open(hs_balance_url)
+        hs_balance = hs_balance.convert('RGBA')
+        draw_hs_balance = ImageDraw.Draw(hs_balance)
+
+        hs_brilliance_url = is_hs_brilliance()
+        hs_brilliance = Image.open(hs_brilliance_url)
+        hs_brilliance = hs_brilliance.convert('RGBA')
+        draw_hs_brilliance = ImageDraw.Draw(hs_brilliance)
+
+        hs_bravery_url = is_hs_bravery()
+        hs_bravery = Image.open(hs_bravery_url)
+        hs_bravery = hs_bravery.convert('RGBA')
+        draw_hs_bravery = ImageDraw.Draw(hs_bravery)
+
+        partner_url = is_partner()
+        partner = Image.open(partner_url)
+        partner = partner.convert('RGBA')
+        draw_partner = ImageDraw.Draw(partner)
+
+        supporter_url = is_supporter()
+        supporter = Image.open(supporter_url)
+        supporter = supporter.convert('RGBA')
+        draw_supporter = ImageDraw.Draw(supporter)
+
+        bot_developer_url = is_bot_developer()
+        bot_developer = Image.open(bot_developer_url)
+        bot_developer = bot_developer.convert('RGBA')
+        draw_bot_developer = ImageDraw.Draw(bot_developer)
+
+        # Фон профиля
+        background_url = checkTopRole()
+        background = Image.open(background_url)
+        background = background.convert('RGBA')
+
+        # Маска и отрисовка
+        # Аватар
+        avatar_mask = Image.new('L', (250, 230), 0)
+        draw_avatar = ImageDraw.Draw(avatar_mask)
+        draw_avatar.ellipse((0, 0) + (250, 230), fill=255)
+        avatar_mask = avatar_mask.resize((90, 90))
+        avatar.putalpha(avatar_mask)
+        # Иконка
         ico_mask = Image.new('L', (250, 250), 0)
-        draw = ImageDraw.Draw(mask)
         draw_ico = ImageDraw.Draw(ico_mask)
-        idraw = ImageDraw.Draw(welcome)
+        draw_ico.ellipse((0, 0) + (150, 150), fill=255)
+        ico_mask = ico_mask.resize((50, 50))
+        server_icon.putalpha(ico_mask)
+
+        draw_background = ImageDraw.Draw(background)
 
         # Шрифты
         headline_username = ImageFont.truetype(r".\pillow\fonts\VAG World.otf", size=25)
         headline_copyright = ImageFont.truetype(r".\pillow\fonts\BlenderPro-Book.ttf", size=25)
         other = ImageFont.truetype(r".\pillow\fonts\Slot Cyrillic.ttf", size=23)
         actvity = ImageFont.truetype(r".\pillow\fonts\Slot Cyrillic.ttf", size=21)
-        # Тексты
-        text_username = idraw.text((312, 48), f'{member.name}#{member.discriminator}', anchor="ms",
-                                   font=headline_username, fill='#FFFFFF')
-        text_copyright = idraw.text((950, 48), f'{ctx.guild.name}', anchor="ms", font=headline_copyright,
-                                    fill='#FFFFFF')
-        text_nitro = idraw.text((147, 447), f'{is_nitro()}', anchor="ms", font=other, fill="#FFFFFF")
-        text_joined = idraw.text((115, 252), f'{member.joined_at.strftime("%d/%m/%Y")}', anchor="ms", font=other,
-                                 fill="#FFFFFF")
-        text_account_registered = idraw.text((115, 300), f'{member.created_at.strftime("%d/%m/%Y")}', anchor="ms",
-                                             font=other, fill="#FFFFFF")
-        text_id = idraw.text((123, 350), f'{member.id}', anchor="ms", font=other, fill="#FFFFFF")
-        text_nick = idraw.text((550, 527), f'{is_nick()}', anchor="ms", font=other, fill="#FFFFFF")
-        text_activity = idraw.text((550, 575), f'{is_activity()}', anchor="ms", font=actvity, fill="#FFFFFF")
-        text_warns = idraw.text((905, 447), f"{is_warn()} / 5", anchor="ms", font=actvity, fill="#FFFFFF")
 
-        # Маска для картинки
-        draw.ellipse((0, 0) + (250, 230), fill=255)
-        draw_ico.ellipse((0, 0) + (150, 150), fill=255)
-        # Изменять вместе с размером аватарки
-        mask = mask.resize((90, 90))
-        ico_mask = ico_mask.resize((50, 50))
-        avatar.putalpha(mask)
-        server_icon.putalpha(ico_mask)
-        # Размер заднего фона (картинки)
-        welcome = welcome.resize((1100, 600))
-        # Размещение аватара на фоне
-        welcome.paste(avatar, (40, 80), avatar)
-        welcome.paste(server_icon, (820, 28), server_icon)
-        # Сохранение картинки из буфера
+        # Тексты
+        text_username = draw_background.text((312, 48), f'{member.name}#{member.discriminator}', anchor="ms",
+                                             font=headline_username, fill='#FFFFFF')
+        text_copyright = draw_background.text((950, 48), f'{ctx.guild.name}', anchor="ms", font=headline_copyright,
+                                              fill='#FFFFFF')
+        text_nitro = draw_background.text((147, 447), f'{is_nitro()}', anchor="ms", font=other, fill="#FFFFFF")
+        text_joined = draw_background.text((115, 252), f'{member.joined_at.strftime("%d/%m/%Y")}', anchor="ms",
+                                           font=other,
+                                           fill="#FFFFFF")
+        text_account_registered = draw_background.text((115, 300), f'{member.created_at.strftime("%d/%m/%Y")}',
+                                                       anchor="ms",
+                                                       font=other, fill="#FFFFFF")
+        text_id = draw_background.text((123, 350), f'{member.id}', anchor="ms", font=other, fill="#FFFFFF")
+        text_nick = draw_background.text((550, 527), f'{is_nick()}', anchor="ms", font=other, fill="#FFFFFF")
+        text_activity = draw_background.text((550, 575), f'{is_activity()}', anchor="ms", font=actvity, fill="#FFFFFF")
+        text_warns = draw_background.text((905, 447), f"{is_warn()} / 5", anchor="ms", font=actvity, fill="#FFFFFF")
+
+        background = background.resize((1100, 600))
+
+        # Размещение элементов
+        background.paste(avatar, (40, 80), avatar)
+        background.paste(server_icon, (820, 28), server_icon)
+        # РАЗМЕЩЕНИЕ ЗНАЧКОВ
+        background.paste(partner, (198, 140), partner)
+        background.paste(bot_developer, (233, 140), bot_developer)
+        background.paste(supporter, (259, 140), supporter)
+        background.paste(hs_balance, (348, 140), hs_balance)
+        background.paste(hs_bravery, (376, 141), hs_bravery)
+        background.paste(hs_brilliance, (398, 141), hs_brilliance)
+
+        # Сохранение картинки в буфер обмена
         _buffer = io.BytesIO()
-        welcome.save(_buffer, "png", quality=95)
+        background.save(_buffer, "png", quality=95)
         _buffer.seek(0)
 
         if member.id == 679691974663733363:

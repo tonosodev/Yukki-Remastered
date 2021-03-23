@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New member_profiles and private-rooms system">
-      <change afterPath="$PROJECT_DIR$/cogs/administration_commands/warns.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/economy/new_slot.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/embeds/colors.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cogs/embeds/weekly_colors_embed.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pillow/welcomes/hi.png" afterDir="false" />
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="New weekly colors and warn system">
+      <change afterPath="$PROJECT_DIR$/pillow/badges/booster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/dev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/hs_balance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/hs_bravery.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/hs_brilliance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/nitro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/none_badge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/partner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/supporter.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/moderation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/commands/member_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/member_info.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/debug/member_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/debug/member_info.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/user_passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_passport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/economy/slot.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/economy/slot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/economy/tic_tac_toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/economy/tic_tac_toe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/embeds/roles2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/data/WeekColor.json" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/data/WeekColor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cogs/events/weekly_colors.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/weekly_colors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/BlenderPro-Book.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/fonts/BlenderPro-Book.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/Slot Cyrillic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/fonts/Slot Cyrillic.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/VAG World.otf" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/fonts/VAG World.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pillow/hi_pillow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/favourite_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/favourite_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/jabka_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/jabka_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/member_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/member_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/muted_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/muted_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/owner_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/owner_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/press_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/press_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/sponsor_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/sponsor_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/support_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/support_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/tech_spec_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/tech_spec_profile.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Python File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -75,24 +76,24 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow/welcomes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow/profiles" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\badges" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\welcomes" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\embeds" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\administration_commands\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\fonts" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\welcomes" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\Fonts" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\development" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\badges" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\fonts" />
     </key>
   </component>
   <component name="RunManager">
@@ -150,13 +151,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00019" summary="- Some changes">
-      <created>1608664017515</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1608664017515</updated>
     </task>
     <task id="LOCAL-00020" summary="Read README.md">
       <created>1608760078246</created>
@@ -494,7 +488,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616174271212</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="New weekly colors and warn system">
+      <created>1616433137318</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1616433137318</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -523,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Recovery editing" />
     <MESSAGE value="Cleanup and some changes" />
     <MESSAGE value="user_report changes" />
     <MESSAGE value="user_report.py reactions edited." />
@@ -548,7 +548,8 @@
     <MESSAGE value="New on_member_join welcome" />
     <MESSAGE value="New member_profiles system" />
     <MESSAGE value="New member_profiles and private-rooms system" />
-    <option name="LAST_COMMIT_MESSAGE" value="New member_profiles and private-rooms system" />
+    <MESSAGE value="New weekly colors and warn system" />
+    <option name="LAST_COMMIT_MESSAGE" value="New weekly colors and warn system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -572,11 +573,6 @@
           <url>file://$PROJECT_DIR$/cogs/recovery/recovery.py</url>
           <line>238</line>
           <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
-          <line>393</line>
-          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>

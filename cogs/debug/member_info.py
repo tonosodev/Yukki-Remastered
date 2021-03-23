@@ -31,7 +31,7 @@ class MemberActivityCog(commands.Cog):
 
         def isnitro():
             if member.premium_since:
-                return f'{member.premium_since.strftime("%d/%m/%Y")}'
+                return f'{member.premium.strftime("%d/%m/%Y")}'
             else:
                 return 'Подписка отсутствует'
 
