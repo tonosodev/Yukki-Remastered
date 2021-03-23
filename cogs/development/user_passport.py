@@ -27,7 +27,7 @@ class UserPassportCog(commands.Cog):
     @commands.command(aliases=['паспорт'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def passport(self, ctx, ):
-        msg = await ctx.reply("`Печатаем паспорт, пожалуйста, подождите. . .`")
+        msg = await ctx.reply("`Печатаем паспорт, пожалуйста, подождите. . .`\n`Это можент занять некоторое время.`")
         # start_time = time.time()
         member = ctx.author
         warns = client.YukkiModeration.WarnCollection.find_one({"_id": member.id})
@@ -51,6 +51,12 @@ class UserPassportCog(commands.Cog):
             else:
                 return "./pillow/badges/none_badge.png"
 
+        def is_boost_badge():
+            if member.premium_since:
+                return "./pillow/badges/booster.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
         def is_partner():
             if flags.partner:
                 return "./pillow/badges/partner.png"
@@ -69,13 +75,21 @@ class UserPassportCog(commands.Cog):
             else:
                 return "./pillow/badges/none_badge.png"
 
+        def is_nitro_badge():
+            if member.premium_since:
+                return "./pillow/badges/nitro.png"
+            else:
+                return "./pillow/badges/none_badge.png"
+
+        # ==============================================================
+
         def is_warn():
             if warns:
                 return len(warns['warns'])
             else:
                 return "0"
 
-        def is_nitro():
+        def is_boost():
             if member.premium_since:
                 return f'{member.premium_since.strftime("%d/%m/%Y")}'
             else:
@@ -192,6 +206,16 @@ class UserPassportCog(commands.Cog):
         bot_developer = bot_developer.convert('RGBA')
         draw_bot_developer = ImageDraw.Draw(bot_developer)
 
+        boost_badge_url = is_boost_badge()
+        boost_badge = Image.open(boost_badge_url)
+        boost_badge = boost_badge.convert('RGBA')
+        draw_boost_badge = ImageDraw.Draw(boost_badge)
+
+        nitro_badge_url = is_nitro_badge()
+        nitro_badge = Image.open(nitro_badge_url)
+        nitro_badge = nitro_badge.convert('RGBA')
+        draw_nitro_badge = ImageDraw.Draw(nitro_badge)
+
         # Фон профиля
         background_url = checkTopRole()
         background = Image.open(background_url)
@@ -224,7 +248,7 @@ class UserPassportCog(commands.Cog):
                                              font=headline_username, fill='#FFFFFF')
         text_copyright = draw_background.text((950, 48), f'{ctx.guild.name}', anchor="ms", font=headline_copyright,
                                               fill='#FFFFFF')
-        text_nitro = draw_background.text((147, 447), f'{is_nitro()}', anchor="ms", font=other, fill="#FFFFFF")
+        text_nitro = draw_background.text((147, 447), f'{is_boost()}', anchor="ms", font=other, fill="#FFFFFF")
         text_joined = draw_background.text((115, 252), f'{member.joined_at.strftime("%d/%m/%Y")}', anchor="ms",
                                            font=other,
                                            fill="#FFFFFF")
@@ -242,12 +266,15 @@ class UserPassportCog(commands.Cog):
         background.paste(avatar, (40, 80), avatar)
         background.paste(server_icon, (820, 28), server_icon)
         # РАЗМЕЩЕНИЕ ЗНАЧКОВ
-        background.paste(partner, (198, 140), partner)
+        background.paste(partner, (197, 140), partner)
         background.paste(bot_developer, (233, 140), bot_developer)
         background.paste(supporter, (259, 140), supporter)
         background.paste(hs_balance, (348, 140), hs_balance)
         background.paste(hs_bravery, (376, 141), hs_bravery)
         background.paste(hs_brilliance, (398, 141), hs_brilliance)
+        background.paste(boost_badge, (318, 140), boost_badge)
+
+        background.paste(nitro_badge, (290, 141), nitro_badge)
 
         # Сохранение картинки в буфер обмена
         _buffer = io.BytesIO()
@@ -260,33 +287,33 @@ class UserPassportCog(commands.Cog):
 
         else:
             if member.top_role is member_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
                 # await ctx.send(f"Выполнено за {time.time() - start_time} секунд")
             elif member.top_role is sponsor_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is muted_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is favourite_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is press_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is head_tech_spec_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is support_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             elif member.top_role is owner_role:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
             else:
-                await msg.delete()
                 await ctx.reply(file=discord.File(fp=_buffer, filename=f'{member.name}profile.png'), delete_after=15)
+                await msg.delete()
 
 
 def setup(bot):
