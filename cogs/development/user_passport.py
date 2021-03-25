@@ -3,7 +3,10 @@ Today is 3/18/2021
 Session by: https://github.com/DevilDesigner
 Create Time: 10:57 AM
 This Class: user_passport
+Когда я начинал писать этот код, только я и чёрт знали, для чего он.
+Сейчас знает лишь чёрт.
 """
+
 import io
 import discord
 import requests
@@ -27,7 +30,7 @@ class UserPassportCog(commands.Cog):
     @commands.command(aliases=['паспорт'])
     @commands.cooldown(1, 60, commands.BucketType.user)
     async def passport(self, ctx, ):
-        msg = await ctx.reply("`Печатаем паспорт, пожалуйста, подождите. . .`\n`Это можент занять некоторое время.`")
+        msg = await ctx.reply("Печатаем Ваш паспорт, пожалуйста, подождите. . .\n`Этот процесс может занять некоторое время.`")
         # start_time = time.time()
         member = ctx.author
         warns = client.YukkiModeration.WarnCollection.find_one({"_id": member.id})
@@ -260,11 +263,16 @@ class UserPassportCog(commands.Cog):
         text_activity = draw_background.text((550, 575), f'{is_activity()}', anchor="ms", font=actvity, fill="#FFFFFF")
         text_warns = draw_background.text((905, 447), f"{is_warn()} / 5", anchor="ms", font=actvity, fill="#FFFFFF")
 
+        # ЭТО ДОЛЖНО НАХОДИТьСЯ ИМЕННО ЗДЕСЬ!
+        # ЗДЕСЬ, А НЕ НА ДЕСЯТЬ СТРОК ВЫШЕ!
+        # ЗАПОМНИ УЖЕ ЭТО!
+        # 267-я строка для размещения бг, понял?
+        # ЕСЛИ СНОВА ЗАБУДЕШЬ - НЕ ОРИ, КОГДА ТЕКСТЫ НЕ БУДУТ ОТОБРАЖАТЬСЯ!
         background = background.resize((1100, 600))
 
         # Размещение элементов
         background.paste(avatar, (40, 80), avatar)
-        background.paste(server_icon, (820, 28), server_icon)
+        background.paste(server_icon, (820, 23), server_icon)
         # РАЗМЕЩЕНИЕ ЗНАЧКОВ
         background.paste(partner, (197, 140), partner)
         background.paste(bot_developer, (233, 140), bot_developer)
@@ -273,7 +281,6 @@ class UserPassportCog(commands.Cog):
         background.paste(hs_bravery, (376, 141), hs_bravery)
         background.paste(hs_brilliance, (398, 141), hs_brilliance)
         background.paste(boost_badge, (318, 140), boost_badge)
-
         background.paste(nitro_badge, (290, 141), nitro_badge)
 
         # Сохранение картинки в буфер обмена

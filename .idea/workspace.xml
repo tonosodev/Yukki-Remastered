@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_passports badges update">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_passports badges released">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/user_passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_passport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
@@ -59,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow/profiles" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -132,13 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Read README.md">
-      <created>1608763036858</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1608763036858</updated>
     </task>
     <task id="LOCAL-00022" summary="Read README.md">
       <created>1608763068611</created>
@@ -476,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616522039645</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="user_passports badges released">
+      <created>1616531813409</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1616531813409</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,7 +505,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="user_report changes" />
     <MESSAGE value="user_report.py reactions edited." />
     <MESSAGE value="Added member_activity.py" />
     <MESSAGE value="New bot activity system" />
@@ -530,7 +529,8 @@
     <MESSAGE value="New member_profiles and private-rooms system" />
     <MESSAGE value="New weekly colors and warn system" />
     <MESSAGE value="user_passports badges update" />
-    <option name="LAST_COMMIT_MESSAGE" value="user_passports badges update" />
+    <MESSAGE value="user_passports badges released" />
+    <option name="LAST_COMMIT_MESSAGE" value="user_passports badges released" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
