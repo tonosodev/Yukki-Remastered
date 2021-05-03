@@ -8,10 +8,11 @@ from discord.ext.commands import when_mentioned_or
 from config import bot_settings, bot_initialize
 
 queue = []
-PREFIX = bot_settings['bot_prefix']
-TOKEN = bot_settings['bot_token']
-yukki = commands.Bot(command_prefix=when_mentioned_or(bot_settings['bot_prefix']), intents=discord.Intents.all())
-yukki.remove_command("help")
+yukki = commands.Bot(
+    command_prefix=when_mentioned_or(bot_settings['bot_prefix']),
+    intents=discord.Intents.all(),
+    help_command=None
+)
 
 # ----------------------------- #
 #         YUKKI COGS            #
@@ -65,7 +66,6 @@ except:
 # -------------------------------#
 @yukki.event
 async def on_command_error(ctx, error):
-    global msg
     if isinstance(error, commands.CommandNotFound):
         return await ctx.reply(embed=discord.Embed(
             description=f'❗️ {ctx.author.mention}, команда не найдена!\nПропишите " ' + bot_settings[
@@ -87,9 +87,8 @@ async def on_command_error(ctx, error):
             description=f"У Вас еще не прошел кулдаун на команду {ctx.command}!\nПодождите еще {error.retry_after:.2f} сек.!"),
             delete_after=5)
     else:
-
         if isinstance(error, UnboundLocalError):
-            return
+            return "UnboundLocalError in file " + filename
 
         else:
             try:
@@ -99,11 +98,15 @@ async def on_command_error(ctx, error):
                            f"[ERROR] Команда: {ctx.message.content}\n"
                            f"[ERROR] Сервер: {ctx.message.guild}\n"
                            f"[ERROR] Ошибка: {error}\n"
-                           f". . .\n")
+                           f". . .\n"
+                           )
 
                     with io.open('log.txt', 'a', encoding='utf-8') as log:
                         print(
-                            '*****************************\nЗапишу ошибку в файл ' + log.name + '\n*****************************\n')
+                            '*****************************\n'
+                            'Запишу ошибку в файл ' + log.name +
+                            '\n*****************************\n'
+                        )
                         log.write(msg)
                 except UnicodeEncodeError:
                     print(f"[ERROR] UnicodeEncodeError\n {error}")
@@ -111,7 +114,11 @@ async def on_command_error(ctx, error):
             except FileNotFoundError:
                 with io.open('log.txt', 'w', encoding='utf-8') as log:
                     print(
-                        '#############################\nФайл ' + log.name + ' не существует!\nСоздаю новый...\n#############################\n')
+                        '#############################\n'
+                        'Файл ' + log.name + ' не существует!\n'
+                        'Создаю новый...\n'
+                        '#############################\n'
+                    )
 
         await yukki.get_channel(bot_settings['system_log_channel']).send(embed=discord.Embed(
             description=f'❗️ Ошибка при выполнении команды пользователя {ctx.author.mention}\n\n**`СЕРВЕР:`**\n{ctx.message.guild}\n**`КОМАНДА:`**\n{ctx.message.content}\n**`ОШИБКА:`**\n{error}'))

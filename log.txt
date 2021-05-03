@@ -298,3 +298,486 @@ In embed.image.url: Scheme "[<discord.file.file object at 0x00000170fdf27d10>]" 
 [ERROR] Сервер: Meta Peace Team®
 [ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'read'
 . . .
+[AUTHORIZE] Пользователь Кошак#0023 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид 13
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид 13
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NameError: name 'region' is not defined
+. . .
+[AUTHORIZE] Пользователь Ars D3V#2461 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In content: Must be 2000 or fewer in length.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: list indices must be integers or slices, not str
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In message_reference: Unknown message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not iterable
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'lower'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Россия
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ValueError: invalid destination language
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Россия
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'CovidCog' object has no attribute '_translate'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Россия
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: translate() missing 1 required positional argument: 'country'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Россия
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'CovidCog' object has no attribute '_translate'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Россия
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'CovidCog' object has no attribute '_translate'
+. . .
+[ERROR] Пользователь: PosReady NT | Dev
+[ERROR] ID Пользователя: 694598900094599198
+[ERROR] Команда: <@!766270990007009330> ковид Украина
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'CovidCog' object has no attribute '_translate'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'lower'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, очисти 500
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ClientOSError: [WinError 1236] The network connection was aborted by the local system
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, new_slot
+[ERROR] Сервер: Yukki Playhouse
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 10014): Unknown Emoji
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, new_slot
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NameError: name 'random_reward' is not defined
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, new_slot
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: calc() missing 2 required positional arguments: 'price' and 'random_reward'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, слот
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ClientConnectorError: Cannot connect to host discord.com:443 ssl:default [getaddrinfo failed]
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: ღ𝓜𝓸𝓻𝓰𝓮𝓷𝓼𝓽𝓮𝓻𝓷ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: OSError: unknown file format
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Kazakhstan
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+. . .
+[ERROR] Пользователь: ღ𝓜𝓸𝓻𝓰𝓮𝓷𝓼𝓽𝓮𝓻𝓷ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: 'NoneType' object is not subscriptable
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь ВАСЯ СЕКСЕР (СЕКС) ЛЮБЛЮ ПИСЮНЫ#9999 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "<@!519877715361398796>" not found.
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
+In message_reference: Unknown message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 1
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[AUTHORIZE] Пользователь Somik Andreas#7938 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь NobodyForYou#3648 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, colors_embed
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: InvalidArgument: emoji argument must be str, Emoji, or Reaction not list.
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, colors_embed
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: HTTPException: 400 Bad Request (error code: 10014): Unknown Emoji
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Чикиряу, хочу татарочку#3259 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'Member' object has no attribute 'premium'
+. . .
+[ERROR] Пользователь: ღ𝓗𝓾 𝓣𝓪𝓸ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'Member' object has no attribute 'premium'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: Draw() missing 1 required positional argument: 'im'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'str' object has no attribute 'read'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: ღ𝓗𝓾 𝓣𝓪𝓸ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Somik Andreas
+[ERROR] ID Пользователя: 372418407137804289
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'ImageDraw' object has no attribute 'size'
+. . .
+[ERROR] Пользователь: Чикиряу, хочу татарочку
+[ERROR] ID Пользователя: 519877715361398796
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: AttributeError: 'Image' object has no attribute 'text'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: Object of type File is not JSON serializable
+. . .
+[ERROR] Пользователь: ღ𝓗𝓾 𝓣𝓪𝓸ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, репорт <@!519877715361398796> 12 варнов
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[AUTHORIZE] Пользователь Discord cat#9498 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь ChaYKa#6666 успешно прошел авторизацию!
+. . .
+[SLOWMODE] Пользователь:
+[SLOWMODE] - NeverMind
+[SLOWMODE] Канал:
+[SLOWMODE] - ╭══•👥lounge
+[SLOWMODE] Время:
+[SLOWMODE] - 3сек.
+...
+[SLOWMODE] Пользователь:
+[SLOWMODE] - NeverMind
+[SLOWMODE] Канал:
+[SLOWMODE] - ╭══•👥lounge
+[SLOWMODE] Время:
+[SLOWMODE] - 1сек.
+...
+[AUTHORIZE] Пользователь helldoodle#3297 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, hug 2
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "2" not found.
+. . .
+[AUTHORIZE] Пользователь SAYNEY#3587 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь يىستنبىيسبثلابثتبىسي#7921 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь МАКС#5160 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь PRIME#9725 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь phoenixx🛐🍷#1111 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: أنا أنت يتلقّى تبحث ل
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, репорт <@!679691974663733363> Ykki
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: platform_status() missing 1 required positional argument: 'Member'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: ConnectionError: HTTPSConnectionPool(host='cdn.discordapp.com', port=443): Max retries exceeded with url: /icons/766213910595633153/ebe986586fdb285a47a25046b237addb.webp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019B94F78940>: Failed to establish a new connection: [WinError 10051] A socket operation was attempted to an unreachable network'))
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: is_nitro_badge() missing 1 required positional argument: 'self'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: is_nitro_badge() missing 1 required positional argument: 'self'
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: is_nitro_badge() missing 1 required positional argument: 'self'
+. . .
+[INFO] Резервное копирование лог-файла начинается...
+. . .
+[INFO] Резервное копирование лог-файла завершено!
+. . .
+[AUTHORIZE] Пользователь ღ𝓜𝓸𝓷𝓪ღ#3984 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь ღ𝓜𝓸𝓷𝓪ღ#3984 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: ღ𝓜𝓸𝓷𝓪ღ
+[ERROR] ID Пользователя: 569156098708209684
+[ERROR] Команда: Юкки, say Привет!
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Channel "Привет!" not found.
+. . .
+[AUTHORIZE] Пользователь Лосяш#0045 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь Jabka#5257 успешно прошел авторизацию!
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, репорт <@!424260619466964993> debug
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[AUTHORIZE] Пользователь dbite#3755 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь ☆ღ𝓜𝓸𝓷𝓲𝓴𝓪ღ☆™#3984 успешно прошел авторизацию!
+. . .
+[AUTHORIZE] Пользователь SayHelloRoman#8511 успешно прошел авторизацию!
+. . .

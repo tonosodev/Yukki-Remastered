@@ -52,7 +52,7 @@ class OnMemberJoinCog(commands.Cog):
             headline2 = ImageFont.truetype(r".\pillow\fonts\VAG World.otf", size=45)
             footer = ImageFont.truetype(r".\pillow\fonts\BlenderPro-Book.ttf", size=46)
             # Тексты
-            idraw.text((718.5, 400), f'{name},', anchor="ms", font=headline, fill='#FFFFFF')
+            idraw.text((718.5, 400), f'{name}', anchor="ms", font=headline, fill='#FFFFFF')
             idraw.text((718.5, 500), f'{random.choice(random_choice)}', anchor="ms", font=headline2, fill='#FFFFFF')
             idraw.text((755.5, 680), f'{self.bot.get_guild(766213910595633153).name}', anchor="ms", font=footer,
                        fill='#FFFFFF')

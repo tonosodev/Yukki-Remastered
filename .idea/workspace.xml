@@ -1,10 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="user_passports badges released">
+    <list default="true" id="ac17f278-0456-4c29-a2fd-928c9af4ea60" name="Default Changelist" comment="cleanup">
+      <change afterPath="$PROJECT_DIR$/cogs/events/data/SwearWords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cogs/events/on_message.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/laptop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/unknown_platform.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pillow/badges/web.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/YukkiRemastered.py" beforeDir="false" afterPath="$PROJECT_DIR$/YukkiRemastered.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/administration_commands/slowmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/administration_commands/slowmode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/hug.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/hug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/commands/user_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/commands/user_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/development/cyberpunk.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cogs/development/user_passport.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/development/user_passport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/data/WeekColor.json" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/data/WeekColor.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/on_member_join.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_member_join.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cogs/events/on_ready.py" beforeDir="false" afterPath="$PROJECT_DIR$/cogs/events/on_ready.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/photo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/favourite_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/favourite_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/jabka_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/jabka_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/member_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/member_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/muted_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/muted_profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pillow/profiles/sponsor_profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/pillow/profiles/sponsor_profile.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +80,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pillow/profiles" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,10 +91,10 @@
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
+      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\badges" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\debug" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\cogs\development" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\badges" />
-      <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\profiles" />
       <recent name="C:\Users\MindControl\Documents\GitHub\Yukki Remastered\pillow\fonts" />
     </key>
   </component>
@@ -132,13 +153,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608058739607</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Read README.md">
-      <created>1608763068611</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1608763068611</updated>
     </task>
     <task id="LOCAL-00023" summary="Read README.md">
       <created>1608794107021</created>
@@ -476,7 +490,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616531813409</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="cleanup">
+      <created>1616668206340</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1616668206341</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,7 +526,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="user_report.py reactions edited." />
     <MESSAGE value="Added member_activity.py" />
     <MESSAGE value="New bot activity system" />
     <MESSAGE value="Cleanup" />
@@ -530,7 +550,8 @@
     <MESSAGE value="New weekly colors and warn system" />
     <MESSAGE value="user_passports badges update" />
     <MESSAGE value="user_passports badges released" />
-    <option name="LAST_COMMIT_MESSAGE" value="user_passports badges released" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -589,6 +610,36 @@
           <url>file://$PROJECT_DIR$/cogs/development/pillow.py</url>
           <line>77</line>
           <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
+          <line>275</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
+          <line>279</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/development/user_passport.py</url>
+          <line>283</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>589</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/YukkiRemastered.py</url>
+          <line>90</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cogs/commands/user_report.py</url>
+          <line>99</line>
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

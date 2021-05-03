@@ -46,20 +46,48 @@ class ConnectCog(commands.Cog):
                 str(discord.__version__)) + " | " + bot_initialize[
                       'discord_py_version'] + "\n##################################################\n")
             while True:
-                await self.bot.change_presence(status=discord.Status.online,
-                                               activity=discord.Game(random.choice(activity_status_game), type=3))
+                await self.bot.change_presence(
+                    status=discord.Status.online,
+                    activity=discord.Game(
+                        random.choice(activity_status_game),
+                        type=3)
+                )
+
                 await asyncio.sleep(30)  # Thread time
-                await self.bot.change_presence(status=discord.Status.idle,
-                                               activity=discord.Activity(name=random.choice(activity_status_competes),
-                                                                         type=5))
+                await self.bot.change_presence(
+                    status=discord.Status.idle,
+                    activity=discord.Activity(
+                        name=random.choice(activity_status_competes),
+                        type=5)
+                )
+
                 await asyncio.sleep(30)
-                await self.bot.change_presence(status=discord.Status.dnd,
-                                               activity=discord.Activity(type=discord.ActivityType.watching,
-                                                                         name=random.choice(activity_status_watch)))
+                await self.bot.change_presence(
+                    status=discord.Status.dnd,
+                    activity=discord.Activity(
+                        type=discord.ActivityType.watching,
+                        name=random.choice(activity_status_watch)
+                    )
+                )
+
                 await asyncio.sleep(30)
-                await self.bot.change_presence(status=discord.Status.idle,
-                                               activity=discord.Activity(type=discord.ActivityType.listening,
-                                                                         name=random.choice(activity_status_listen)))
+                await self.bot.change_presence(
+                    status=discord.Status.idle,
+                    activity=discord.Activity(
+                        type=discord.ActivityType.listening,
+                        name=random.choice(activity_status_listen)
+                    )
+                )
+
+                await asyncio.sleep(30)
+                await self.bot.change_presence(
+                    activity=discord.Streaming(
+                        platform='Twitch',
+                        type=discord.ActivityType.streaming,
+                        name=f'MetaPeaceTeam',
+                        url='https://twitch.tv/twitch'
+                    )
+                )
                 await asyncio.sleep(30)
         except:
             print("\n##################################################\n" + bot_initialize[

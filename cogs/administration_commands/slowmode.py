@@ -2,7 +2,7 @@ import discord
 
 from discord.ext import commands
 
-from config import slowmode_command_aliases, commands_permission, bot_settings
+from config import slowmode_command_aliases, commands_permission, bot_settings, bot_initialize
 
 
 class SlowMode(commands.Cog):
@@ -16,8 +16,7 @@ class SlowMode(commands.Cog):
         if value is None:
             embed = discord.Embed(title="SlowMode", description="Укажите количество секунд `>slowmode <int value>`",
                                   color=discord.Color.red())
-            embed.set_footer(text=f'{self.bot.user.name} © 2020 | Все права защищены',
-                             icon_url=self.bot.user.avatar_url)
+            embed.set_footer(text=f'{self.bot.user.name}' + bot_initialize['embeds_footer_message'], icon_url=self.bot.user.avatar_url)
             await ctx.send(embed=embed, delete_after=10)
         elif value > 21600:
             embed = discord.Embed(title="SlowMode", description="Максимальное количество секунд: 21600",
@@ -38,7 +37,7 @@ class SlowMode(commands.Cog):
 
             logs = self.bot.get_channel(bot_settings['log_channel'])
             embed = discord.Embed(title="SlowMode ⚔️",
-                                  description=f"Установлен медленный режим на **{value}** {sec} в канале {ctx.channel.mention}",
+                                  description=f"Установлен медленный режим в **{value}** {sec} в канале {ctx.channel.mention}",
                                   color=0x8A2BE2)
             embed.set_footer(text='Установлен управляющим {}'.format(ctx.author.name),
                              icon_url=ctx.author.avatar_url)

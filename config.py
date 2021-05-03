@@ -108,7 +108,7 @@ bot_initialize = {
     "new_user_authorize": "",
 
     "copyright_message": "\n\t  Yukki© 2021 | All rights reserved",
-    "embeds_footer_message": "© 2021 | Все права защищены"
+    "embeds_footer_message": "© 2021 | Все права замурлычены"
 }
 # ===================================================================#
 #                             PERMISSIONS                            #
@@ -197,3 +197,7 @@ version_command_aliases = ['версия']
 help_command_aliases = ['помощь', 'помоги', 'команды', 'Помощь', 'Помоги', 'Команды', 'хелп', 'Хелп']
 
 # ==========================
+
+BAN_URL = [
+    'https://www.youtube.com/watch'
+]

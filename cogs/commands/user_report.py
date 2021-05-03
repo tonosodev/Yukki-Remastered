@@ -24,6 +24,9 @@ class UserReport(commands.Cog):
     @commands.has_any_role(*commands_permission['user_report_command_permission'])
     @commands.cooldown(1, 3600, commands.BucketType.user)
     async def report(self, ctx, suspect: discord.Member = None, *, reason=None):
+        if ctx.author is ctx.guild.owner:
+            self.report.reset_cooldown(ctx)
+
         report_logs = self.bot.get_channel(bot_settings['report_channel'])
         info_logs = self.bot.get_channel(bot_settings['log_channel'])
         load_variable = await ctx.reply(f"{ctx.author.mention}, пожалуйста, подождите. . .")
@@ -230,8 +233,9 @@ class UserReport(commands.Cog):
                         await info_logs.send(embed=info_warn)
 
                         info_warn_for_author = discord.Embed(title=f'Жалоба рассмотрена ✅', color=0x4B0082)
-                        info_warn_for_author.add_field(name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
-                                                       value=f'#{token}', inline=False)
+                        info_warn_for_author.add_field(
+                            name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
+                            value=f'#{token}', inline=False)
                         info_warn_for_author.add_field(name=f'__**Решение:**__',
                                                        value=f'Пользователю {suspect.mention} было `вынесено предупреждение`.',
                                                        inline=False)
@@ -241,8 +245,9 @@ class UserReport(commands.Cog):
                         await ctx.author.send(embed=info_warn_for_author)
 
                         info_warn_for_suspect = discord.Embed(title=f'На Вас была рассмотрена жалоба ‼', color=0x4B0082)
-                        info_warn_for_suspect.add_field(name=f'__**Управляющий {manager.name} рассмотрел жалобу на Вас**__',
-                                                        value=f'#{token}', inline=False)
+                        info_warn_for_suspect.add_field(
+                            name=f'__**Управляющий {manager.name} рассмотрел жалобу на Вас**__',
+                            value=f'#{token}', inline=False)
                         info_warn_for_suspect.add_field(name=f'__**Жалобу выдал**__:', value=f"{ctx.author.mention}")
                         info_warn_for_suspect.add_field(name=f'__**Решение:**__',
                                                         value=f'Вам было `вынесено предупреждение`.',
@@ -305,8 +310,9 @@ class UserReport(commands.Cog):
                         await info_logs.send(embed=info_mute)
 
                         info_mute_for_author = discord.Embed(title=f'Жалоба рассмотрена ✅', color=0x4B0082)
-                        info_mute_for_author.add_field(name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
-                                                       value=f'#{token}', inline=False)
+                        info_mute_for_author.add_field(
+                            name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
+                            value=f'#{token}', inline=False)
                         info_mute_for_author.add_field(name=f'__**Решение:**__',
                                                        value=f'Пользователю {suspect.mention} был `временно ограничен доступ к общему чату`.',
                                                        inline=False)
@@ -316,8 +322,9 @@ class UserReport(commands.Cog):
                         await ctx.author.send(embed=info_mute_for_author)
 
                         info_mute_for_suspect = discord.Embed(title=f'На Вас была рассмотрена жалоба ‼', color=0x4B0082)
-                        info_mute_for_suspect.add_field(name=f'__**Управляющий {manager.name} рассмотрел жалобу на Вас**__',
-                                                        value=f'#{token}', inline=False)
+                        info_mute_for_suspect.add_field(
+                            name=f'__**Управляющий {manager.name} рассмотрел жалобу на Вас**__',
+                            value=f'#{token}', inline=False)
                         info_mute_for_suspect.add_field(name=f'__**Жалобу выдал**__:', value=f"{ctx.author.mention}")
                         info_mute_for_suspect.add_field(name=f'__**Решение:**__',
                                                         value=f'Вам был `временно ограничен доступ к общему чату`.',
@@ -371,8 +378,9 @@ class UserReport(commands.Cog):
                         await info_logs.send(embed=info_kick)
 
                         info_kick_for_author = discord.Embed(title=f'Жалоба рассмотрена ✅', color=0x4B0082)
-                        info_kick_for_author.add_field(name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
-                                                       value=f'#{token}', inline=False)
+                        info_kick_for_author.add_field(
+                            name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
+                            value=f'#{token}', inline=False)
                         info_kick_for_author.add_field(name=f'__**Решение:**__',
                                                        value=f'Пользователь {suspect.mention} был `кикнут с сервера`.',
                                                        inline=False)
@@ -450,8 +458,9 @@ class UserReport(commands.Cog):
                                             icon_url=self.bot.user.avatar_url)
                         await info_logs.send(embed=info_ban)
                         info_ban_for_author = discord.Embed(title=f'Жалоба рассмотрена ✅', color=0x4B0082)
-                        info_ban_for_author.add_field(name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
-                                                      value=f'#{token}', inline=False)
+                        info_ban_for_author.add_field(
+                            name=f'__**Управляющий {manager.name} успешно рассмотрел Вашу жалобу**__',
+                            value=f'#{token}', inline=False)
                         info_ban_for_author.add_field(name=f'__**Решение:**__',
                                                       value=f'Пользователь {suspect.mention} был `перманентно заблокирован на сервере`.',
                                                       inline=False)
@@ -541,8 +550,9 @@ class UserReport(commands.Cog):
 
                         info_close_ticket_for_suspect = discord.Embed(title=f'На Вас была рассмотрена жалоба ‼',
                                                                       color=0x4B0082)
-                        info_close_ticket_for_suspect.add_field(name=f'__**Управляюший {manager.name} рассмотрел жалобу на Вас**__',
-                                                                value=f'#{token}', inline=False)
+                        info_close_ticket_for_suspect.add_field(
+                            name=f'__**Управляюший {manager.name} рассмотрел жалобу на Вас**__',
+                            value=f'#{token}', inline=False)
                         info_close_ticket_for_suspect.add_field(name=f'__**Автор жалобы**__:',
                                                                 value=f"{ctx.author.mention}")
                         info_close_ticket_for_suspect.add_field(name=f'__**Решение:**__',
