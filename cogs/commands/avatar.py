@@ -1,10 +1,9 @@
 import random
 
 import discord
+from config import avatar_command_aliases, bot_initialize, commands_permission
 from discord.ext import commands
 from loguru import logger
-
-from config import avatar_command_aliases, commands_permission, bot_initialize
 
 
 class UserAvatar(commands.Cog):

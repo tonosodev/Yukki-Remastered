@@ -781,3 +781,21 @@ In message_reference: Unknown message
 . . .
 [AUTHORIZE] Пользователь SayHelloRoman#8511 успешно прошел авторизацию!
 . . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: TypeError: object method can't be used in 'await' expression
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, ковид Russia
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: NotFound: 404 Not Found (error code: 10008): Unknown Message
+. . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, выдай_роль <@&766231587104620554> <@!844609830240780359>
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Member "<@&766231587104620554>" not found.
+. . .

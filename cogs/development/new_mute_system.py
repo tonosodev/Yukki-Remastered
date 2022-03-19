@@ -6,8 +6,8 @@ This Class: new_mute_system
 """
 
 import discord
-import config
 import time
+import config
 from utils import DB
 from discord.ext import commands
 
