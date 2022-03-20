@@ -799,3 +799,9 @@ In message_reference: Unknown message
 [ERROR] Сервер: Meta Peace Team®
 [ERROR] Ошибка: Member "<@&766231587104620554>" not found.
 . . .
+[ERROR] Пользователь: NeverMind
+[ERROR] ID Пользователя: 641398600727003197
+[ERROR] Команда: Юкки, паспорт
+[ERROR] Сервер: Meta Peace Team®
+[ERROR] Ошибка: Command raised an exception: FileNotFoundError: [Errno 2] No such file or directory: './pillow/profiles/press_profile.png'
+. . .
